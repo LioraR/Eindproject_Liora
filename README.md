@@ -1,8 +1,13 @@
-•	Opdracht: Eindproject voorstel 
+•	Opdracht: eindproject voorstel
+
 •	Naam: Liora Rosenberg
+
 •	Link data: https://www.idea.int/data-tools/data/voter-turnout
+
 • External components: d3-tip, SQLite, pandas, matplotlib.pyplot
+
 • Similar related visualizations: https://jaspernaberman.github.io/Programming-Project/Scripts/HTML/visualizations.html (bij dit eindproject is er ook een visualisatie van de wereldkaart gemaakt en is het mogelijk om op verschillende landen te klikken)
+
 
 
 De onderzoeksvraag luidt: “In hoeverre is er een verschil tussen het politieke systeem en het opkomstpercentage?” 
