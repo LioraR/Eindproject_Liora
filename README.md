@@ -1,6 +1,9 @@
-•	Opdracht: Eindproject voorstel: 
+•	Opdracht: Eindproject voorstel 
 •	Naam: Liora Rosenberg
 •	Link data: https://www.idea.int/data-tools/data/voter-turnout
+• External components: d3-tip, SQLite, pandas, matplotlib.pyplot
+• Similar related visualizations: https://jaspernaberman.github.io/Programming-Project/Scripts/HTML/visualizations.html (bij dit eindproject is er ook een visualisatie van de wereldkaart gemaakt en is het mogelijk om op verschillende landen te klikken)
+
 
 De onderzoeksvraag luidt: “In hoeverre is er een verschil tussen het politieke systeem en het opkomstpercentage?” 
 Sinds 1980 is er een afname in het opkomstpercentage van de stemgerechtigde populatie. Wetenschappelijk onderzoek heeft zich de afgelopen jaren vooral bezig gehouden met de reden hiervoor. Er is echter relatief weinig onderzoek gedaan met betrekking tot het verschil in landen. De onderzoeken die zich bezig houden met de reden van de verminderde opkomstpercentages doen dat vaak zonder visualisatie van data terwijl dat mogelijk tot meer inzicht zou leiden. Vandaar mijn voorstel om de relatie tussen het politieke systeem en het opkomstpercentage op verschillende wijze te visualiseren. Ik stel onder andere voor om het opkomstpercentage van verschillende europese landen met een vergelijkbaar of juist verschillend politiek systeem naast elkaar te tonen. De doelgroep is dan ook mensen met interesse in de politiek. 
