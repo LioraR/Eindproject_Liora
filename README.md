@@ -2,7 +2,9 @@
 
 •	Naam: Liora Rosenberg
 
-•	Link data: https://www.idea.int/data-tools/data/voter-turnout
+•	Link data voter turnout: https://www.idea.int/data-tools/data/voter-turnout
+•	Link data political systems: (zie politicalsystems.xlsx)
+
 
 • External components: d3-tip, SQLite, pandas, matplotlib.pyplot
 
