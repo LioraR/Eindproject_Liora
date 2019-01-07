@@ -21,7 +21,7 @@ Bij de visualisatie wil ik graag een kaart van europa maken die middels verschil
 
 
 ![image](https://user-images.githubusercontent.com/44025069/50769129-40483300-1283-11e9-85d7-1e3c132d1a7a.png)
-![image](https://user-images.githubusercontent.com/44025069/50769854-8c947280-1285-11e9-8397-dff4866cfb8c.png)
+<img src="https://user-images.githubusercontent.com/44025069/50771558-43dfb800-128b-11e9-982c-6b675e294527.png" alt="drawing" width="200"/>
 ![image](https://user-images.githubusercontent.com/44025069/50770985-78eb0b00-1289-11e9-8b11-9e19fd0bc1e0.png)
 
 
