@@ -25,3 +25,5 @@ Bij de visualisatie wil ik graag een kaart van europa maken die middels verschil
 
 
 Voor dit onderzoek moeten er nog verschillende aspecten verbeterd worden. De onderzoeksvraag kan nog aangescherpt worden door niet naar alle verschillende soorten politieke systemen te kijken. Verder moeten politieke systemen scherp gedefinieerd worden. Daarnaast zijn er meerdere aspecten die het opkomstpercentage beinvloeden en daarom mee moeten worden genomen in dit onderzoek. Landen waar stemmen verplicht is worden niet meegenomen aangezien deze landen het gemiddelde dusdanig beinvloeden dat ze outliers vormen. In gedachten moet worden gehouden dat er tussen landen verschillen in regelgeving, bevolkingsopbouw, de grote van een staat en andere sociaal economische aspecten bestaan die van invloed zijn op het stemgedrag. Bij dat laatste kan men denken aan grote afstanden tot een stembureau of een lage participatie van sociaal zwakkeren etc.
+
+blabla
