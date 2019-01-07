@@ -17,9 +17,7 @@ Op basis van politieke systemen kunnen er verschillende onderscheiden worden gem
 
 Bij de visualisatie wil ik graag een kaart van europa maken die middels verschillende kleuren aangeeft hoe hoog het opkomstpercentage is. Daarvan kan men op een land klikken om vervolgens uit te komen bij een donut chart die de ratio van het opkomstpercentage tussen mannen en vrouwen weergeeft. Daarnaast zal een scatterplot worden gemaakt bij het aanklikken van een land. De scatterplot heeft een dropdwon voor de verschillende variabelen die politieke systemen weergeven op de x-as en het opkomstpercentage staat op de Y-as. Verder zijn er nog optionele aspecten die ik wil toevoegen zoals het maken van een boxplot zodat de gemiddelden zichtbaar worden en vervolgens kijken of er een significant verband/verschil is tussen het opkomstpercentage en het politieke systeem.  
 
-<<<<<<< HEAD
-Voor dit onderzoek moeten er nog verschillende aspecten verbeterd worden. De onderzoeksvraag kan nog aangescherpt worden door niet naar alle verschillende soorten politieke systemen te kijken. Verder moeten politieke systemen scherp gedefinieerd worden. Daarnaast zijn er meerdere aspecten die het opkomstpercentage beinvloeden en daarom mee moeten worden genomen in dit onderzoek. Landen waar stemmen verplicht is worden niet meegenomen aangezien deze landen het gemiddelde dusdanig beinvloeden dat ze outliers vormen. In gedachten moet worden gehouden dat er tussen landen verschillen in regelgeving, bevolkingsopbouw, de grote van een staat en andere sociaal economische aspecten bestaan die van invloed zijn op het stemgedrag. Bij dat laatste kan men denken aan grote afstanden tot een stembureau of een lage participatie van sociaal zwakkeren etc. Daarnaast moet de wijze van visualisatie van de desbetreffende data nog verder worden uitgewerkt.
-=======
+
 ![image](https://user-images.githubusercontent.com/44025069/50769129-40483300-1283-11e9-85d7-1e3c132d1a7a.png)
 ![image](https://user-images.githubusercontent.com/44025069/50769854-8c947280-1285-11e9-8397-dff4866cfb8c.png)
 
