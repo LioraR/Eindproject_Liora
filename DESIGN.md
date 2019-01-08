@@ -5,6 +5,6 @@ De data die ik gebruik voor de verdeling van een politiek systeem is:
 
 <img src="https://user-images.githubusercontent.com/44025069/50844216-917f2200-136a-11e9-87e0-c7f19363356a.png" alt="drawing" width="400"/>
 
-Gister wilde ik een scatterplot maken maar dat is niet handig met nominale variabelen. Op de x-as zou dan bijvoorbeeld enkel republiek versus monarchie staan. Het is daarom handiger om een Sunburst Diagram te maken. De bovengenoemde gegevens zou ik via een CSV omzetten naar een JSON. 
+Gister wilde ik een scatterplot maken maar dat is niet handig met nominale variabelen. Op de x-as zou dan bijvoorbeeld enkel republiek versus monarchie staan. Het is daarom handiger om een Sunburst Diagram te maken. De bovengenoemde gegevens zou ik via een CSV omzetten naar een JSON.
 
 ![image](https://user-images.githubusercontent.com/44025069/50843821-bf179b80-1369-11e9-9b9b-5b707c8efc5e.png)
