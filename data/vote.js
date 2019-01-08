@@ -64,7 +64,6 @@ window.onload = function() {
 
             var europe = topojson.feature(data, data.objects.europe).features
 
-
           svg.append("g")
               .attr("class", "countries")
               .selectAll("path")
@@ -102,7 +101,7 @@ window.onload = function() {
                .on('click', function(d) {
                     d3.select("#chart").selectAll("*").remove().exit()
                     country = d.properties.name
-                    lineChart(country)
+                    //lineChart(country)
                })
 
               svg.append("path")
