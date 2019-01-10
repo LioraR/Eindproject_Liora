@@ -134,44 +134,42 @@ window.onload = function() {
             })
 
 
-            var data = [30, 30, 30, 30, 30]
+            var data = [20, 20, 20, 20, 20]
             function pieChart(data){
 
-            var margin = {top: 0, right:0, bottom: 0, left:0}
-            width = 500 - margin.left - margin.right;
-            height =500 - margin.top - margin.bottom;
-            radius = width /2;
+            radius = height /2;
 
             var arc = d3.arc()
-                        .outerRadius(radius - 10)
-                        .innerRadius(radius - 50)
+                        .outerRadius(radius)
+                        .innerRadius(radius - 200)
 
             var pie = d3.pie()
                         .value(function(d) {
                           return d;
                         });
 
-            var svg2 = d3.select("#pie")
-                         .append("svg")
+            var sv = d3.select("body").append("svg")
                          .attr('id', 'piechartsvg')
                          .attr('width', width)
                          .attr('height', height)
+                         .style('background', 'blue')
                          .append('g')
                          .attr('transform', "translate(" + width /2 + "," + height /2 + ")")
 
-            var g = svg2.selectAll(".arc")
+
+            var g = sv.selectAll(".arc")
                         .data(pie(data))
                         .enter()
-                        .append("g")
+                        .append("a")
                         .attr("class", "arc")
 
               g.append("path")
               .attr("d", arc)
-              .style("fill", "blue")
-
+              .style("fill", "red")
             }
 
-            //pieChart(data)
+            pieChart(data)
+
         function barChart(country) {
 
         var data = vote[country];
@@ -183,6 +181,7 @@ window.onload = function() {
 
         // create barchart
         var g = d3.select("body").append('svg')
+            .attr('id', 'barchart')
             .attr('width', width/2)
             .attr('height', height)
             .style('background', 'red')
