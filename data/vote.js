@@ -217,7 +217,7 @@ window.onload = function() {
         .data(data)
         .enter().append("rect")
         .style('fill', function(d) {
-            return "rgb(" + (d * 0.1) + ", 0, 0)";
+            return "rgb(0, 0, 10)";
         })
         .attr('y', height)
         .attr('width', barWidth)
