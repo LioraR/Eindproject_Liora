@@ -13,7 +13,7 @@ var margin = { top: 50, right: 50, bottom: 50, left: 50 },
 window.onload = function() {
 
     // distract jasons
-    var vote = "turnout.json"
+    var vote = "turnout2.json"
     var data = "europe.json"
     var requests = [d3.json(vote), d3.json(data)];
 
@@ -48,7 +48,8 @@ window.onload = function() {
             .attr("width", width/2)
             .attr("height", height)
             .append('g')
-            .attr('class', 'map');
+            .attr('class', 'map')
+
 
         var projection = d3.geoMercator()
                .scale(width/3)
@@ -100,8 +101,8 @@ window.onload = function() {
                })
                .on('click', function(d) {
                     d3.select("#chart").selectAll("*").remove().exit()
-                    country = d.properties.name
-                    //lineChart(country)
+                    country = d.properties.NAME
+                    barChart(country)
                })
 
               svg.append("path")
@@ -131,6 +132,66 @@ window.onload = function() {
             .text(function(d) {
               return d;
             })
+
+
+
+        function barChart(country) {
+
+        var data = vote[country];
+        console.log(data)
+
+        // dimensions chart
+        barWidth = (width - 2 * margin) / Object.keys(data).length;
+
+
+        // create barchart
+        var g = d3.select("body").append('svg')
+            .attr('width', width/2)
+            .attr('height', height)
+            .style('background', 'red')
+
+            // scaling x and y-as
+      var xScale = d3.scaleBand()
+            .rangeRound([margin.right, width/2 - margin.left])
+            //.range([margin.right, width/2 - margin.left])
+            //.rangeRound([0, width])
+      //var xScale = d3.scaleLinear()
+          //.domain([, ])
+          //.range([margin.right, width/2 - margin.left])
+
+      var yScale = d3.scaleLinear()
+          .domain([0, 100])
+          .range([height - margin.bottom, margin.top])
+
+      // make y-as
+      var yAxis = d3.axisLeft(yScale);
+      g.append("g")
+          .attr("class", "axis")
+          .attr("transform", "translate(" + [margin.top, 0] + ")")
+          .call(yAxis)
+
+      // make x-as
+      var xAxis = d3.axisBottom(xScale);
+      g.append("g")
+          .attr("class", "axis")
+          .attr("transform", "translate(" + [0, height - margin.top] + ")")
+          .call(xAxis)
+
+      g.selectAll(".bar")
+        .data(data)
+        .enter().append("rect")
+        .style('fill', function(d) {
+            return "rgb(" + (d * 0.1) + ", 0, 0)";
+        })
+        .attr('y', height)
+        .attr('width', barWidth)
+        .attr('height', 0)
+        .attr("y", height - margin.top)
+        .attr("x", function(d, i) {
+          return xScale(i);
+        })
+
+    }
 
     }).catch(function(e) {
         throw (e);
