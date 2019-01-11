@@ -7,6 +7,8 @@ var margin = { top: 50, right: 50, bottom: 50, left: 50 },
       width = screen.width - margin.left - margin.right,
       height = 650 - margin.top - margin.bottom;
 
+console.log(width)
+
 
               // make title
             //  d3.select("head").append("title").text("Voter Turnout")
@@ -15,11 +17,15 @@ window.onload = function() {
     // distract jasons
     var vote = "turnout2.json"
     var data = "europe.json"
-    var requests = [d3.json(vote), d3.json(data)];
+    var system = "systems.json"
+    var requests = [d3.json(vote), d3.json(data), d3.json(system)];
 
     Promise.all(requests).then(function(response) {
         var vote = response[0];
         var data = response[1];
+        var system = response[2]
+
+        console.log(system)
         console.log(vote)
 
         var format = d3.format(",");
@@ -102,6 +108,7 @@ window.onload = function() {
                .on('click', function(d) {
                     d3.select("#chart").selectAll("*").remove().exit()
                     country = d.properties.NAME
+                    scatterPlot(country)
                     barChart(country)
                })
 
@@ -134,8 +141,20 @@ window.onload = function() {
             })
 
 
-            var data = [20, 20, 20, 20, 20]
+
+
+
+            console.log(system)
+            var y = system['Austria']['self-government']
+            console.log(y)
+            var x = vote['Austria']['Voter Turnout']
+            console.log(x)
+            var data = [x, 100 - x]
+            //voterTurnout = data["Voter Turnout"];
+
             function pieChart(data){
+
+
 
             radius = height /2;
 
@@ -147,6 +166,10 @@ window.onload = function() {
                         .value(function(d) {
                           return d;
                         });
+
+            var color2 = d3.scaleThreshold()
+                .domain([1,2])
+                .range(["rgb(247,251,255)", "rgb(3,19,43)"]);
 
             var sv = d3.select("body").append("svg")
                          .attr('id', 'piechartsvg')
@@ -165,21 +188,29 @@ window.onload = function() {
 
               g.append("path")
               .attr("d", arc)
-              .style("fill", "red")
+              .style("fill", function(d, i) { return color2(i); }
+            )
+              //.style("fill", "red")
             }
 
             pieChart(data)
 
+
+
+
         function barChart(country) {
 
         var data = vote[country];
-        console.log(data)
+        console.log(Object.values(data))
+        console.log(data["Voter Turnout"])
 
         // dimensions chart
-        barWidth = (width - 2 * margin) / Object.keys(data).length;
+        barWidth = (width - 2 * margin.top) / Object.keys(data).length;
+        //(data)["Voter Turnout"].length;
+        console.log(barWidth)
 
 
-        // create barchart
+        // create svg barchart
         var g = d3.select("body").append('svg')
             .attr('id', 'barchart')
             .attr('width', width/2)
@@ -187,13 +218,13 @@ window.onload = function() {
             .style('background', 'red')
 
             // scaling x and y-as
-      var xScale = d3.scaleBand()
-            .rangeRound([margin.right, width/2 - margin.left])
+      //var xScale = d3.scaleBand()
+          //  .rangeRound([margin.right, height/2 - margin.left])
             //.range([margin.right, width/2 - margin.left])
             //.rangeRound([0, width])
-      //var xScale = d3.scaleLinear()
-          //.domain([, ])
-          //.range([margin.right, width/2 - margin.left])
+
+      var xScale = d3.scaleLinear()
+          .range([margin.left, width/2 - margin.right])
 
       var yScale = d3.scaleLinear()
           .domain([0, 100])
@@ -213,21 +244,88 @@ window.onload = function() {
           .attr("transform", "translate(" + [0, height - margin.top] + ")")
           .call(xAxis)
 
+      console.log(data)
+      console.log(Object.values(data))
       g.selectAll(".bar")
-        .data(data)
+        .data(Object.values(data))
         .enter().append("rect")
         .style('fill', function(d) {
             return "rgb(0, 0, 10)";
         })
-        .attr('y', height)
-        .attr('width', barWidth)
-        .attr('height', 0)
-        .attr("y", height - margin.top)
+        .attr('y', 5)
         .attr("x", function(d, i) {
-          return xScale(i);
+          return xScale(i)/4;
         })
+        .attr('width', barWidth/4)
+        .attr('height', function(d){
+          return yScale(d)
+        })
+        //.attr("y", height - margin.top)
+
 
     }
+
+
+    // make scatterplot from freedomHouse and turnout
+    function scatterPlot(country) {
+      var turnout = vote[country]["Voter Turnout"];
+      var freedomHouse = vote[country]["Freedom House"]
+
+      console.log(turnout)
+      console.log(freedomHouse)
+
+      // create svg barchart
+      var svg3 = d3.select("body").append('svg')
+          .attr('id', 'barchart')
+          .attr('width', width/2)
+          .attr('height', height)
+          .style('background', 'red')
+
+      // freedomHouse loopt van 0 tot 4
+      var xScale = d3.scaleLinear()
+          .domain([0, 4])
+          .range([margin.left, width/2 - margin.right])
+
+          // voter turnout loopt van 0 tot 100
+      var yScale = d3.scaleLinear()
+          .domain([0, 100])
+          .range([height - margin.bottom, margin.top])
+
+      // make y-as
+      var yAxis = d3.axisLeft(yScale);
+      svg3.append("g")
+          .attr("class", "axis")
+          .attr("transform", "translate(" + [margin.top, 0] + ")")
+          .call(yAxis)
+
+      // make x-as
+      var xAxis = d3.axisBottom(xScale);
+      svg3.append("g")
+          .attr("class", "axis")
+          .attr("transform", "translate(" + [0, height - margin.top] + ")")
+          .call(xAxis)
+
+
+      grandList = []
+      firstList = [4, 3, 2]
+      secondList = [70, 60, 50]
+      grandList.push([turnout, freedomHouse])
+      //grandList.push([firstList, secondList])
+      svg3.selectAll("circle")
+           .data(grandList)
+           .enter()
+           .append("circle")
+           .attr("x", function(d) {
+            return xScale(d[0]);
+            })
+            .attr("y", function(d) {
+            return yScale(d[1]);
+            })
+            .attr("r", 5)
+            .attr("fill", "blue");
+    }
+
+
 
     }).catch(function(e) {
         throw (e);
