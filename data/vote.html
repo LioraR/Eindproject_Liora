@@ -7,6 +7,18 @@
   <head>
     <meta charset="utf-8">
     <title>Line chart</title>
+    <style>
+      .names {
+      fill: none;
+      stroke: #fff;
+      stroke-linejoin: round;
+      }
+    body {
+    background-color: #93B874;
+}
+
+    </style>
+    <link rel="stylesheet" type="text/css" href="vote.css">
   </head>
   <body>
 
@@ -21,7 +33,31 @@
     <script src="d3-tip.js"></script>
     <script src="vote.js" charset="utf-8"></script>
 
-    <div id="map"></div>
+    <!--<div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-6" style="background-color: red"><svg id="map" width="100%" height="600"><svg></div>
+      <div class="col-sm-6" style="background-color: blue"><svg id="barChart" width="100%" height="600"><svg></div>
+    </div> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <div class="container-fluid" </div>
+    <div class="row">
+      <div class="col-sm-6" style="background-color: blue" id="map" ><h2>Voter Turnout</h2></div>
+      <div class="col-sm-6" style="background-color: blue" id="barChart" ><h2>Invalid Votes</h2></div>
+  </div>
+  <div class="row">
+  <div class="col-sm-6" style="background-color: blue" id="pieChart" ><h2>pieChart</h2></div>
+  <div class="col-sm-6" style="background-color: blue" id="scatterPlot"><h2>scatterPlot</h2></div>
+  </div>
+
+    <!--<div class="box">
+      <div class="col-md-6" style="background-color: #FFCC01"><svg id="map"><svg></div>
+      <div class="col-md-6" style="background-color: #CCC1CC"><svg id="map"><svg></div>
+    </div>
+
+    <!--<div id="map"></div> -->
+
+
 
   </body>
 </html>

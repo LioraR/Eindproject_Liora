@@ -50,8 +50,11 @@ window.onload = function() {
                     "rgb(158,202,225)", "rgb(107,174,214)", "rgb(66,146,198)",
                     "rgb(33,113,181)", "rgb(8,81,156)", "rgb(8,48,107)", "rgb(3,19,43)"]);
 
+        //svg = d3.select("#map")
+
+
         var svg = d3.select("#map").append("svg")
-            .attr("width", width/2)
+            .attr("width", width)
             .attr("height", height)
             .append('g')
             .attr('class', 'map')
@@ -113,7 +116,7 @@ window.onload = function() {
                })
 
               svg.append("path")
-                  .datum(topojson.mesh(europe, function(a, b) { return a.name !== b.name; }))
+                  .datum(topojson.mesh(europe, function(a, b) { return a.NAME !== b.NAME; }))
                   .attr("class", "names")
                   .attr("d", path);
         };
@@ -154,8 +157,6 @@ window.onload = function() {
 
             function pieChart(data){
 
-
-
             radius = height /2;
 
             var arc = d3.arc()
@@ -171,13 +172,14 @@ window.onload = function() {
                 .domain([1,2])
                 .range(["rgb(247,251,255)", "rgb(3,19,43)"]);
 
-            var sv = d3.select("body").append("svg")
+            var sv = d3.select("#pieChart").append("svg")
                          .attr('id', 'piechartsvg')
-                         .attr('width', width)
+                         .attr('width', width/2)
                          .attr('height', height)
                          .style('background', 'blue')
                          .append('g')
-                         .attr('transform', "translate(" + width /2 + "," + height /2 + ")")
+                         //.attr('transform', "translate(" + width /2 + "," + height /2 + ")")
+                         .attr("transform", "translate(" + [width/4, height/2] + ")")
 
 
             var g = sv.selectAll(".arc")
@@ -211,11 +213,17 @@ window.onload = function() {
 
 
         // create svg barchart
-        var g = d3.select("body").append('svg')
+        //g = d3.select("#barChart")
+
+        var g = d3.select("#barChart").append('svg')
             .attr('id', 'barchart')
             .attr('width', width/2)
             .attr('height', height)
             .style('background', 'red')
+
+
+
+
 
             // scaling x and y-as
       //var xScale = d3.scaleBand()
@@ -252,9 +260,12 @@ window.onload = function() {
         .style('fill', function(d) {
             return "rgb(0, 0, 10)";
         })
-        .attr('y', 5)
+        // begin op x
+        .attr('y', function(d, i) {
+          return height - margin.top - yScale(d)
+        })
         .attr("x", function(d, i) {
-          return xScale(i)/4;
+          return xScale(i)/4 + margin.left;
         })
         .attr('width', barWidth/4)
         .attr('height', function(d){
@@ -275,8 +286,8 @@ window.onload = function() {
       console.log(freedomHouse)
 
       // create svg barchart
-      var svg3 = d3.select("body").append('svg')
-          .attr('id', 'barchart')
+      var svg3 = d3.select("#scatterPlot").append('svg')
+          .attr('id', 'scatterPlot')
           .attr('width', width/2)
           .attr('height', height)
           .style('background', 'red')
