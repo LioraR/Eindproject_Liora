@@ -173,19 +173,21 @@ window.onload = function() {
                 .range(["rgb(247,251,255)", "rgb(3,19,43)"]);
 
             var sv = d3.select("#pieChart").append("svg")
-                         .attr('id', 'piechartsvg')
+                         .attr('id', 'pieChart')
                          .attr('width', width/2)
                          .attr('height', height)
                          .style('background', 'blue')
                          .append('g')
+                         //.attr('class', 'pieChart')
                          //.attr('transform', "translate(" + width /2 + "," + height /2 + ")")
-                         .attr("transform", "translate(" + [width/4, height/2] + ")")
+
 
 
             var g = sv.selectAll(".arc")
                         .data(pie(data))
                         .enter()
                         .append("a")
+                        .attr("transform", "translate(" + [width/4, height/2] + ")")
                         .attr("class", "arc")
 
               g.append("path")
