@@ -238,7 +238,7 @@ window.onload = function() {
             //.rangeRound([0, width])
 
       var xScale = d3.scaleLinear()
-          .domain([1979, 2014])
+          //.domain([1979, 2014])
           .range([margin.left, width/2 - margin.right])
 
       var yScale = d3.scaleLinear()
@@ -259,6 +259,7 @@ window.onload = function() {
           .attr("transform", "translate(" + [0, height - margin.top] + ")")
           .call(xAxis)
 
+      var b = [50, 60, 70, 80]
       //console.log(data)
       //console.log(Object.values(data))
       g.selectAll(".bar")
