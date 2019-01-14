@@ -9,8 +9,11 @@ Donderdag: Ik heb een piechart gemaakt.
 
 Vrijdag: Bij de bespreking werd duidelijk dat om een barchart te maken dat het totaal dan op 100% uit moet komen. In de Barchart keek ik enkel naar het gemiddelde opkomstpercentage van alle landen die een monarchie zijn ten opzichte van een alle landen die een republiek zijn. Dan kijk ik dus niet naar de totale populatie maar enkel naar het gemiddelde van alle landen. Het is mogelijk handiger om een barchart te maken met een dropdown menu met de politieke systemen. Dan worden de gemiddelde van een monarchie met dat van een republiek vergeleken. Net als de andere gemiddeldes. Daarnaast maak ik een scatterplot van de Freedom House en het opkomstpercentage per land.
 
+Zaterdag: Ik heb met boodstrap grid mijn opmaak mooi gemaakt.
+
 Week 2
-Maandag:
+Maandag: Ik heb besloten om mijn onderzoeksvraag aan te passen aangezien ik daar betere visualisaties bij kan maken. Ik heb dan als onderzoeksvraag: in hoeverre is er een verband tussen politieke vrijheden en het opkomstpercentage bij EU-verkiezingen? Dan maak ik een linechart bij van het freedomHouse (politieke vrijheden) en een scatterplot om te kijken of er een verband tussen het freedomHouse en het opkomstpercentage is. Ik ben bezig geweest om mijn kaart aan te passen naar de uitslag van EU-verkiezingen.
+
 Dinsdag:
 Woensdag:
 Donderdag:

@@ -1,0 +1,216 @@
+{
+    "ballot": {
+        "year": 2014,
+        "type": "eu-wide"
+    },
+    "update": {
+        "labelId": null,
+        "resultStatus": "constitutive",
+        "time": null
+    },
+    "results": [
+        {
+            "divisionId": "EU",
+            "percent": {
+                "men": 63,
+                "women": 37
+            }
+        },
+        {
+            "divisionId": "PT",
+            "percent": {
+                "men": 62,
+                "women": 38
+            }
+        },
+        {
+            "divisionId": "IE",
+            "percent": {
+                "men": 45,
+                "women": 55
+            }
+        },
+        {
+            "divisionId": "IT",
+            "percent": {
+                "men": 60,
+                "women": 40
+            }
+        },
+        {
+            "divisionId": "LT",
+            "percent": {
+                "men": 91,
+                "women": 9
+            }
+        },
+        {
+            "divisionId": "SI",
+            "percent": {
+                "men": 63,
+                "women": 37
+            }
+        },
+        {
+            "divisionId": "CZ",
+            "percent": {
+                "men": 76,
+                "women": 24
+            }
+        },
+        {
+            "divisionId": "ES",
+            "percent": {
+                "men": 59,
+                "women": 41
+            }
+        },
+        {
+            "divisionId": "AT",
+            "percent": {
+                "men": 56,
+                "women": 44
+            }
+        },
+        {
+            "divisionId": "SK",
+            "percent": {
+                "men": 69,
+                "women": 31
+            }
+        },
+        {
+            "divisionId": "EE",
+            "percent": {
+                "men": 50,
+                "women": 50
+            }
+        },
+        {
+            "divisionId": "FR",
+            "percent": {
+                "men": 58,
+                "women": 42
+            }
+        },
+        {
+            "divisionId": "DK",
+            "percent": {
+                "men": 62,
+                "women": 38
+            }
+        },
+        {
+            "divisionId": "SE",
+            "percent": {
+                "men": 45,
+                "women": 55
+            }
+        },
+        {
+            "divisionId": "RO",
+            "percent": {
+                "men": 69,
+                "women": 31
+            }
+        },
+        {
+            "divisionId": "DE",
+            "percent": {
+                "men": 64,
+                "women": 36
+            }
+        },
+        {
+            "divisionId": "NL",
+            "percent": {
+                "men": 58,
+                "women": 42
+            }
+        },
+        {
+            "divisionId": "LV",
+            "percent": {
+                "men": 63,
+                "women": 37
+            }
+        },
+        {
+            "divisionId": "BG",
+            "percent": {
+                "men": 71,
+                "women": 29
+            }
+        },
+        {
+            "divisionId": "HU",
+            "percent": {
+                "men": 81,
+                "women": 19
+            }
+        },
+        {
+            "divisionId": "HR",
+            "percent": {
+                "men": 55,
+                "women": 45
+            }
+        },
+        {
+            "divisionId": "CY",
+            "percent": {
+                "men": 83,
+                "women": 17
+            }
+        },
+        {
+            "divisionId": "MT",
+            "percent": {
+                "men": 33,
+                "women": 67
+            }
+        },
+        {
+            "divisionId": "FI",
+            "percent": {
+                "men": 46,
+                "women": 54
+            }
+        },
+        {
+            "divisionId": "PL",
+            "percent": {
+                "men": 76,
+                "women": 24
+            }
+        },
+        {
+            "divisionId": "LU",
+            "percent": {
+                "men": 67,
+                "women": 33
+            }
+        },
+        {
+            "divisionId": "EL",
+            "percent": {
+                "men": 76,
+                "women": 24
+            }
+        },
+        {
+            "divisionId": "UK",
+            "percent": {
+                "men": 59,
+                "women": 41
+            }
+        },
+        {
+            "divisionId": "BE",
+            "percent": {
+                "men": 71,
+                "women": 29
+            }
+        }
+    ]
+}
