@@ -7,9 +7,6 @@ var margin = { top: 50, right: 50, bottom: 50, left: 50 },
       width = screen.width - margin.left - margin.right,
       height = 650 - margin.top - margin.bottom;
 
-console.log(width)
-
-
               // make title
             //  d3.select("head").append("title").text("Voter Turnout")
 window.onload = function() {
@@ -17,18 +14,17 @@ window.onload = function() {
     // distract jasons
     var vote = "EUturnout.json"
     var data = "europe.json"
-    var system = "systems.json"
+    //var system = "systems.json"
     var freedomHouse = "freedomHouse.json"
-    var requests = [d3.json(vote), d3.json(data), d3.json(system), d3.json(freedomHouse)];
+    var requests = [d3.json(vote), d3.json(data), d3.json(freedomHouse)];
 
     Promise.all(requests).then(function(response) {
         var vote = response[0];
         var data = response[1];
-        var system = response[2]
-        var freedomHouse = response[3]
+        var freedomHouse = response[2]
 
         console.log(freedomHouse)
-        console.log(system)
+        //console.log(system)
         console.log(vote)
 
         var format = d3.format(",");
@@ -151,16 +147,16 @@ window.onload = function() {
 
 
 
-
-            console.log(system)
-            var y = system['Austria']['self-government']
-            console.log(y)
-            var x = vote['Austria']['Voter Turnout']
+            //console.log(system)
+            //var y = system['Austria']['self-government']
+            //console.log(y)
+            console.log(vote)
+            var x = vote['Austria']["2014"]
             console.log(x)
             var data = [x, 100 - x]
             //voterTurnout = data["Voter Turnout"];
 
-            function pieChart(data){
+            function pieChart(data) {
 
             radius = height /2;
 
@@ -212,15 +208,17 @@ window.onload = function() {
 
         function barChart(country) {
 
-        var data = vote[country];
-        console.log(Object.values(data))
-        console.log(data["Voter Turnout"])
+        //var data = vote[country]
+        //console.log(Object.values(data))
+        //console.log(data["Voter Turnout"])
+
+        var years = Object.keys(vote[country])
+        console.log(years)
+        var turnout = Object.values(vote[country])
+        console.log(turnout)
 
         // dimensions chart
         barWidth = (width - 2 * margin.top) / Object.keys(data).length;
-        //(data)["Voter Turnout"].length;
-        console.log(barWidth)
-
 
         // create svg barchart
         g = d3.select("#barChart")
@@ -233,8 +231,6 @@ window.onload = function() {
 
 
 
-
-
             // scaling x and y-as
       //var xScale = d3.scaleBand()
           //  .rangeRound([margin.right, height/2 - margin.left])
@@ -242,6 +238,7 @@ window.onload = function() {
             //.rangeRound([0, width])
 
       var xScale = d3.scaleLinear()
+          .domain([1979, 2014])
           .range([margin.left, width/2 - margin.right])
 
       var yScale = d3.scaleLinear()
@@ -262,10 +259,10 @@ window.onload = function() {
           .attr("transform", "translate(" + [0, height - margin.top] + ")")
           .call(xAxis)
 
-      console.log(data)
-      console.log(Object.values(data))
+      //console.log(data)
+      //console.log(Object.values(data))
       g.selectAll(".bar")
-        .data(Object.values(data))
+        .data(turnout)
         .enter().append("rect")
         .style('fill', function(d) {
             return "rgb(0, 0, 10)";
@@ -289,7 +286,7 @@ window.onload = function() {
 
     // make scatterplot from freedomHouse and turnout
     function scatterPlot(country) {
-      var turnout = vote[country]["Voter Turnout"];
+      var turnout = vote[country]["2014"];
       var freedomHouse = vote[country]["Freedom House"]
 
       console.log(turnout)
