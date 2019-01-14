@@ -13,25 +13,19 @@
       stroke: #fff;
       stroke-linejoin: round;
       }
-    body {
-    background-color: #93B874;
-}
-
     </style>
     <link rel="stylesheet" type="text/css" href="vote.css">
   </head>
   <body>
 
-    <p>Name: Liora Rosenberg</p>
-    <p>Eindproject</p>
-    <p>Voter Turnout</p>
-    <p style="color:blue;font-size:160%;text-align:center;">Voter Turnout</p>
-
     <script src="https://d3js.org/d3.v5.min.js"></script>
     <script src="http://d3js.org/topojson.v1.min.js"></script>
 
     <script src="d3-tip.js"></script>
-    <script src="vote.js" charset="utf-8"></script>
+    <script src="voteEU.js" charset="utf-8"></script>
+
+
+
 
     <!--<div class="container-fluid">
     <div class="row">
@@ -41,13 +35,41 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
     <div class="container-fluid" </div>
+
+
+
+      <!--  add navbar -->
+      <nav class="navbar navbar-inverse">
+              <div class="collapse navbar-collapse" id="myNavbar">
+                  <ul class="nav navbar-nav">
+                      <li><a href="#home">Home</a></li>
+                      <li><a href="#explanation">Voter Turnout</a></li>
+                      <li><a href="#donutChart">Donut Chart</a></li>
+                      <li><a href="#references">references</a></li>
+                  </ul>
+                  <ul class="nav navbar-nav navbar-right">
+                      <li><a href="https://github.com/LioraR/Eindproject_Liora">Liora Rosenberg</a></li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+
+    <div class="p-3 mb-2 bg-info text-white">
+
+      <p style="color:blue;font-size:160%;text-align:center;">Voter Turnout</p>
+
+
+      <div class="row">
+        <div class="col-md-6" style="background-color: white"><h2>Voter Turnout</h2><svg id="map" width="100%" height="550"><svg></div>
+          <div class="mr-2">1</div>
+        <div class="col-md-5 col-md-offset-1" style="background-color: white"><h2>Invalid Votes</h2><svg id="barChart" width="100%" height="550"><svg></div>
+    </div>
+
     <div class="row">
-      <div class="col-md-6" style="background-color: blue" id="map" ><h2>Voter Turnout</h2></div>
-      <div class="col-md-5 col-md-offset-1" style="background-color: blue" id="barChart" ><h2>Invalid Votes</h2></div>
-  </div>
-  <div class="row">
-  <div class="col-md-6 " style="background-color: red" id="pieChart" ><h2>pieChart</h2></div>
-  <div class="col-md-5 col-md-offset-1" style="background-color: blue" id="scatterPlot"><h2>scatterPlot</h2></div>
+      <div class="col-md-6" style="background-color: white"><h2>pieChart</h2><svg id="pieChart" width="100%" height="550"><svg></div>
+        <div class="mr-2">2</div>
+      <div class="col-md-5 col-md-offset-1" style="background-color: white"><h2>scatterPlot</h2><svg id="scatterPlot" width="100%" height="550"><svg></div>
+    </div>
   </div>
 
     <!--<div class="box">

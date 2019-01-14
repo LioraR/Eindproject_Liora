@@ -15,7 +15,7 @@ console.log(width)
 window.onload = function() {
 
     // distract jasons
-    var vote = "turnout2.json"
+    var vote = "EUturnout.json"
     var data = "europe.json"
     var system = "systems.json"
     var freedomHouse = "freedomHouse.json"
@@ -39,7 +39,9 @@ window.onload = function() {
             .offset([-10, 0])
             .html(function(d) {
 
-              var votes = vote[d.properties.NAME]["Voter Turnout"]
+              var votes = vote[d.properties.NAME]["2014"]
+              //var votes = Object.values(vote[d.properties.NAME])
+              console.log(votes)
                 // only select countries were data exist
                 return "<strong>Country: </strong><span class='details'>" + d.properties.NAME + "<br></span>" +
                        "<strong>Voter Turnout: </strong><span class='details'>" + votes + "</span>";
@@ -84,8 +86,8 @@ window.onload = function() {
                 .attr("d", path)
                 .style("fill", function(d) {
                   // if a country is not in the dataset make it white
-                  if ((vote[d.properties.NAME] !== undefined)){
-                    return (color(vote[d.properties.NAME]["Voter Turnout"]));
+                  if (vote[d.properties.NAME] !== undefined){
+                    return (color(vote[d.properties.NAME]["2014"]));
                 }
                     return "#FF0000"
                 })
