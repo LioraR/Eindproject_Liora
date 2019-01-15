@@ -85,7 +85,7 @@ window.onload = function() {
                   if (vote[d.properties.NAME] !== undefined){
                     return (color(vote[d.properties.NAME]["2014"]));
                 }
-                    return "#FF0000"
+                    return "black"
                 })
 
                 .style('stroke', 'white')
@@ -291,7 +291,8 @@ window.onload = function() {
 
 
     // make scatterplot from freedomHouse and turnout
-    function scatterPlot(data, country) {
+    function scatterPlot(country) {
+
       var turnout = Object.keys(vote[country]);
       var freedom = Object.values(freedomHouse[country])
 
@@ -331,11 +332,10 @@ window.onload = function() {
           .attr("transform", "translate(" + [0, height - margin.top] + ")")
           .call(xAxis)
 
-
       grandList = []
       firstList = [4, 3, 2]
       secondList = [70, 60, 50]
-      grandList.push([turnout, freedomHouse])
+      grandList.push([firstList, secondList])
       //grandList.push([firstList, secondList])
       svg3.selectAll("circle")
            .data(grandList)
