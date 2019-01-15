@@ -114,6 +114,8 @@ window.onload = function() {
                     country = d.properties.NAME
                     scatterPlot(country)
                     barChart(country)
+                    lineChart(country)
+                    pieChart(country)
                })
 
               svg.append("path")
@@ -156,7 +158,11 @@ window.onload = function() {
             var data = [x, 100 - x]
             //voterTurnout = data["Voter Turnout"];
 
-            function pieChart(data) {
+            function pieChart(country) {
+
+            var turnout = vote[country]["2014"];
+            console.log(vote[country]["2014"])
+            var data = [turnout, 100 - turnout]
 
             radius = height /2;
 
@@ -171,7 +177,7 @@ window.onload = function() {
 
             var color2 = d3.scaleThreshold()
                 .domain([1,2])
-                .range(["rgb(247,251,255)", "rgb(3,19,43)"]);
+                .range(["blue", "rgb(3,19,43)"]);
 
             var sv = d3.select("#pieChart")
             // var sv = d3.select("#pieChart").append("svg")
@@ -200,10 +206,6 @@ window.onload = function() {
             )
               //.style("fill", "red")
             }
-
-            pieChart(data)
-
-
 
 
         function barChart(country) {
@@ -239,7 +241,7 @@ window.onload = function() {
 
       var xScale = d3.scaleLinear()
           //.domain([1979, 2014])
-          .range([margin.left, width/2 - margin.right])
+          .range([margin.left, width/2 - (3*margin.right)])
 
       var yScale = d3.scaleLinear()
           .domain([0, 100])
@@ -259,7 +261,6 @@ window.onload = function() {
           .attr("transform", "translate(" + [0, height - margin.top] + ")")
           .call(xAxis)
 
-      var b = [50, 60, 70, 80]
       //console.log(data)
       //console.log(Object.values(data))
       g.selectAll(".bar")
@@ -270,14 +271,18 @@ window.onload = function() {
         })
         // begin op x
         .attr('y', function(d, i) {
-          return height - margin.top - yScale(d)
+          return yScale(d);
+          //return height - margin.top - yScale(d)
         })
         .attr("x", function(d, i) {
-          return xScale(i)/4 + margin.left;
+          //return margin.left + i * width / b.length;
+          return xScale(i)/turnout.length + margin.left;
+          // /14
         })
-        .attr('width', barWidth/4)
+        .attr('width', barWidth/25)
         .attr('height', function(d){
-          return yScale(d)
+          //return yScale(d)
+          return height - margin.top - yScale(d)
         })
         //.attr("y", height - margin.top)
 
@@ -286,9 +291,10 @@ window.onload = function() {
 
 
     // make scatterplot from freedomHouse and turnout
-    function scatterPlot(country) {
-      var turnout = vote[country]["2014"];
-      var freedomHouse = vote[country]["Freedom House"]
+    function scatterPlot(data, country) {
+      var turnout = Object.keys(vote[country]);
+      var freedom = Object.values(freedomHouse[country])
+
 
       console.log(turnout)
       console.log(freedomHouse)
@@ -345,6 +351,84 @@ window.onload = function() {
             .attr("fill", "blue");
     }
 
+    function lineChart(country){
+
+      // create SVG element
+      var svg_line = d3.select("#lineChart")
+
+      // scaling x and y-as
+      var xScale = d3.scaleLinear()
+          .domain([1979, 2014])
+          .range([margin.right, width/1.2 - margin.left])
+          //.range([margin.left, width/2 - (3*margin.right)])
+
+      var yScale = d3.scaleLinear()
+          .domain([0, 4])
+          .range([height - margin.bottom, margin.top])
+
+      // make y-as
+      var yAxis = d3.axisLeft(yScale);
+      svg_line.append("g")
+          .attr("class", "axis")
+          .attr("transform", "translate(" + [margin.top, 0] + ")")
+          .call(yAxis)
+
+      // make x-as
+      var xAxis = d3.axisBottom(xScale);
+      svg_line.append("g")
+          .attr("class", "axis")
+          .attr("transform", "translate(" + [0, height - margin.top] + ")")
+          .call(xAxis)
+
+      freedomHous = Object.values(freedomHouse[country])
+      console.log(freedomHouse)
+      years = Object.keys(vote[country])
+      console.log(years)
+
+      //var freedomHouse = Object.values(freedomHouse[country])
+      //console.log(freedomHouse)
+
+      console.log(Object.values(freedomHouse[country]))
+      //var years = Object.keys(vote[country])
+      //console.log(years)
+
+      //var freedomHouse = Object.values(vote[country])
+
+
+      // make line
+      var line = d3.line()
+                .x(function(d, i) { return xScale(d.years); })
+                .y(function(d) { return yScale(d.freedomHous); })
+                .curve(d3.curveMonotoneX)
+
+      testdata = []
+      years.forEach(function(y, i){
+        var obj= {};
+        obj["years"] = y;
+        obj["freedomHous"] = freedomHous[i];
+        testdata.push(obj)
+      })
+      // var obj = {};
+      // obj['years'] = years;
+      // obj['freedomHouse'] = freedomHouse;
+      // testdata.push(obj)
+
+      var dataset = testdata
+      console.log(testdata);
+      // [{
+      //   "years": 1990,
+      //   "freedomHouse": 86
+      // }]
+
+      console.log(dataset)
+      console.log(vote[country])
+
+      // append the path, bind the data, and call the line generator
+      svg_line.append("path")
+          .datum(dataset)
+          .attr("class", "line")
+          .attr("d", line);
+    }
 
 
     }).catch(function(e) {
