@@ -14,10 +14,16 @@ Zaterdag: Ik heb met boodstrap grid mijn opmaak mooi gemaakt.
 Week 2
 Maandag: Ik heb besloten om mijn onderzoeksvraag aan te passen aangezien ik daar betere visualisaties bij kan maken. Ik heb dan als onderzoeksvraag: in hoeverre is er een verband tussen politieke vrijheden en het opkomstpercentage bij EU-verkiezingen? Dan maak ik een linechart bij van het freedomHouse (politieke vrijheden) en een scatterplot om te kijken of er een verband tussen het freedomHouse en het opkomstpercentage is. Ik ben bezig geweest om mijn kaart aan te passen naar de uitslag van EU-verkiezingen.
 
-Dinsdag:
+Dinsdag:Ik heb vandaag mijn linechart gemaakt waar de freedomHouse per jaar wordt weergegeven. Wel moet ik nog een manier vinden waarop de lijn wordt upgedate zonder de hele svg de verwijderen. Verder ben ik begonnen aan scatterplot te maken en zal ik deze morgen afmaken.
+
 Woensdag:
+to do: scatterplot fixen
+
 Donderdag:
+to do: drop down menu jaren fixen zodat de kaart upgedate wordt
+
 Vrijdag:
+to do: 
 
 Week 3
 Maandag:
