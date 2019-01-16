@@ -17,13 +17,13 @@ Maandag: Ik heb besloten om mijn onderzoeksvraag aan te passen aangezien ik daar
 Dinsdag:Ik heb vandaag mijn linechart gemaakt waar de freedomHouse per jaar wordt weergegeven. Wel moet ik nog een manier vinden waarop de lijn wordt upgedate zonder de hele svg de verwijderen. Verder ben ik begonnen aan scatterplot te maken en zal ik deze morgen afmaken.
 
 Woensdag:
-to do: scatterplot fixen
+Ik heb aan mijn scatterplot gewerkt maar heb nog geen punten op de lijn. Morgen zou ik daar dus verder aan moeten werken.
 
 Donderdag:
 to do: drop down menu jaren fixen zodat de kaart upgedate wordt
 
 Vrijdag:
-to do: 
+to do:
 
 Week 3
 Maandag:

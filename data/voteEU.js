@@ -38,9 +38,12 @@ window.onload = function() {
               var votes = vote[d.properties.NAME]["2014"]
               //var votes = Object.values(vote[d.properties.NAME])
               console.log(votes)
+
+              if (votes !== undefined) {
                 // only select countries were data exist
                 return "<strong>Country: </strong><span class='details'>" + d.properties.NAME + "<br></span>" +
                        "<strong>Voter Turnout: </strong><span class='details'>" + votes + "</span>";
+                }
 
             })
 
@@ -82,7 +85,7 @@ window.onload = function() {
                 .attr("d", path)
                 .style("fill", function(d) {
                   // if a country is not in the dataset make it white
-                  if (vote[d.properties.NAME] !== undefined){
+                  if ((vote[d.properties.NAME] !== undefined) && (vote[d.properties.NAME]["2014"] !== undefined)) {
                     return (color(vote[d.properties.NAME]["2014"]));
                 }
                     return "black"
@@ -146,16 +149,10 @@ window.onload = function() {
               return d;
             })
 
-
-
-
-            //console.log(system)
             //var y = system['Austria']['self-government']
-            //console.log(y)
-            console.log(vote)
-            var x = vote['Austria']["2014"]
-            console.log(x)
-            var data = [x, 100 - x]
+            //var x = vote['Austria']["2014"]
+            //console.log(x)
+            //var data = [x, 100 - x]
             //voterTurnout = data["Voter Turnout"];
 
             function pieChart(country) {
@@ -296,9 +293,24 @@ window.onload = function() {
       var turnout = Object.keys(vote[country]);
       var freedom = Object.values(freedomHouse[country])
 
+      //console.log(turnout)
+      //console.log(freedomHouse)
 
-      console.log(turnout)
-      console.log(freedomHouse)
+      grandList = []
+      turnoutList = []
+      freedomList = []
+
+      turnout.forEach(function(datapoint) {
+
+        turnoutList.push(turnout)
+        freedomList.push(freedom)
+        grandList.push([turnoutList, freedomList]);
+      });
+
+      //firstList = [4, 3, 2]
+      //secondList = [70, 60, 50]
+      //grandList.push([firstList, secondList]);
+      console.log(grandList)
 
       // create svg barchart
       var svg3 = d3.select("#scatterPlot")
@@ -332,23 +344,19 @@ window.onload = function() {
           .attr("transform", "translate(" + [0, height - margin.top] + ")")
           .call(xAxis)
 
-      grandList = []
-      firstList = [4, 3, 2]
-      secondList = [70, 60, 50]
-      grandList.push([firstList, secondList])
       //grandList.push([firstList, secondList])
       svg3.selectAll("circle")
            .data(grandList)
            .enter()
            .append("circle")
-           .attr("x", function(d) {
+           .attr("cx", function(d) {
             return xScale(d[0]);
             })
-            .attr("y", function(d) {
+            .attr("cy", function(d) {
             return yScale(d[1]);
             })
             .attr("r", 5)
-            .attr("fill", "blue");
+            .attr("fill", "black")
     }
 
     function lineChart(country){
@@ -428,6 +436,42 @@ window.onload = function() {
           .datum(dataset)
           .attr("class", "line")
           .attr("d", line);
+
+          // appends a circle for each datapoint
+        svg_line.selectAll(".dot")
+        .data(dataset).enter().append("circle")
+              .attr("class", "dot") // Assign a class for styling
+              .attr("cx", function(d, i) { return xScale(d.years) })
+              .attr("cy", function(d) { return yScale(d.freedomHous) })
+              .attr("r", 5)
+              .on("mouseover", function(d) {
+                  toolTip.show(d);
+
+                  d3.select(this)
+                    .style("opacity", 1)
+                    .style("stroke", "white")
+                    .style("stroke-width", 3);
+
+          })
+              .on('mouseout', function(d) {
+                  toolTip.hide(d);
+              })
+
+              // Set tooltips
+            var toolTip = d3.tip()
+                  .attr('class', 'd3-tip')
+                  .offset([-10, 0])
+                  .html(function(d) {
+
+                    // only select countries were data exist
+                    //if (Object.keys(life) !== undefined) {
+
+                         return "<strong>year: </strong><span class='details'>"
+                         + d["years"] + "<br></span>"+ "<strong>Life expectancy: </strong><span class='details'>" +
+                         d["freedomHous"] +"</span>";
+        //}
+    })
+svg_line.call(toolTip);
     }
 
 
