@@ -16,6 +16,10 @@ reader["Voter Turnout"] = pandas.to_numeric(reader["Voter Turnout"],  errors='co
 # put the data in the right format
 reader = reader.pivot_table(values='Voter Turnout', index='Country', columns='Year', aggfunc='mean')
 
+#if reader["Voter Turnout"] == "null":
+#    print('x')
+    #reader["Voter Turnout"] = None
+
 print(reader)
 
 #reader = reader.set_index('Country')

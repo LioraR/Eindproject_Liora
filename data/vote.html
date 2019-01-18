@@ -15,24 +15,16 @@
       }
     </style>
     <link rel="stylesheet" type="text/css" href="vote.css">
-  </head>
-  <body>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
 
     <script src="https://d3js.org/d3.v5.min.js"></script>
     <script src="http://d3js.org/topojson.v1.min.js"></script>
 
-    <script src="d3-tip.js"></script>
-    <script src="voteEU.js" charset="utf-8"></script>
+  </head>
+  <body>
 
 
-
-
-    <!--<div class="container-fluid">
-    <div class="row">
-      <div class="col-sm-6" style="background-color: red"><svg id="map" width="50%" height="600"><svg></div>
-      <div class="col-sm-6" style="background-color: blue"><svg id="barChart" width="50%" height="600"><svg></div>
-    </div> -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
     <div class="container-fluid" </div>
 
@@ -40,10 +32,9 @@
       <nav class="navbar navbar-inverse">
               <div class="collapse navbar-collapse" id="myNavbar">
                   <ul class="nav navbar-nav">
-                      <li><a href="#home">Home</a></li>
-                      <li><a href="#explanation">Voter Turnout</a></li>
-                      <li><a href="#donutChart">Donut Chart</a></li>
-                      <li><a href="#references">references</a></li>
+                      <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+                      <li><a data-toggle="tab" href="#explanation">Voter Turnout</a></li>
+                      <li><a data-toggle="tab" href="#references">references</a></li>
                   </ul>
                   <ul class="nav navbar-nav navbar-right">
                       <li><a href="https://github.com/LioraR/Eindproject_Liora">Liora Rosenberg</a></li>
@@ -51,15 +42,30 @@
               </div>
       </nav>
 
+      <!-- make explanation -->
+      <div class="tab-content">
+        <div id="home" class="tab-pane fade in active">
+          <h3>HOME</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div id="explanation" class="tab-pane fade">
+          <h3>Menu 1</h3>
+          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <div id="references" class="tab-pane fade">
+          <h3>Menu 2</h3>
+          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+        </div>
 
 
+    <!-- make homepage-->
     <div class="p-3 mb-2 bg-info text-white">
 
       <p style="color:blue;font-size:160%;text-align:center;">Voter Turnout</p>
 
 
       <div class="row">
-        <div class="form-row align-items-center">
+        <div class="container-fluit">
           <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
              Year <span class="caret"></span>
         </button>
@@ -76,18 +82,21 @@
           </ul>
         </div>
         <div class="col-md-6" style="background-color: white"><h2>EU Voter Turnout</h2><svg id="map" width="100%" height="550"><svg></div>
-          <div class="mr-2"></div>
+          <div class="md-2"></div>
         <div class="col-md-5 col-md-offset-1" style="background-color: white"><h2>EU Voter Turnout per country</h2><svg id="barChart" width="100%" height="550"><svg></div>
     </div>
 
     <div class="row">
-      <div class="col-md-12" style="p-3 mb-2 bg-info text-white" width="100%" height="500"></div>
+      <div class="col-md-12" style="p-3 mb-2 bg-info text-white"><svg id="map" width="100%" height="150"><svg></div>
     </div>
 
     <div class="row">
       <div class="col-md-6" style="background-color: white"><h2>pieChart</h2><svg id="pieChart" width="100%" height="550"><svg></div>
-        <div class="mr-2"></div>
       <div class="col-md-5 col-md-offset-1" style="background-color: white"><h2>scatterPlot</h2><svg id="scatterPlot" width="100%" height="550"><svg></div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12" style="p-3 mb-2 bg-info text-white"><svg id="map" width="100%" height="150"><svg></div>
     </div>
 
     <div class="row">
@@ -95,14 +104,9 @@
     </div>
   </div>
 
-    <!--<div class="box">
-      <div class="col-md-6" style="background-color: #red"><svg id="map"><svg></div>
-      <div class="col-md-6" style="background-color: #red"><svg id="map"><svg></div>
-    </div>
-
-    <!--<div id="map"></div> -->
-
-
+    <!-- own writen js -->
+    <script src="d3-tip.js"></script>
+    <script src="voteEU.js" charset="utf-8"></script>
 
   </body>
 </html>

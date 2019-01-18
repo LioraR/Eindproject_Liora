@@ -1,6 +1,6 @@
 // naam: Liora Rosenberg
 // Student number: 11036435
-//  this file creates a website that shows a map in with all the life expectancies are depicted
+//  this file creates a website that shows a map in with all the voter turnout are depicted
 
 // dimensions
 var margin = { top: 50, right: 50, bottom: 50, left: 50 },
@@ -28,6 +28,23 @@ window.onload = function() {
         console.log(vote)
 
         var format = d3.format(",");
+
+
+
+
+      //   // remove null data in dataset
+      //   var years = Object.keys(vote[country])
+      //   console.log(years)
+      //
+      //
+      // years.forEach(function(y, i){
+      //   var v = vote[country][years[i]]
+      //   console.log(v)
+      //   //if v = "null"
+      // })
+
+
+
 
         // create tooltips
         var tip = d3.tip()
@@ -114,7 +131,7 @@ window.onload = function() {
                })
                .on('click', function(d) {
                     d3.select("#chart").selectAll("*").remove().exit()
-                    country = d.properties.NAME
+                    var country = d.properties.NAME;
                     scatterPlot(country)
                     barChart(country)
                     lineChart(country)
@@ -174,7 +191,7 @@ window.onload = function() {
 
             var color2 = d3.scaleThreshold()
                 .domain([1,2])
-                .range(["blue", "rgb(3,19,43)"]);
+                .range(["rgb(135,206,250)", "rgb(3,19,43)"]);
 
             var sv = d3.select("#pieChart")
             // var sv = d3.select("#pieChart").append("svg")
@@ -201,7 +218,6 @@ window.onload = function() {
               .attr("d", arc)
               .style("fill", function(d, i) { return color2(i); }
             )
-              //.style("fill", "red")
             }
 
 
@@ -290,27 +306,36 @@ window.onload = function() {
     // make scatterplot from freedomHouse and turnout
     function scatterPlot(country) {
 
-      var turnout = Object.keys(vote[country]);
+      //console.log(vote[country]);
+      //console.log(freedomHouse[country]);
+
+      var turnout = Object.values(vote[country]);
       var freedom = Object.values(freedomHouse[country])
 
-      //console.log(turnout)
-      //console.log(freedomHouse)
+      //superlijst= []
+
+      // for (i = 0; i < turnout.length; i++){
+      //   obj = {}
+      //   obj["turnout"] = turnout[i]
+      //   obj["freedom"] = freedom[i]
+      //   superlijst.push(obj)
+      // }
+      //
+      // console.log(superlijst);
+
+
 
       grandList = []
-      turnoutList = []
-      freedomList = []
+      turnout.forEach(function(y, i){
+        var obj= [];
+        obj["freedom"] = freedom[i];
+        obj["turnout"] = turnout[i];
 
-      turnout.forEach(function(datapoint) {
+        grandList.push(obj)
+      })
 
-        turnoutList.push(turnout)
-        freedomList.push(freedom)
-        grandList.push([turnoutList, freedomList]);
-      });
 
-      //firstList = [4, 3, 2]
-      //secondList = [70, 60, 50]
-      //grandList.push([firstList, secondList]);
-      console.log(grandList)
+
 
       // create svg barchart
       var svg3 = d3.select("#scatterPlot")
@@ -350,10 +375,10 @@ window.onload = function() {
            .enter()
            .append("circle")
            .attr("cx", function(d) {
-            return xScale(d[0]);
+            return xScale(d.freedom);
             })
             .attr("cy", function(d) {
-            return yScale(d[1]);
+            return yScale(d.turnout);
             })
             .attr("r", 5)
             .attr("fill", "black")
@@ -361,17 +386,28 @@ window.onload = function() {
 
     function lineChart(country){
 
+      var years = Object.keys(vote[country])
+      var freedomHous = Object.values(freedomHouse[country])
+      console.log(freedomHouse)
+      console.log(years)
+
       // create SVG element
       var svg_line = d3.select("#lineChart")
 
+      // scaling
+      var min = Math.min.apply(null, years)
+      var max = Math.max.apply(null, years)
+      var minF = Math.min.apply(null, freedomHous)
+      var maxF = Math.max.apply(null, freedomHous)
+
       // scaling x and y-as
       var xScale = d3.scaleLinear()
-          .domain([1979, 2014])
+          .domain([min, max])
           .range([margin.right, width/1.2 - margin.left])
           //.range([margin.left, width/2 - (3*margin.right)])
 
       var yScale = d3.scaleLinear()
-          .domain([0, 4])
+          .domain([minF, maxF])
           .range([height - margin.bottom, margin.top])
 
       // make y-as
@@ -388,10 +424,6 @@ window.onload = function() {
           .attr("transform", "translate(" + [0, height - margin.top] + ")")
           .call(xAxis)
 
-      freedomHous = Object.values(freedomHouse[country])
-      console.log(freedomHouse)
-      years = Object.keys(vote[country])
-      console.log(years)
 
       //var freedomHouse = Object.values(freedomHouse[country])
       //console.log(freedomHouse)
@@ -467,7 +499,7 @@ window.onload = function() {
                     //if (Object.keys(life) !== undefined) {
 
                          return "<strong>year: </strong><span class='details'>"
-                         + d["years"] + "<br></span>"+ "<strong>Life expectancy: </strong><span class='details'>" +
+                         + d["years"] + "<br></span>"+ "<strong>Freedom House: </strong><span class='details'>" +
                          d["freedomHous"] +"</span>";
         //}
     })
