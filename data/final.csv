@@ -1,4 +1,4 @@
-﻿Country,Election type,Year,Voter Turnout,VAP Turnout,Invalid votes,Freedom House - Political Rights,Freedom House - Civil liberties
+﻿Country,Election type,Year,Voter Turnout,VAP Turnout,Invalid votes,Freedom House Political Rights,Freedom House Civil liberties
 Austria,EU Parliament,2014,45.39 %,39.77 %,3.00 %,1 ,1
 Austria,EU Parliament,2009,45.97 %,41.32 %,2.07 %,1 ,1
 Austria,EU Parliament,2004,42.43 %,39.95 %,2.60 %,1 ,1
@@ -15,7 +15,7 @@ Belgium,EU Parliament,1979,91.36 %,86.69 %,12.39 %,1 ,1
 Bulgaria,EU Parliament,2014,36.10 %,41.07 %,5.19 %,2 ,2
 Bulgaria,EU Parliament,2009,38.92 %,43.59 %,0.97 %,2 ,2
 Bulgaria,EU Parliament,2007,29.22 %,31.27 %,0.90 %,1 ,2
-Croatia,EU Parliament,2014,25.24 %,26.39 %,3.06 %,1 ,2 
+Croatia,EU Parliament,2014,25.24 %,26.39 %,3.06 %,1 ,2
 Croatia,EU Parliament,2013,20.84 %,22.70 %,5.06 %,1 ,2
 Cyprus,EU Parliament,2014,43.97 %,31.49 %,1.91 %,1 ,1
 Cyprus,EU Parliament,2009,59.40 %,38.99 %,1.97 %,1 ,1

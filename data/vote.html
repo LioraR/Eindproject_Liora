@@ -30,31 +30,25 @@
 
       <!--  add navbar -->
       <nav class="navbar navbar-inverse">
-              <div class="collapse navbar-collapse" id="myNavbar">
+        <div class="container-fluid">
+              <div class="collapse navbar-collapse" id="navbar">
                   <ul class="nav navbar-nav">
                       <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
-                      <li><a data-toggle="tab" href="#explanation">Voter Turnout</a></li>
-                      <li><a data-toggle="tab" href="#references">references</a></li>
+                      <li><a data-toggle="collapse" href="#explanation">Voter Turnout</a></li>
+                      <li><a data-toggle="collapse" href="#references">references</a></li>
                   </ul>
                   <ul class="nav navbar-nav navbar-right">
                       <li><a href="https://github.com/LioraR/Eindproject_Liora">Liora Rosenberg</a></li>
                   </ul>
               </div>
+            </div>
       </nav>
 
       <!-- make explanation -->
-      <div class="tab-content">
-        <div id="home" class="tab-pane fade in active">
+      <div class="collapse navbar-collapse">
+        <div id="home" class="nav navbar-nav">
           <h3>HOME</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-        <div id="explanation" class="tab-pane fade">
-          <h3>Menu 1</h3>
-          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-        <div id="references" class="tab-pane fade">
-          <h3>Menu 2</h3>
-          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
         </div>
 
 
@@ -91,8 +85,8 @@
     </div>
 
     <div class="row">
-      <div class="col-md-6" style="background-color: white"><h2>pieChart</h2><svg id="pieChart" width="100%" height="550"><svg></div>
-      <div class="col-md-5 col-md-offset-1" style="background-color: white"><h2>scatterPlot</h2><svg id="scatterPlot" width="100%" height="550"><svg></div>
+      <div class="col-md-6" style="background-color: white"><h2>Amount of Votes </h2><svg id="pieChart" width="100%" height="550"><svg></div>
+      <div class="col-md-5 col-md-offset-1" style="background-color: white"><h2>Correlation Freedom and Turnout</h2><svg id="scatterPlot" width="100%" height="550"><svg></div>
     </div>
 
     <div class="row">
@@ -100,8 +94,24 @@
     </div>
 
     <div class="row">
-      <div class="col-md-offset-1 col-md-10 col-md-offset-1" style="background-color: white"><h2>Freedom House</h2><svg id="lineChart" width="100%" height="550"><svg></div>
+      <div class="col-md-6" style="background-color: white"><h2>Freedom House</h2><svg id="lineChart" width="100%" height="550"><svg></div>
+      <div class="col-md-5 col-md-offset-1" style="background-color: white"><h2>Voter Turnout</h2><svg id="lineChart2" width="100%" height="550"><svg></div>
     </div>
+
+
+  </div>
+
+
+
+
+  <div id="explanation" class="nav navbar-nav">
+    <h3>Menu 1</h3>
+    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </div>
+
+  <div id="references" class="nav navbar-nav">
+    <h3>Menu 2</h3>
+    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
   </div>
 
     <!-- own writen js -->
