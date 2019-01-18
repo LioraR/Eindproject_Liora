@@ -20,15 +20,18 @@ Woensdag:
 Ik heb aan mijn scatterplot gewerkt maar heb nog geen punten op de lijn. Morgen zou ik daar dus verder aan moeten werken.
 
 Donderdag:
-to do: drop down menu jaren fixen zodat de kaart upgedate wordt
+to do: scatterplot fixen + alle nullpunten weggehaald
 
 Vrijdag:
-to do:
+to do: slider voor jaren fixen zodat de kaart upgedate wordt
 
 Week 3
-Maandag:
-Dinsdag:
-Woensdag:
+Maandag: zorgen dat niet de hele svg verwijderd wordt maar enkel de baren
+
+Dinsdag: maak drop-down menu voor linechart freedomHouse
+
+Woensdag: maak een mooie voorkant en ga aan de opmaak van de website werken
+
 Donderdag:
 Vrijdag:
 
@@ -36,5 +39,3 @@ Week 4
 Maandag:
 Dinsdag:
 Woensdag:
-Donderdag:
-Vrijdag:
