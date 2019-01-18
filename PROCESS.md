@@ -20,22 +20,27 @@ Woensdag:
 Ik heb aan mijn scatterplot gewerkt maar heb nog geen punten op de lijn. Morgen zou ik daar dus verder aan moeten werken.
 
 Donderdag:
-to do: scatterplot fixen + alle nullpunten weggehaald
+Ik heb aan mijn scatterplot gemaakt en heb een navbar gemaakt. Wel werkt de navbar nog niet aangezien ik er niet op kan klikken.
 
 Vrijdag:
-to do: slider voor jaren fixen zodat de kaart upgedate wordt
+Ik heb de null-data verwijderd uit mijn lijn en ben bezig geweest om text-labels toe te voegen aan de linecharts en scatterplot. Daarnaast heb ik nog een linechart gemaakt.
+
+Zaterdag + zondag: zorg dat de invalid votes ook wordt ingeladen
 
 Week 3
-Maandag: zorgen dat niet de hele svg verwijderd wordt maar enkel de baren
+Maandag: zorg dat de navbar goed doorlinked
 
-Dinsdag: maak drop-down menu voor linechart freedomHouse
+Dinsdag: slider voor jaren fixen zodat de kaart upgedate wordt
 
-Woensdag: maak een mooie voorkant en ga aan de opmaak van de website werken
+Woensdag: zorgen dat niet de hele svg verwijderd wordt maar enkel de baren, de lijnen en de piechart
 
-Donderdag:
-Vrijdag:
+Donderdag: maak drop-down menu voor linechart freedomHouse
+
+Vrijdag: maak een mooie voorkant en ga aan de opmaak van de website werken
 
 Week 4
-Maandag:
-Dinsdag:
-Woensdag:
+Maandag: splits alle javscript files en zorgt dat alle files georderd erin staan
+
+Dinsdag: maak de code mooi
+
+Woensdag: maak de code mooi
