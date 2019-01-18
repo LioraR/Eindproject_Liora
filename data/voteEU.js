@@ -14,14 +14,15 @@ window.onload = function() {
     // distract jasons
     var vote = "EUturnout.json"
     var data = "europe.json"
-    //var system = "systems.json"
+    var final = "final.json"
     var freedomHouse = "freedomHouse.json"
-    var requests = [d3.json(vote), d3.json(data), d3.json(freedomHouse)];
+    var requests = [d3.json(vote), d3.json(data), d3.json(freedomHouse), d3.json(final)];
 
     Promise.all(requests).then(function(response) {
         var vote = response[0];
         var data = response[1];
-        var freedomHouse = response[2]
+        var freedomHouse = response[2];
+        var final = response[3];
 
         console.log(freedomHouse)
         //console.log(system)
