@@ -2,6 +2,10 @@
 // Student number: 11036435
 //  this file creates a website that shows a map in with all the voter turnout are depicted
 
+
+  // scroll down in homepage
+  document.documentElement.scrollTop = 2000;
+
 // dimensions
 var margin = { top: 50, right: 50, bottom: 50, left: 50 },
       width = screen.width - margin.left - margin.right,
@@ -14,26 +18,27 @@ window.onload = function() {
     // distract jasons
     var vote = "EUturnout.json"
     var data = "europe.json"
-    //var final = "final.json"
     var freedomHouse = "freedomHouse.json"
-    var requests = [d3.json(vote), d3.json(data), d3.json(freedomHouse)];
+    var invalid = "invalid.json"
+    //var final = "final.json"
+    var requests = [d3.json(vote), d3.json(data), d3.json(freedomHouse), d3.json(invalid)];
 
     Promise.all(requests).then(function(response) {
         var vote = response[0];
         var data = response[1];
         var freedomHouse = response[2];
+        var invalid = response[3]
         //var final = response[3];
 
         console.log(freedomHouse)
         //console.log(system)
         console.log(vote)
+        console.log(invalid)
 
         var format = d3.format(",");
 
 
         //countery = "Belgium"
-
-
 
 
         // create tooltips
@@ -95,7 +100,7 @@ window.onload = function() {
                   if ((vote[d.properties.NAME] !== undefined) && (vote[d.properties.NAME]["2014"] !== undefined)) {
                     return (color(vote[d.properties.NAME]["2014"]));
                 }
-                    return "black"
+                    return "#A9A9A9"
                 })
 
                 .style('stroke', 'white')
@@ -166,9 +171,11 @@ window.onload = function() {
 
             function pieChart(country) {
 
+            var invalidVote = invalid[country]["2014"]
+            console.log(invalidVote)
             var turnout = vote[country]["2014"];
             console.log(vote[country]["2014"])
-            var data = [turnout, 100 - turnout]
+            var data = [turnout, invalidVote, 100 - turnout - invalidVote]
 
             radius = height /2;
 
@@ -182,8 +189,8 @@ window.onload = function() {
                         });
 
             var color2 = d3.scaleThreshold()
-                .domain([1,2])
-                .range(["rgb(135,206,250)", "rgb(3,19,43)"]);
+                .domain([1,2,3])
+                .range(["rgb(135,206,250)","rgb(205,17,17)", "rgb(3,19,43)"]);
 
             var sv = d3.select("#pieChart")
             // var sv = d3.select("#pieChart").append("svg")
@@ -239,9 +246,26 @@ window.onload = function() {
 
             // add text
 
+            var names = ["Voter Turnout", "Invalid Votes", "Not Voted"]
+
+            // make legend
+            legend2 = sv.selectAll("pieChart")
+              .data([1,2,3]).enter()
+              .append("g")
+              .attr("class", ".legend")
+              .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
+
+            legend2.append("rect")
+                .attr("x", 300)
+                .attr("y", 250)
+                .attr("width", 32)
+                .attr("height", 20)
+                .style("fill", d => color2(d))
 
 
             }
+
+
 
 
         function barChart(country) {
@@ -478,8 +502,9 @@ window.onload = function() {
           .range([margin.right, width/2 - margin.left])
           //.range([margin.left, width/2 - (3*margin.right)])
 
+      // the highest freedomHouse rating is 1 and the lowest is 4 so the domain ranges from max to min
       var yScale = d3.scaleLinear()
-          .domain([minF, maxF])
+          .domain([maxF, minF])
           .range([height - margin.bottom, margin.top])
 
       // make y-as

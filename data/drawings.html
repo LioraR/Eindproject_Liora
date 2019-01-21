@@ -1,0 +1,131 @@
+<!--Name: Liora Rosenberg-->
+<!--Student number: 11036435 -->
+<!-- this file creates a website that draws a graph -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Line chart</title>
+    <style>
+      .names {
+      fill: none;
+      stroke: #fff;
+      stroke-linejoin: round;
+      }
+    </style>
+    <link rel="stylesheet" type="text/css" href="vote.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="http://d3js.org/topojson.v1.min.js"></script>
+
+  </head>
+  <!-- <div class = "description">text</div> -->
+  <body>
+
+    <div class="p-3 mb-2 bg-info text-white">
+
+    <!--  add navbar -->
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="nav navbar-nav">
+                    <li><a data-toggle="tab" href="/vote.html">Home</a></li>
+                    <li class="active"><a data-toggle="collapse" href="/drawings.html">Voter Turnout</a></li>
+                    <li><a data-toggle="collapse" href="/references.html">references</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="https://github.com/LioraR/Eindproject_Liora">Liora Rosenberg</a></li>
+                </ul>
+            </div>
+          </div>
+    </nav>
+
+    <!-- make homepage-->
+
+      <p style="color:blue;font-size:160%;text-align:center;">Voter Turnout</p>
+    <div class="row">
+    <div class="container-fluit">
+      <div class="dropdown2">
+        <button onclick="myFunction()" class="dropbtn">Dropdown</button> 
+        <div id="myDropdown" class="dropdown-content2">
+          <a href="#">2007</a>
+          <a href="#">2008</a>
+        </div>
+      </div>
+    </div>
+    </div>
+
+      <!--<div class="row">
+        <div class="container-fluit">
+          <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+             Year <span class="caret"></span>
+        </button>
+          <ul class="dropdown-menu" role="menu">
+            <li><a class="m" value="2007" href="#">2007</a></li>
+            <li><a class="m" value="2008" href="#">2008</a></li>
+            <li><a class="m" value="2009" href="#">2009</a></li>
+            <li><a class="m" value="2010" href="#">2010</a></li>
+            <li><a class="m" value="2011" href="#">2011</a></li>
+            <li><a class="m" value="2012" href="#">2012</a></li>
+            <li><a class="m" value="2013" href="#">2013</a></li>
+            <li><a class="m" value="2014" href="#">2014</a></li>
+            <li><a class="m" value="2015" href="#">2015</a></li>
+          </ul>
+        </div>
+        </div> -->
+
+        <script>
+            function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+        </script>
+
+
+    <div class="col-md-6" style="background-color: white"><h2>EU Voter Turnout</h2><svg id="map" width="100%" height="550"><svg></div>
+      <div class="md-2"></div>
+    <div class="col-md-5 col-md-offset-1" style="background-color: white"><h2>EU Voter Turnout per country</h2><svg id="barChart" width="100%" height="550"><svg></div>
+
+
+    <div class="row">
+      <div class="col-md-12" style="p-3 mb-2 bg-info text-white"><svg id="map" width="100%" height="150"><svg></div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6" style="background-color: white"><h2>Amount of Votes </h2><svg id="pieChart" width="100%" height="550"><svg></div>
+      <div class="col-md-5 col-md-offset-1" style="background-color: white"><h2>Correlation Freedom and Turnout</h2><svg id="scatterPlot" width="100%" height="550"><svg></div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12" style="p-3 mb-2 bg-info text-white"><svg id="map" width="100%" height="150"><svg></div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6" style="background-color: white"><h2>Freedom House</h2><svg id="lineChart" width="100%" height="550"><svg></div>
+      <div class="col-md-5 col-md-offset-1" style="background-color: white"><h2>Voter Turnout</h2><svg id="lineChart2" width="100%" height="550"><svg></div>
+    </div>
+
+
+  </div>
+
+  <!-- own writen js -->
+  <script src="d3-tip.js"></script>
+  <script src="voteEU.js" charset="utf-8"></script>
+
+  </body>
+</html>

@@ -1,0 +1,617 @@
+Country,Election type,Year,Voter Turnout,VAP Turnout,Invalid votes
+Albania,Parliamentary,2017,46.76 %,68.50 %,1.97 %
+Albania,Parliamentary,2013,53.31 %,76.68 %,1.84 %
+Albania,Parliamentary,2009,50.77 %,69.11 %,2.99 %
+Albania,Parliamentary,2005,48.73 %,58.96 %,1.58 %
+Albania,Parliamentary,2001,54.95 %,67.30 %,3.60 %
+Albania,Parliamentary,1997,72.56 %,63.40 %,
+Albania,Parliamentary,1996,89.08 %,89.53 %,
+Albania,Parliamentary,1992,91.50 %,89.21 %,
+Albania,Parliamentary,1991,98.92 %,98.89 %,
+Andorra,Parliamentary,2015,65.62 %,22.97 %,8.17 %
+Andorra,Parliamentary,2011,74.12 %,23.38 %,4.24 %
+Andorra,Parliamentary,2009,75.34 %,25.98 %,0.89 %
+Andorra,Parliamentary,2005,80.38 %,21.02 %,0.90 %
+Andorra,Parliamentary,2001,81.64 %,15.94 %,5.70 %
+Andorra,Parliamentary,1997,81.59 %,81.59 %,5.19 %
+Andorra,Parliamentary,1993,80.92 %,80.92 %,
+Austria,Parliamentary,2017,80.00 %,68.79 %,0.99 %
+Austria,Parliamentary,2013,74.91 %,65.87 %,1.90 %
+Austria,Parliamentary,2008,78.81 %,75.61 %,2.10 %
+Austria,Parliamentary,2006,78.49 %,73.21 %,1.78 %
+Austria,Parliamentary,2002,84.27 %,77.45 %,1.50 %
+Austria,Parliamentary,1999,80.42 %,72.64 %,1.50 %
+Austria,Parliamentary,1995,85.98 %,78.64 %,2.30 %
+Austria,Parliamentary,1994,82.46 %,76.02 %,1.70 %
+Austria,Parliamentary,1990,86.14 %,80.47 %,3.00 %
+Austria,Parliamentary,1986,90.46 %,87.07 %,1.80 %
+Austria,Parliamentary,1983,92.59 %,86.91 %,1.40 %
+Austria,Parliamentary,1979,92.24 %,86.81 %,1.10 %
+Austria,Parliamentary,1975,92.90 %,86.65 %,1.10 %
+Austria,Parliamentary,1971,92.44 %,88.23 %,1.10 %
+Austria,Parliamentary,1970,91.78 %,89.52 %,0.90 %
+Austria,Parliamentary,1966,93.80 %,89.83 %,1.10 %
+Austria,Parliamentary,1962,93.77 %,90.28 %,1.10 %
+Austria,Parliamentary,1959,94.21 %,89.67 %,1.40 %
+Austria,Parliamentary,1956,95.95 %,89.31 %,1.70 %
+Austria,Parliamentary,1953,95.83 %,89.03 %,1.70 %
+Austria,Parliamentary,1949,96.78 %,86.24 %,1.30 %
+Austria,Parliamentary,1945,94.31 %,67.39 %,1.10 %
+Belarus,Parliamentary,2016,74.68 %,66.84 %,
+Belarus,Parliamentary,2012,74.20 %,65.92 %,
+Belarus,Parliamentary,2008,76.74 %,69.56 %,2.10 %
+Belarus,Parliamentary,2004,90.14 %,82.43 %,3.20 %
+Belarus,Parliamentary,2000,61.08 %,58.24 %,
+Belarus,Parliamentary,1995,56.40 %,54.88 %,
+Belgium,Parliamentary,2014,89.37 %,87.21 %,5.78 %
+Belgium,Parliamentary,2010,89.22 %,84.65 %,5.80 %
+Belgium,Parliamentary,2007,91.08 %,86.00 %,5.13 %
+Belgium,Parliamentary,2003,91.63 %,85.92 %,4.30 %
+Belgium,Parliamentary,1999,90.57 %,83.14 %,6.86 %
+Belgium,Parliamentary,1995,91.15 %,83.20 %,7.50 %
+Belgium,Parliamentary,1991,92.71 %,85.10 %,7.00 %
+Belgium,Parliamentary,1987,93.38 %,86.49 %,6.60 %
+Belgium,Parliamentary,1985,93.59 %,86.32 %,7.40 %
+Belgium,Parliamentary,1981,94.56 %,94.31 %,7.40 %
+Belgium,Parliamentary,1978,94.87 %,87.78 %,8.40 %
+Belgium,Parliamentary,1977,95.07 %,89.91 %,7.20 %
+Belgium,Parliamentary,1974,90.35 %,85.71 %,7.90 %
+Belgium,Parliamentary,1971,91.55 %,88.61 %,8.00 %
+Belgium,Parliamentary,1968,90.02 %,86.18 %,6.80 %
+Belgium,Parliamentary,1965,91.58 %,88.02 %,7.10 %
+Belgium,Parliamentary,1961,92.34 %,87.96 %,5.50 %
+Belgium,Parliamentary,1958,93.62 %,89.25 %,4.90 %
+Belgium,Parliamentary,1954,93.18 %,88.50 %,5.50 %
+Belgium,Parliamentary,1950,92.62 %,86.31 %,5.30 %
+Belgium,Parliamentary,1949,94.41 %,88.23 %,5.40 %
+Belgium,Parliamentary,1946,90.30 %,42.01 %,3.86 %
+Bosnia and Herzegovina,Parliamentary,2018,54.03 %,56.15 %,8.63 %
+Bosnia and Herzegovina,Parliamentary,2014,54.54 %,59.32 %,8.76 %
+Bosnia and Herzegovina,Parliamentary,2010,56.49 %,58.77 %,7.22 %
+Bosnia and Herzegovina,Parliamentary,2006,54.94 %,42.76 %,6.70 %
+Bosnia and Herzegovina,Parliamentary,2002,55.45 %,40.86 %,
+Bosnia and Herzegovina,Parliamentary,2000,63.70 %,52.33 %,
+Bosnia and Herzegovina,Parliamentary,1998,70.74 %,57.72 %,
+Bosnia and Herzegovina,Parliamentary,1996,46.06 %,51.92 %,
+Bulgaria,Parliamentary,2017,53.85 %,62.79 %,7.97 %
+Bulgaria,Parliamentary,2014,51.05 %,60.88 %,6.20 %
+Bulgaria,Parliamentary,2013,52.49 %,59.69 %,2.48 %
+Bulgaria,Parliamentary,2009,60.64 %,72.43 %,2.25 %
+Bulgaria,Parliamentary,2005,55.76 %,62.41 %,2.70 %
+Bulgaria,Parliamentary,2001,66.63 %,72.10 %,0.90 %
+Bulgaria,Parliamentary,1997,58.87 %,66.90 %,0.80 %
+Bulgaria,Parliamentary,1994,75.23 %,80.98 %,1.20 %
+Bulgaria,Parliamentary,1991,83.87 %,84.54 %,2.70 %
+Croatia,Parliamentary,2016,52.59 %,55.52 %,1.88 %
+Croatia,Parliamentary,2015,60.82 %,63.96 %,
+Croatia,Parliamentary,2011,54.17 %,66.09 %,1.73 %
+Croatia,Parliamentary,2007,59.58 %,70.84 %,1.50 %
+Croatia,Parliamentary,2003,61.65 %,71.96 %,1.60 %
+Croatia,Parliamentary,2000,76.55 %,80.95 %,1.70 %
+Croatia,Parliamentary,1995,68.79 %,72.17 %,3.30 %
+Croatia,Parliamentary,1992,75.61 %,74.92 %,4.70 %
+Croatia,Parliamentary,1990,84.54 %,,3.84 %
+Cyprus,Parliamentary,2016,66.74 %,39.13 %,3.08 %
+Cyprus,Parliamentary,2011,78.70 %,47.21 %,2.08 %
+Cyprus,Parliamentary,2006,89.00 %,60.35 %,5.60 %
+Cyprus,Parliamentary,2001,91.75 %,67.68 %,4.20 %
+Cyprus,Parliamentary,1996,90.13 %,75.90 %,
+Cyprus,Parliamentary,1991,94.31 %,78.63 %,3.50 %
+Cyprus,Parliamentary,1985,94.62 %,77.95 %,2.60 %
+Cyprus,Parliamentary,1981,95.75 %,72.85 %,1.60 %
+Cyprus,Parliamentary,1976,85.29 %,62.25 %,1.50 %
+Cyprus,Parliamentary,1970,75.85 %,54.77 %,2.20 %
+Czech Republic,Parliamentary,2017,60.84 %,58.06 %,0.60 %
+Czech Republic,Parliamentary,2013,59.48 %,60.03 %,0.74 %
+Czech Republic,Parliamentary,2010,62.60 %,62.22 %,0.63 %
+Czech Republic,Parliamentary,2006,64.47 %,65.12 %,0.40 %
+Czech Republic,Parliamentary,2002,57.95 %,59.03 %,0.40 %
+Czech Republic,Parliamentary,1998,74.00 %,76.73 %,0.40 %
+Czech Republic,Parliamentary,1996,76.29 %,77.57 %,0.60 %
+Czech Republic,Parliamentary,1992,84.68 %,83.76 %,1.70 %
+Czech Republic,Parliamentary,1990,96.33 %,93.06 %,1.40 %
+Denmark,Parliamentary,2015,85.89 %,80.34 %,1.15 %
+Denmark,Parliamentary,2011,87.74 %,81.83 %,0.84 %
+Denmark,Parliamentary,2007,86.59 %,83.20 %,0.70 %
+Denmark,Parliamentary,2005,84.54 %,81.34 %,0.80 %
+Denmark,Parliamentary,2001,87.15 %,84.34 %,1.00 %
+Denmark,Parliamentary,1998,85.95 %,83.13 %,0.80 %
+Denmark,Parliamentary,1994,84.25 %,81.73 %,1.00 %
+Denmark,Parliamentary,1990,82.85 %,80.42 %,0.80 %
+Denmark,Parliamentary,1988,85.70 %,82.73 %,0.70 %
+Denmark,Parliamentary,1987,86.74 %,85.85 %,0.80 %
+Denmark,Parliamentary,1984,88.44 %,86.04 %,0.70 %
+Denmark,Parliamentary,1981,87.77 %,86.28 %,0.60 %
+Denmark,Parliamentary,1979,85.62 %,83.23 %,0.70 %
+Denmark,Parliamentary,1977,88.70 %,87.74 %,0.60 %
+Denmark,Parliamentary,1975,88.23 %,86.63 %,0.60 %
+Denmark,Parliamentary,1973,88.72 %,87.37 %,0.60 %
+Denmark,Parliamentary,1971,87.16 %,87.31 %,0.70 %
+Denmark,Parliamentary,1968,89.28 %,87.98 %,0.40 %
+Denmark,Parliamentary,1966,88.61 %,88.46 %,0.30 %
+Denmark,Parliamentary,1964,85.51 %,84.77 %,0.40 %
+Denmark,Parliamentary,1960,85.84 %,85.91 %,0.30 %
+Denmark,Parliamentary,1957,83.73 %,82.09 %,0.50 %
+Denmark,Parliamentary,1953,80.58 %,78.91 %,0.30 %
+Denmark,Parliamentary,1950,81.87 %,76.57 %,0.30 %
+Denmark,Parliamentary,1947,85.78 %,79.98 %,0.20 %
+Denmark,Parliamentary,1945,86.29 %,80.65 %,0.30 %
+Estonia,Parliamentary,2015,64.23 %,56.82 %,0.60 %
+Estonia,Parliamentary,2011,63.53 %,55.45 %,0.56 %
+Estonia,Parliamentary,2007,61.91 %,53.44 %,0.90 %
+Estonia,Parliamentary,2003,58.24 %,48.12 %,1.20 %
+Estonia,Parliamentary,1999,57.43 %,45.95 %,1.60 %
+Estonia,Parliamentary,1995,68.91 %,48.84 %,0.90 %
+Estonia,Parliamentary,1992,67.84 %,40.93 %,1.50 %
+Estonia,Parliamentary,1990,78.20 %,78.28 %,
+Faroe Islands,Parliamentary,2008,89.50 %,87.63 %,0.20 %
+Faroe Islands,Parliamentary,2004,92.34 %,90.95 %,0.20 %
+Faroe Islands,Parliamentary,2002,91.63 %,89.83 %,0.50 %
+Faroe Islands,Parliamentary,1998,88.19 %,87.00 %,0.70 %
+Finland,Parliamentary,2015,66.85 %,73.14 %,0.51 %
+Finland,Parliamentary,2011,67.37 %,72.77 %,0.55 %
+Finland,Parliamentary,2007,65.02 %,68.18 %,0.70 %
+Finland,Parliamentary,2003,66.71 %,69.96 %,0.90 %
+Finland,Parliamentary,1999,65.27 %,65.21 %,1.00 %
+Finland,Parliamentary,1995,68.58 %,71.13 %,0.60 %
+Finland,Parliamentary,1991,68.39 %,71.93 %,1.80 %
+Finland,Parliamentary,1987,72.06 %,77.25 %,0.50 %
+Finland,Parliamentary,1983,75.73 %,81.10 %,0.40 %
+Finland,Parliamentary,1979,75.31 %,81.32 %,0.40 %
+Finland,Parliamentary,1975,73.80 %,80.29 %,0.40 %
+Finland,Parliamentary,1972,81.40 %,84.48 %,0.40 %
+Finland,Parliamentary,1970,82.23 %,83.63 %,0.30 %
+Finland,Parliamentary,1966,84.94 %,85.14 %,0.40 %
+Finland,Parliamentary,1962,85.09 %,85.46 %,0.40 %
+Finland,Parliamentary,1958,74.99 %,74.71 %,0.50 %
+Finland,Parliamentary,1954,79.90 %,80.27 %,0.50 %
+Finland,Parliamentary,1951,74.58 %,73.96 %,0.70 %
+Finland,Parliamentary,1948,78.25 %,79.36 %,0.70 %
+Finland,Parliamentary,1945,74.87 %,74.61 %,0.70 %
+France,Parliamentary,2017,42.64 %,38.62 %,4.20 %
+France,Parliamentary,2012,55.40 %,46.08 %,2.14 %
+France,Parliamentary,2007,59.98 %,43.43 %,3.42 %
+France,Parliamentary,2002,60.32 %,47.25 %,4.35 %
+France,Parliamentary,1997,67.96 %,59.86 %,4.90 %
+France,Parliamentary,1993,68.93 %,61.29 %,5.30 %
+France,Parliamentary,1988,66.18 %,58.14 %,2.00 %
+France,Parliamentary,1986,78.48 %,69.91 %,4.30 %
+France,Parliamentary,1981,70.87 %,63.92 %,1.40 %
+France,Parliamentary,1978,71.63 %,63.40 %,1.90 %
+France,Parliamentary,1973,81.31 %,70.63 %,2.30 %
+France,Parliamentary,1968,79.85 %,69.36 %,1.70 %
+France,Parliamentary,1967,81.12 %,71.14 %,2.30 %
+France,Parliamentary,1962,68.69 %,60.99 %,3.10 %
+France,Parliamentary,1958,77.18 %,71.13 %,2.50 %
+France,Parliamentary,1956,82.69 %,74.26 %,2.90 %
+France,Parliamentary,1951,80.19 %,68.49 %,2.80 %
+France,Parliamentary,1946,81.85 %,73.73 %,1.70 %
+France,Parliamentary,1945,79.83 %,73.93 %,2.40 %
+Germany,Parliamentary,2017,76.15 %,69.11 %,1.25 %
+Germany,Parliamentary,2013,71.53 %,66.07 %,1.55 %
+Germany,Parliamentary,2009,70.78 %,64.61 %,1.44 %
+Germany,Parliamentary,2005,77.65 %,71.99 %,1.60 %
+Germany,Parliamentary,2002,79.08 %,73.46 %,1.20 %
+Germany,Parliamentary,1998,82.20 %,75.32 %,1.60 %
+Germany,Parliamentary,1994,78.97 %,72.39 %,1.30 %
+Germany,Parliamentary,1990,77.76 %,73.10 %,1.10 %
+Germany,Parliamentary,1987,84.33 %,75.02 %,0.90 %
+Germany,Parliamentary,1983,89.09 %,80.95 %,0.90 %
+Germany,Parliamentary,1980,88.57 %,81.84 %,0.90 %
+Germany,Parliamentary,1976,90.75 %,83.84 %,0.90 %
+Germany,Parliamentary,1972,91.11 %,88.74 %,0.80 %
+Germany,Parliamentary,1969,86.67 %,79.86 %,1.70 %
+Germany,Parliamentary,1965,86.77 %,80.86 %,2.40 %
+Germany,Parliamentary,1961,87.74 %,86.86 %,4.00 %
+Germany,Parliamentary,1957,87.77 %,87.57 %,3.80 %
+Germany,Parliamentary,1953,85.99 %,80.57 %,3.30 %
+Germany,Parliamentary,1949,78.49 %,76.46 %,3.10 %
+Gibraltar,Parliamentary,2015,70.77 %,74.23 %,
+Gibraltar,Parliamentary,2011,82.51 %,82.72 %,
+Greece,Parliamentary,2015,63.94 %,70.65 %,2.36 %
+Greece,Parliamentary,2012,62.47 %,69.36 %,0.99 %
+Greece,Parliamentary,2009,70.92 %,79.24 %,2.64 %
+Greece,Parliamentary,2007,74.14 %,79.59 %,2.70 %
+Greece,Parliamentary,2004,76.62 %,87.66 %,2.20 %
+Greece,Parliamentary,2000,74.97 %,89.02 %,1.60 %
+Greece,Parliamentary,1996,76.34 %,83.88 %,2.00 %
+Greece,Parliamentary,1993,82.95 %,85.61 %,1.70 %
+Greece,Parliamentary,1989,84.50 %,87.52 %,1.50 %
+Greece,Parliamentary,1985,83.81 %,87.35 %,0.90 %
+Greece,Parliamentary,1981,81.50 %,84.48 %,1.40 %
+Greece,Parliamentary,1977,81.11 %,82.41 %,1.20 %
+Greece,Parliamentary,1974,79.58 %,82.73 %,1.10 %
+Greece,Parliamentary,1964,81.69 %,83.64 %,0.60 %
+Greece,Parliamentary,1963,83.04 %,85.32 %,0.80 %
+Greece,Parliamentary,1961,81.87 %,86.34 %,0.40 %
+Greece,Parliamentary,1958,75.48 %,73.87 %,0.40 %
+Greece,Parliamentary,1956,74.97 %,67.87 %,0.40 %
+Greece,Parliamentary,1952,75.37 %,73.87 %,0.50 %
+Greece,Parliamentary,1951,77.20 %,80.16 %,0.50 %
+Greece,Parliamentary,1950,,80.10 %,0.40 %
+Greece,Parliamentary,1946,,53.54 %,1.20 %
+Hungary,Parliamentary,2018,69.67 %,71.64 %,1.03 %
+Hungary,Parliamentary,2014,61.84 %,63.36 %,0.91 %
+Hungary,Parliamentary,2010,64.38 %,63.67 %,
+Hungary,Parliamentary,2006,67.57 %,68.84 %,0.60 %
+Hungary,Parliamentary,2002,70.52 %,71.55 %,0.60 %
+Hungary,Parliamentary,1998,57.01 %,59.03 %,1.30 %
+Hungary,Parliamentary,1994,68.92 %,69.43 %,1.20 %
+Hungary,Parliamentary,1990,65.10 %,65.52 %,1.36 %
+Iceland,Parliamentary,2016,79.18 %,75.68 %,2.90 %
+Iceland,Parliamentary,2013,81.44 %,80.01 %,0.30 %
+Iceland,Parliamentary,2009,85.12 %,84.74 %,3.50 %
+Iceland,Parliamentary,2007,83.60 %,84.65 %,1.60 %
+Iceland,Parliamentary,2003,87.70 %,89.12 %,1.20 %
+Iceland,Parliamentary,1999,84.07 %,86.18 %,2.20 %
+Iceland,Parliamentary,1995,87.38 %,87.83 %,1.60 %
+Iceland,Parliamentary,1991,87.62 %,88.67 %,1.50 %
+Iceland,Parliamentary,1987,90.10 %,92.32 %,1.10 %
+Iceland,Parliamentary,1983,88.60 %,88.19 %,2.50 %
+Iceland,Parliamentary,1979,89.34 %,90.59 %,2.50 %
+Iceland,Parliamentary,1978,90.27 %,89.56 %,1.70 %
+Iceland,Parliamentary,1974,91.44 %,87.56 %,1.30 %
+Iceland,Parliamentary,1971,90.44 %,89.37 %,1.50 %
+Iceland,Parliamentary,1967,91.37 %,88.96 %,1.80 %
+Iceland,Parliamentary,1963,91.14 %,89.39 %,1.80 %
+Iceland,Parliamentary,1959,90.63 %,89.73 %,1.50 %
+Iceland,Parliamentary,1956,92.07 %,91.92 %,2.00 %
+Iceland,Parliamentary,1953,89.90 %,92.11 %,1.70 %
+Iceland,Parliamentary,1949,89.03 %,88.90 %,1.70 %
+Iceland,Parliamentary,1946,87.41 %,87.18 %,1.40 %
+Ireland,Parliamentary,2016,65.09 %,58.04 %,0.86 %
+Ireland,Parliamentary,2011,69.90 %,63.78 %,1.00 %
+Ireland,Parliamentary,2007,67.03 %,68.89 %,0.90 %
+Ireland,Parliamentary,2002,62.57 %,66.98 %,1.10 %
+Ireland,Parliamentary,1997,65.92 %,67.38 %,0.99 %
+Ireland,Parliamentary,1992,68.49 %,73.65 %,1.50 %
+Ireland,Parliamentary,1989,68.51 %,71.23 %,1.20 %
+Ireland,Parliamentary,1987,73.33 %,77.87 %,0.90 %
+Ireland,Parliamentary,1982,72.86 %,76.33 %,0.70 %
+Ireland,Parliamentary,1981,76.22 %,78.78 %,0.90 %
+Ireland,Parliamentary,1977,76.31 %,85.17 %,0.90 %
+Ireland,Parliamentary,1973,76.61 %,77.76 %,1.20 %
+Ireland,Parliamentary,1969,76.93 %,77.22 %,1.20 %
+Ireland,Parliamentary,1965,75.14 %,74.43 %,0.90 %
+Ireland,Parliamentary,1961,70.61 %,70.96 %,1.00 %
+Ireland,Parliamentary,1957,71.25 %,70.38 %,0.90 %
+Ireland,Parliamentary,1954,76.45 %,75.34 %,0.90 %
+Ireland,Parliamentary,1951,75.27 %,74.39 %,0.90 %
+Ireland,Parliamentary,1948,74.25 %,73.41 %,1.00 %
+Italy,Parliamentary,2018,72.93 %,65.18 %,3.22 %
+Italy,Parliamentary,2013,75.19 %,68.33 %,3.59 %
+Italy,Parliamentary,2008,80.54 %,79.13 %,5.10 %
+Italy,Parliamentary,2006,83.62 %,82.13 %,2.90 %
+Italy,Parliamentary,2001,81.44 %,84.92 %,7.20 %
+Italy,Parliamentary,1996,82.91 %,87.35 %,7.80 %
+Italy,Parliamentary,1994,86.14 %,90.84 %,5.90 %
+Italy,Parliamentary,1992,87.44 %,92.34 %,5.40 %
+Italy,Parliamentary,1987,88.86 %,94.40 %,4.90 %
+Italy,Parliamentary,1983,89.02 %,91.76 %,5.70 %
+Italy,Parliamentary,1979,90.35 %,92.75 %,3.90 %
+Italy,Parliamentary,1976,93.37 %,95.43 %,2.70 %
+Italy,Parliamentary,1972,93.18 %,94.70 %,3.20 %
+Italy,Parliamentary,1968,92.79 %,93.10 %,3.60 %
+Italy,Parliamentary,1963,92.88 %,95.31 %,3.20 %
+Italy,Parliamentary,1958,93.72 %,93.92 %,2.80 %
+Italy,Parliamentary,1953,93.87 %,91.53 %,4.30 %
+Italy,Parliamentary,1948,92.23 %,93.26 %,2.20 %
+Italy,Parliamentary,1946,89.08 %,88.01 %,7.70 %
+Kosovo,Parliamentary,2017,41.30 %,59.22 %,6.30 %
+Kosovo,Parliamentary,2014,42.63 %,61.70 %,4.64 %
+Kosovo,Parliamentary,2010,45.62 %,61.31 %,4.22 %
+Kosovo,Parliamentary,2007,43.23 %,55.89 %,9.00 %
+Kosovo,Parliamentary,2004,49.52 %,65.28 %,1.35 %
+Latvia,Parliamentary,2018,54.58 %,53.55 %,0.70 %
+Latvia,Parliamentary,2014,58.80 %,51.69 %,0.76 %
+Latvia,Parliamentary,2011,59.49 %,53.02 %,0.14 %
+Latvia,Parliamentary,2010,64.72 %,52.46 %,2.14 %
+Latvia,Parliamentary,2006,60.98 %,50.18 %,0.80 %
+Latvia,Parliamentary,2002,71.17 %,55.08 %,0.50 %
+Latvia,Parliamentary,1998,71.90 %,51.91 %,0.50 %
+Latvia,Parliamentary,1995,71.90 %,50.64 %,1.50 %
+Latvia,Parliamentary,1993,89.88 %,57.72 %,1.50 %
+Latvia,Parliamentary,1990,81.20 %,80.95 %,
+Liechtenstein,Parliamentary,2017,77.82 %,49.58 %,4.08 %
+Liechtenstein,Parliamentary,2013,79.80 %,52.70 %,
+Liechtenstein,Parliamentary,2009,84.63 %,56.46 %,2.90 %
+Liechtenstein,Parliamentary,2005,86.47 %,57.62 %,2.10 %
+Liechtenstein,Parliamentary,2001,86.72 %,56.76 %,1.10 %
+Liechtenstein,Parliamentary,1997,86.94 %,53.84 %,0.50 %
+Liechtenstein,Parliamentary,1993,87.54 %,55.58 %,0.90 %
+Liechtenstein,Parliamentary,1989,90.88 %,59.58 %,0.70 %
+Liechtenstein,Parliamentary,1986,93.33 %,60.27 %,0.20 %
+Liechtenstein,Parliamentary,1982,95.39 %,56.61 %,1.10 %
+Liechtenstein,Parliamentary,1978,95.72 %,56.61 %,0.60 %
+Liechtenstein,Parliamentary,1974,95.56 %,56.89 %,0.80 %
+Liechtenstein,Parliamentary,1970,94.94 %,62.84 %,0.80 %
+Liechtenstein,Parliamentary,1966,95.68 %,62.07 %,0.30 %
+Liechtenstein,Parliamentary,1962,94.68 %,66.13 %,0.50 %
+Liechtenstein,Parliamentary,1958,96.47 %,76.32 %,0.20 %
+Liechtenstein,Parliamentary,1957,93.45 %,74.19 %,0.30 %
+Liechtenstein,Parliamentary,1953,90.76 %,79.07 %,0.90 %
+Liechtenstein,Parliamentary,1949,91.99 %,83.83 %,1.50 %
+Liechtenstein,Parliamentary,1945,93.36 %,97.07 %,1.90 %
+Lithuania,Parliamentary,2016,50.64 %,54.51 %,4.12 %
+Lithuania,Parliamentary,2012,52.93 %,55.86 %,4.23 %
+Lithuania,Parliamentary,2008,48.59 %,46.15 %,6.22 %
+Lithuania,Parliamentary,2004,46.04 %,43.33 %,5.47 %
+Lithuania,Parliamentary,2000,58.18 %,50.43 %,4.40 %
+Lithuania,Parliamentary,1996,52.92 %,49.96 %,4.90 %
+Lithuania,Parliamentary,1992,75.22 %,70.21 %,5.50 %
+Lithuania,Parliamentary,1990,71.72 %,,
+Luxembourg,Parliamentary,2018,89.66 %,48.16 %,7.23 %
+Luxembourg,Parliamentary,2013,91.15 %,55.12 %,6.81 %
+Luxembourg,Parliamentary,2009,90.93 %,53.20 %,6.45 %
+Luxembourg,Parliamentary,2004,91.68 %,56.50 %,5.60 %
+Luxembourg,Parliamentary,1999,86.51 %,56.92 %,6.50 %
+Luxembourg,Parliamentary,1994,88.30 %,60.52 %,6.50 %
+Luxembourg,Parliamentary,1989,87.39 %,64.07 %,5.50 %
+Luxembourg,Parliamentary,1984,88.81 %,66.83 %,6.50 %
+Luxembourg,Parliamentary,1979,88.85 %,68.48 %,7.30 %
+Luxembourg,Parliamentary,1974,90.14 %,73.74 %,5.80 %
+Luxembourg,Parliamentary,1968,88.56 %,67.79 %,6.40 %
+Luxembourg,Parliamentary,1964,90.57 %,72.55 %,6.40 %
+Luxembourg,Parliamentary,1959,92.33 %,74.29 %,4.90 %
+Luxembourg,Parliamentary,1954,92.65 %,73.14 %,4.90 %
+Luxembourg,Parliamentary,1951,90.78 %,37.29 %,4.90 %
+Luxembourg,Parliamentary,1948,91.90 %,,5.60 %
+Luxembourg,Parliamentary,1945,,74.95 %,
+Macedonia former Yugoslav Republic (1993-),Parliamentary,2016,66.79 %,71.99 %,3.18 %
+Macedonia former Yugoslav Republic (1993-),Parliamentary,2014,62.98 %,68.96 %,
+Macedonia former Yugoslav Republic (1993-),Parliamentary,2011,63.48 %,69.37 %,2.77 %
+Macedonia former Yugoslav Republic (1993-),Parliamentary,2008,57.99 %,67.08 %,3.00 %
+Macedonia former Yugoslav Republic (1993-),Parliamentary,2006,55.98 %,64.50 %,3.90 %
+Macedonia former Yugoslav Republic (1993-),Parliamentary,2002,74.60 %,85.35 %,1.80 %
+Macedonia former Yugoslav Republic (1993-),Parliamentary,1998,72.88 %,70.70 %,
+Macedonia former Yugoslav Republic (1993-),Parliamentary,1994,77.29 %,71.16 %,3.90 %
+Macedonia former Yugoslav Republic (1993-),Parliamentary,1990,81.18 %,,5.90 %
+Malta,Parliamentary,2017,92.06 %,92.29 %,1.28 %
+Malta,Parliamentary,2013,92.95 %,91.72 %,1.30 %
+Malta,Parliamentary,2008,93.30 %,88.88 %,1.20 %
+Malta,Parliamentary,2003,95.70 %,95.35 %,1.00 %
+Malta,Parliamentary,1998,95.40 %,95.93 %,1.40 %
+Malta,Parliamentary,1996,97.16 %,98.02 %,1.10 %
+Malta,Parliamentary,1992,96.04 %,95.33 %,0.80 %
+Malta,Parliamentary,1987,96.11 %,95.57 %,0.70 %
+Malta,Parliamentary,1981,94.64 %,86.03 %,0.60 %
+Malta,Parliamentary,1976,95.00 %,89.81 %,0.70 %
+Malta,Parliamentary,1971,92.93 %,77.55 %,0.50 %
+Malta,Parliamentary,1966,89.71 %,76.73 %,1.10 %
+Malta,Parliamentary,1962,90.77 %,79.41 %,0.60 %
+Malta,Parliamentary,1955,81.16 %,67.74 %,0.50 %
+Malta,Parliamentary,1953,80.37 %,66.04 %,0.70 %
+Malta,Parliamentary,1951,74.59 %,60.37 %,0.70 %
+Malta,Parliamentary,1950,76.02 %,57.06 %,0.60 %
+Malta,Parliamentary,1947,75.44 %,58.97 %,0.60 %
+Moldova Republic of,Parliamentary,2014,55.80 %,58.82 %,
+Moldova Republic of,Parliamentary,2010,63.37 %,50.21 %,0.69 %
+Moldova Republic of,Parliamentary,2009,58.77 %,46.36 %,0.65 %
+Moldova Republic of,Parliamentary,2005,64.84 %,48.66 %,1.20 %
+Moldova Republic of,Parliamentary,2001,69.96 %,63.77 %,2.50 %
+Moldova Republic of,Parliamentary,1998,69.12 %,56.98 %,3.40 %
+Moldova Republic of,Parliamentary,1994,79.31 %,64.13 %,5.00 %
+Monaco,Parliamentary,2018,70.35 %,19.09 %,5.40 %
+Monaco,Parliamentary,2013,74.55 %,19.88 %,4.36 %
+Monaco,Parliamentary,2008,76.85 %,18.29 %,4.20 %
+Monaco,Parliamentary,2003,79.73 %,17.86 %,3.40 %
+Monaco,Parliamentary,1998,65.41 %,11.70 %,2.80 %
+Monaco,Parliamentary,1993,66.59 %,12.00 %,3.30 %
+Monaco,Parliamentary,1988,70.33 %,12.55 %,5.20 %
+Monaco,Parliamentary,1983,75.05 %,13.23 %,2.90 %
+Monaco,Parliamentary,1978,74.55 %,13.26 %,5.50 %
+Monaco,Parliamentary,1973,72.26 %,15.17 %,2.90 %
+Monaco,Parliamentary,1968,72.34 %,14.74 %,6.30 %
+Montenegro,Parliamentary,2016,73.41 %,73.38 %,1.42 %
+Montenegro,Parliamentary,2012,70.56 %,71.01 %,1.50 %
+Montenegro,Parliamentary,2009,66.19 %,61.15 %,1.77 %
+Montenegro,Parliamentary,2006,72.05 %,65.84 %,2.00 %
+Netherlands,Parliamentary,2017,81.93 %,77.31 %,0.45 %
+Netherlands,Parliamentary,2012,74.56 %,71.02 %,0.40 %
+Netherlands,Parliamentary,2010,75.40 %,71.13 %,0.28 %
+Netherlands,Parliamentary,2006,80.35 %,77.48 %,0.20 %
+Netherlands,Parliamentary,2003,80.04 %,77.54 %,0.10 %
+Netherlands,Parliamentary,2002,79.06 %,76.82 %,1.50 %
+Netherlands,Parliamentary,1998,73.23 %,70.12 %,1.70 %
+Netherlands,Parliamentary,1994,78.75 %,75.20 %,0.50 %
+Netherlands,Parliamentary,1989,80.27 %,78.01 %,0.30 %
+Netherlands,Parliamentary,1986,85.76 %,84.22 %,0.30 %
+Netherlands,Parliamentary,1982,80.98 %,80.30 %,0.40 %
+Netherlands,Parliamentary,1981,87.03 %,85.19 %,0.50 %
+Netherlands,Parliamentary,1977,88.00 %,86.27 %,0.60 %
+Netherlands,Parliamentary,1972,83.50 %,80.24 %,0.70 %
+Netherlands,Parliamentary,1971,79.08 %,77.83 %,0.70 %
+Netherlands,Parliamentary,1967,94.95 %,92.07 %,2.80 %
+Netherlands,Parliamentary,1963,95.13 %,87.95 %,2.50 %
+Netherlands,Parliamentary,1959,95.57 %,88.76 %,2.30 %
+Netherlands,Parliamentary,1956,95.50 %,88.07 %,2.10 %
+Netherlands,Parliamentary,1952,94.98 %,86.87 %,3.00 %
+Netherlands,Parliamentary,1948,93.67 %,85.14 %,3.10 %
+Netherlands,Parliamentary,1946,93.12 %,85.47 %,3.10 %
+Norway,Parliamentary,2017,78.22 %,70.59 %,0.80 %
+Norway,Parliamentary,2013,78.23 %,77.93 %,0.45 %
+Norway,Parliamentary,2009,76.37 %,74.74 %,0.50 %
+Norway,Parliamentary,2005,77.44 %,76.54 %,0.40 %
+Norway,Parliamentary,2001,75.48 %,73.50 %,0.60 %
+Norway,Parliamentary,1997,78.33 %,76.77 %,0.50 %
+Norway,Parliamentary,1993,75.85 %,74.47 %,0.40 %
+Norway,Parliamentary,1989,83.16 %,81.52 %,0.20 %
+Norway,Parliamentary,1985,84.03 %,83.65 %,0.10 %
+Norway,Parliamentary,1981,81.99 %,82.26 %,0.10 %
+Norway,Parliamentary,1977,82.89 %,79.17 %,0.10 %
+Norway,Parliamentary,1973,80.24 %,80.06 %,0.20 %
+Norway,Parliamentary,1969,83.84 %,85.11 %,0.20 %
+Norway,Parliamentary,1965,85.43 %,85.03 %,0.40 %
+Norway,Parliamentary,1961,79.07 %,77.67 %,0.60 %
+Norway,Parliamentary,1957,78.32 %,76.94 %,0.50 %
+Norway,Parliamentary,1953,79.33 %,79.55 %,0.60 %
+Norway,Parliamentary,1949,82.02 %,80.55 %,0.70 %
+Norway,Parliamentary,1945,76.36 %,71.35 %,0.90 %
+Poland,Parliamentary,2015,50.92 %,49.40 %,2.53 %
+Poland,Parliamentary,2011,48.92 %,48.54 %,4.52 %
+Poland,Parliamentary,2007,53.88 %,54.24 %,2.10 %
+Poland,Parliamentary,2005,40.57 %,40.87 %,3.60 %
+Poland,Parliamentary,2001,46.18 %,47.63 %,4.00 %
+Poland,Parliamentary,1997,47.93 %,48.80 %,3.90 %
+Poland,Parliamentary,1993,52.08 %,52.00 %,4.30 %
+Poland,Parliamentary,1991,43.20 %,44.40 %,5.60 %
+Poland,Parliamentary,1989,62.11 %,63.96 %,
+Poland,Parliamentary,1985,78.86 %,,0.32 %
+Poland,Parliamentary,1980,98.87 %,,0.06 %
+Poland,Parliamentary,1976,98.27 %,,0.06 %
+Poland,Parliamentary,1972,97.94 %,,0.02 %
+Poland,Parliamentary,1969,97.61 %,,0.04 %
+Poland,Parliamentary,1965,96.62 %,,0.07 %
+Poland,Parliamentary,1961,94.83 %,,0.11 %
+Poland,Parliamentary,1957,94.14 %,,0.35 %
+Poland,Parliamentary,1952,95.03 %,,0.03 %
+Portugal,Parliamentary,2015,55.84 %,61.75 %,3.70 %
+Portugal,Parliamentary,2011,58.03 %,64.49 %,4.08 %
+Portugal,Parliamentary,2009,59.68 %,66.14 %,3.10 %
+Portugal,Parliamentary,2005,64.26 %,69.23 %,2.90 %
+Portugal,Parliamentary,2002,62.84 %,68.62 %,1.90 %
+Portugal,Parliamentary,1999,61.05 %,69.27 %,2.00 %
+Portugal,Parliamentary,1995,66.30 %,79.11 %,1.90 %
+Portugal,Parliamentary,1991,68.18 %,77.71 %,1.10 %
+Portugal,Parliamentary,1987,72.64 %,78.15 %,2.20 %
+Portugal,Parliamentary,1985,75.37 %,79.69 %,2.70 %
+Portugal,Parliamentary,1983,78.64 %,77.43 %,2.70 %
+Portugal,Parliamentary,1980,85.45 %,87.91 %,2.40 %
+Portugal,Parliamentary,1979,87.54 %,88.25 %,2.90 %
+Portugal,Parliamentary,1976,83.27 %,83.29 %,4.80 %
+Portugal,Parliamentary,1975,91.73 %,89.73 %,6.90 %
+Romania,Parliamentary,2016,37.79 %,41.12 %,3.77 %
+Romania,Parliamentary,2012,41.76 %,42.81 %,3.61 %
+Romania,Parliamentary,2008,39.20 %,40.48 %,4.86 %
+Romania,Parliamentary,2004,58.51 %,62.26 %,5.20 %
+Romania,Parliamentary,2000,65.31 %,62.16 %,6.20 %
+Romania,Parliamentary,1996,76.01 %,78.20 %,6.50 %
+Romania,Parliamentary,1992,76.29 %,76.16 %,12.70 %
+Romania,Parliamentary,1990,79.69 %,,
+Russian Federation,Parliamentary,2016,47.88 %,46.04 %,1.86 %
+Russian Federation,Parliamentary,2011,60.10 %,57.96 %,1.57 %
+Russian Federation,Parliamentary,2007,63.71 %,61.91 %,1.10 %
+Russian Federation,Parliamentary,2003,55.67 %,54.34 %,1.60 %
+Russian Federation,Parliamentary,1999,62.33 %,59.12 %,2.00 %
+Russian Federation,Parliamentary,1995,64.73 %,62.77 %,1.90 %
+Russian Federation,Parliamentary,1993,50.00 %,47.22 %,
+San Marino,Parliamentary,2016,59.66 %,75.24 %,4.19 %
+San Marino,Parliamentary,2012,63.85 %,82.05 %,6.43 %
+San Marino,Parliamentary,2008,68.48 %,88.48 %,3.83 %
+San Marino,Parliamentary,2006,71.84 %,98.06 %,3.40 %
+San Marino,Parliamentary,2001,73.80 %,102.83 %,3.80 %
+San Marino,Parliamentary,1998,75.28 %,75.28 %,3.80 %
+San Marino,Parliamentary,1993,80.30 %,80.30 %,3.80 %
+San Marino,Parliamentary,1988,81.14 %,81.14 %,
+San Marino,Parliamentary,1983,79.54 %,79.54 %,
+San Marino,Parliamentary,1978,78.98 %,78.98 %,2.60 %
+San Marino,Parliamentary,1974,79.70 %,79.70 %,2.40 %
+Serbia,Parliamentary,2016,56.07 %,64.31 %,2.86 %
+Serbia,Parliamentary,2014,53.09 %,63.49 %,
+Serbia,Parliamentary,2012,57.77 %,67.55 %,
+Serbia,Parliamentary,2008,61.35 %,70.17 %,2.20 %
+Serbia,Parliamentary,2007,60.57 %,68.19 %,1.60 %
+Slovakia,Parliamentary,2016,59.82 %,59.43 %,1.53 %
+Slovakia,Parliamentary,2012,59.11 %,57.85 %,
+Slovakia,Parliamentary,2010,58.84 %,58.38 %,1.46 %
+Slovakia,Parliamentary,2006,54.67 %,56.40 %,1.40 %
+Slovakia,Parliamentary,2002,70.07 %,71.63 %,1.30 %
+Slovakia,Parliamentary,1998,84.25 %,78.86 %,1.70 %
+Slovakia,Parliamentary,1994,75.41 %,75.93 %,1.60 %
+Slovakia,Parliamentary,1992,84.68 %,83.76 %,1.70 %
+Slovakia,Parliamentary,1990,96.33 %,93.06 %,1.40 %
+Slovenia,Parliamentary,2018,52.64 %,54.58 %,1.15 %
+Slovenia,Parliamentary,2014,51.73 %,54.09 %,1.30 %
+Slovenia,Parliamentary,2011,65.60 %,66.99 %,1.71 %
+Slovenia,Parliamentary,2008,63.10 %,65.04 %,1.70 %
+Slovenia,Parliamentary,2004,60.64 %,61.09 %,2.30 %
+Slovenia,Parliamentary,2000,70.36 %,72.33 %,3.30 %
+Slovenia,Parliamentary,1996,73.67 %,75.75 %,5.90 %
+Slovenia,Parliamentary,1992,85.90 %,85.52 %,7.00 %
+Spain,Parliamentary,2016,69.84 %,60.87 %,1.68 %
+Spain,Parliamentary,2015,73.20 %,64.39 %,1.64 %
+Spain,Parliamentary,2011,68.94 %,63.26 %,1.29 %
+Spain,Parliamentary,2008,75.32 %,69.30 %,1.80 %
+Spain,Parliamentary,2004,75.66 %,76.25 %,2.60 %
+Spain,Parliamentary,2000,68.71 %,73.79 %,0.70 %
+Spain,Parliamentary,1996,78.06 %,80.56 %,1.50 %
+Spain,Parliamentary,1993,77.05 %,77.43 %,1.30 %
+Spain,Parliamentary,1989,70.01 %,71.28 %,1.40 %
+Spain,Parliamentary,1986,70.37 %,73.72 %,2.10 %
+Spain,Parliamentary,1982,79.83 %,83.11 %,2.40 %
+Spain,Parliamentary,1979,68.13 %,72.32 %,1.80 %
+Spain,Parliamentary,1977,76.96 %,79.36 %,1.70 %
+Sweden,Parliamentary,2018,87.18 %,82.08 %,0.90 %
+Sweden,Parliamentary,2014,85.81 %,82.61 %,0.92 %
+Sweden,Parliamentary,2010,84.63 %,82.63 %,1.14 %
+Sweden,Parliamentary,2006,81.99 %,80.60 %,1.80 %
+Sweden,Parliamentary,2002,80.11 %,78.04 %,1.50 %
+Sweden,Parliamentary,1998,81.39 %,77.72 %,2.10 %
+Sweden,Parliamentary,1994,86.82 %,82.36 %,1.50 %
+Sweden,Parliamentary,1991,86.74 %,82.77 %,1.70 %
+Sweden,Parliamentary,1988,85.96 %,82.68 %,1.20 %
+Sweden,Parliamentary,1985,89.85 %,86.22 %,0.90 %
+Sweden,Parliamentary,1982,91.45 %,88.61 %,0.90 %
+Sweden,Parliamentary,1979,90.72 %,86.94 %,0.60 %
+Sweden,Parliamentary,1976,91.76 %,88.49 %,0.40 %
+Sweden,Parliamentary,1973,90.84 %,85.81 %,0.20 %
+Sweden,Parliamentary,1970,88.28 %,87.31 %,0.20 %
+Sweden,Parliamentary,1968,89.29 %,86.57 %,0.70 %
+Sweden,Parliamentary,1964,83.86 %,80.85 %,0.70 %
+Sweden,Parliamentary,1960,85.91 %,82.76 %,0.40 %
+Sweden,Parliamentary,1958,77.42 %,75.60 %,0.50 %
+Sweden,Parliamentary,1956,79.84 %,77.31 %,0.60 %
+Sweden,Parliamentary,1952,79.11 %,77.32 %,0.50 %
+Sweden,Parliamentary,1948,82.74 %,82.02 %,0.40 %
+Switzerland,Parliamentary,2015,48.51 %,38.63 %,1.62 %
+Switzerland,Parliamentary,2011,49.50 %,39.59 %,1.72 %
+Switzerland,Parliamentary,2007,48.28 %,39.79 %,1.80 %
+Switzerland,Parliamentary,2003,45.23 %,37.27 %,1.75 %
+Switzerland,Parliamentary,1999,43.30 %,34.94 %,1.70 %
+Switzerland,Parliamentary,1995,42.22 %,35.66 %,1.82 %
+Switzerland,Parliamentary,1991,46.05 %,39.67 %,1.58 %
+Switzerland,Parliamentary,1987,46.47 %,39.90 %,1.23 %
+Switzerland,Parliamentary,1983,48.91 %,40.79 %,1.51 %
+Switzerland,Parliamentary,1979,48.05 %,40.60 %,1.26 %
+Switzerland,Parliamentary,1975,52.36 %,43.62 %,1.25 %
+Switzerland,Parliamentary,1971,56.86 %,45.42 %,1.28 %
+Switzerland,Parliamentary,1967,65.72 %,53.21 %,1.77 %
+Switzerland,Parliamentary,1963,66.11 %,53.46 %,1.82 %
+Switzerland,Parliamentary,1959,68.46 %,58.11 %,1.94 %
+Switzerland,Parliamentary,1955,70.08 %,60.78 %,1.69 %
+Switzerland,Parliamentary,1951,71.20 %,62.98 %,1.92 %
+Switzerland,Parliamentary,1947,72.44 %,66.01 %,1.91 %
+Ukraine,Parliamentary,2014,52.42 %,49.98 %,
+Ukraine,Parliamentary,2012,57.40 %,55.94 %,1.97 %
+Ukraine,Parliamentary,2007,62.03 %,62.73 %,4.40 %
+Ukraine,Parliamentary,2006,67.19 %,67.20 %,1.77 %
+Ukraine,Parliamentary,2002,69.24 %,69.57 %,3.90 %
+Ukraine,Parliamentary,1998,70.65 %,68.11 %,3.10 %
+Ukraine,Parliamentary,1994,75.81 %,73.42 %,6.30 %
+United Kingdom,Parliamentary,2017,68.93 %,62.88 %,0.23 %
+United Kingdom,Parliamentary,2015,66.12 %,60.45 %,
+United Kingdom,Parliamentary,2010,65.77 %,61.06 %,1.03 %
+United Kingdom,Parliamentary,2005,61.36 %,58.32 %,0.30 %
+United Kingdom,Parliamentary,2001,59.38 %,57.56 %,0.40 %
+United Kingdom,Parliamentary,1997,71.46 %,69.39 %,0.20 %
+United Kingdom,Parliamentary,1992,77.83 %,75.36 %,0.10 %
+United Kingdom,Parliamentary,1987,75.42 %,75.17 %,0.10 %
+United Kingdom,Parliamentary,1983,72.81 %,71.70 %,0.20 %
+United Kingdom,Parliamentary,1979,76.00 %,75.06 %,0.40 %
+United Kingdom,Parliamentary,1974,72.93 %,77.88 %,0.10 %
+United Kingdom,Parliamentary,1970,72.15 %,71.15 %,0.10 %
+United Kingdom,Parliamentary,1966,75.96 %,73.77 %,0.20 %
+United Kingdom,Parliamentary,1964,77.17 %,75.13 %,0.10 %
+United Kingdom,Parliamentary,1959,78.71 %,77.46 %,
+United Kingdom,Parliamentary,1955,76.78 %,75.75 %,
+United Kingdom,Parliamentary,1951,81.89 %,81.36 %,
+United Kingdom,Parliamentary,1950,83.61 %,81.59 %,
+United Kingdom,Parliamentary,1945,72.55 %,70.05 %,
+Yugoslavia FR/Union of Serbia and Montenegro,Parliamentary,2003,58.75 %,63.97 %,1.30 %
+Yugoslavia FR/Union of Serbia and Montenegro,Parliamentary,2000,64.17 %,,4.50 %
+Yugoslavia FR/Union of Serbia and Montenegro,Parliamentary,1996,53.29 %,52.19 %,
+Yugoslavia FR/Union of Serbia and Montenegro,Parliamentary,1993,67.39 %,65.11 %,5.50 %
+Yugoslavia SFR (1943-1992),Parliamentary,1992,56.07 %,54.26 %,11.00 %
+Yugoslavia SFR (1943-1992),Parliamentary,1953,89.37 %,84.32 %,
+Yugoslavia SFR (1943-1992),Parliamentary,1950,91.94 %,85.82 %,
+Yugoslavia SFR (1943-1992),Parliamentary,1945,88.66 %,73.16 %,

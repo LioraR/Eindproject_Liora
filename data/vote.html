@@ -8,15 +8,21 @@
     <meta charset="utf-8">
     <title>Line chart</title>
     <style>
-      .names {
-      fill: none;
-      stroke: #fff;
-      stroke-linejoin: round;
+      .container {
+        position: relative;
+        text-align: center;
+        color: white;
+      }
+
+      .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
       }
     </style>
     <link rel="stylesheet" type="text/css" href="vote.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
 
     <script src="https://d3js.org/d3.v5.min.js"></script>
     <script src="http://d3js.org/topojson.v1.min.js"></script>
@@ -34,8 +40,8 @@
               <div class="collapse navbar-collapse" id="navbar">
                   <ul class="nav navbar-nav">
                       <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
-                      <li><a data-toggle="collapse" href="#explanation">Voter Turnout</a></li>
-                      <li><a data-toggle="collapse" href="#references">references</a></li>
+                      <li><a data-toggle="collapse" href="/drawings.html">Voter Turnout</a></li>
+                      <li><a data-toggle="collapse" href="/references.html">references</a></li>
                   </ul>
                   <ul class="nav navbar-nav navbar-right">
                       <li><a href="https://github.com/LioraR/Eindproject_Liora">Liora Rosenberg</a></li>
@@ -44,79 +50,78 @@
             </div>
       </nav>
 
+      <!-- <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#news">News</a>
+        <div class="dropdown">
+          <button class="dropbtn">Dropdown
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="/drawings.html">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
+      </div> -->
+
       <!-- make explanation -->
-      <div class="collapse navbar-collapse">
+      <!--<div class="collapse navbar-collapse">
         <div id="home" class="nav navbar-nav">
           <h3>HOME</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
+        </div> -->
 
 
-    <!-- make homepage-->
-    <div class="p-3 mb-2 bg-info text-white">
-
-      <p style="color:blue;font-size:160%;text-align:center;">Voter Turnout</p>
-
-
-      <div class="row">
-        <div class="container-fluit">
-          <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-             Year <span class="caret"></span>
-        </button>
-          <ul class="dropdown-menu" role="menu">
-            <li><a class="m" value="2007" href="#">2007</a></li>
-            <li><a class="m" value="2008" href="#">2008</a></li>
-            <li><a class="m" value="2009" href="#">2009</a></li>
-            <li><a class="m" value="2010" href="#">2010</a></li>
-            <li><a class="m" value="2011" href="#">2011</a></li>
-            <li><a class="m" value="2012" href="#">2012</a></li>
-            <li><a class="m" value="2013" href="#">2013</a></li>
-            <li><a class="m" value="2014" href="#">2014</a></li>
-            <li><a class="m" value="2015" href="#">2015</a></li>
-          </ul>
-        </div>
-        <div class="col-md-6" style="background-color: white"><h2>EU Voter Turnout</h2><svg id="map" width="100%" height="550"><svg></div>
-          <div class="md-2"></div>
-        <div class="col-md-5 col-md-offset-1" style="background-color: white"><h2>EU Voter Turnout per country</h2><svg id="barChart" width="100%" height="550"><svg></div>
+  <!-- create homepage with image -->
+  <!--<div id="home" class="nav navbar-nav"> -->
+    <div class="container">
+      <img src="eu.jpg" alt="EU" style="width:100%;">
+      <!--<div class="centered">explanation EU</div>
+      <div class="centered">explanation Voter Turnout</div>
+      <div class="centered">explanation website</div> -->
+      <div class="centered"><button onclick="button()" id="Button">Explanation</button></div>
+      <!--<button onclick="downFunction()" id="downButton">Go Down</button> -->
     </div>
-
-    <div class="row">
-      <div class="col-md-12" style="p-3 mb-2 bg-info text-white"><svg id="map" width="100%" height="150"><svg></div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-6" style="background-color: white"><h2>Amount of Votes </h2><svg id="pieChart" width="100%" height="550"><svg></div>
-      <div class="col-md-5 col-md-offset-1" style="background-color: white"><h2>Correlation Freedom and Turnout</h2><svg id="scatterPlot" width="100%" height="550"><svg></div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-12" style="p-3 mb-2 bg-info text-white"><svg id="map" width="100%" height="150"><svg></div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-6" style="background-color: white"><h2>Freedom House</h2><svg id="lineChart" width="100%" height="550"><svg></div>
-      <div class="col-md-5 col-md-offset-1" style="background-color: white"><h2>Voter Turnout</h2><svg id="lineChart2" width="100%" height="550"><svg></div>
-    </div>
-
-
-  </div>
+  <!--</div> -->
 
 
 
+<h1>EU Voter Turnout </h1>
+Elections to the European Parliament have been unable to capture the public’s interest— turnout remains far lower than most national elections and many who do vote appear more concerned with sending messages of approval to national political parties than electing representatives at the EU level.
 
-  <div id="explanation" class="nav navbar-nav">
-    <h3>Menu 1</h3>
-    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-  </div>
+<script>
 
-  <div id="references" class="nav navbar-nav">
+function button() {
+    document.documentElement.scrollTop = 800;
+}
+</script>
+
+
+
+  <!--<script>
+  // when the user clicks on the button, scroll to the first visualization
+  // scroll down
+
+  document.documentElement.scrollTop = 1630;
+  function downFunction() {
+      document.documentElement.scrollTop = 800;
+  }
+  </script> -->
+
+
+
+
+  <!--<div id="references" class="nav navbar-nav">
     <h3>Menu 2</h3>
     <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-  </div>
+  </div> -->
 
-    <!-- own writen js -->
-    <script src="d3-tip.js"></script>
-    <script src="voteEU.js" charset="utf-8"></script>
+  <!-- own writen js -->
+  <script src="d3-tip.js"></script>
+  <script src="voteEU.js" charset="utf-8"></script>
+
+
 
   </body>
 </html>
