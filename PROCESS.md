@@ -25,10 +25,10 @@ Ik heb aan mijn scatterplot gemaakt en heb een navbar gemaakt. Wel werkt de navb
 Vrijdag:
 Ik heb de null-data verwijderd uit mijn lijn en ben bezig geweest om text-labels toe te voegen aan de linecharts en scatterplot. Daarnaast heb ik nog een linechart gemaakt.
 
-Zaterdag + zondag: zorg dat de invalid votes ook wordt ingeladen
+Zaterdag + zondag: Ik heb gezocht dat de navbar goed werkt en er drie pagina's zijn.
 
 Week 3
-Maandag: zorg dat de navbar goed doorlinked
+Maandag: Ik heb de invalid votes ingeladen en ik ben begonnen om een dropdown menu te maken voor de jaren en daarmee de kaart up te date.
 
 Dinsdag: slider voor jaren fixen zodat de kaart upgedate wordt
 
