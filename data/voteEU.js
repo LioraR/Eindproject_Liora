@@ -20,15 +20,18 @@ window.onload = function() {
     var data = "europe.json"
     var freedomHouse = "freedomHouse.json"
     var invalid = "invalid.json"
+    var vap = "vap.json"
     //var final = "final.json"
-    var requests = [d3.json(vote), d3.json(data), d3.json(freedomHouse), d3.json(invalid)];
+    var requests = [d3.json(vote), d3.json(data), d3.json(freedomHouse), d3.json(invalid), d3.json(vap)];
 
     Promise.all(requests).then(function(response) {
         var vote = response[0];
         var data = response[1];
         var freedomHouse = response[2];
         var invalid = response[3]
+        var vap = response[4]
         //var final = response[3];
+        console.log(vap)
 
         console.log(freedomHouse)
         //console.log(system)
@@ -85,17 +88,6 @@ window.onload = function() {
         svg.call(tip);
         makeMap(data, vote);
 
-
-
-
-
-
-
-              
-
-
-        // Create a dropdown
-    var dropdown = d3.select("#fruitDropdown")
 
 
 
@@ -206,7 +198,7 @@ window.onload = function() {
                         });
 
             var color2 = d3.scaleThreshold()
-                .domain([1,2,3])
+                .domain([1, 2, 3])
                 .range(["rgb(135,206,250)","rgb(205,17,17)", "rgb(3,19,43)"]);
 
             var sv = d3.select("#pieChart")
@@ -261,13 +253,12 @@ window.onload = function() {
               .style("fill", function(d, i) { return color2(i); }
             )
 
-            // add text
-
+            // add text to legend
             var names = ["Invalid Votes", "Voter Turnout", "Not Voted"]
 
             // make legend
             legend2 = sv.selectAll("pieChart")
-              .data([1,2,3]).enter()
+              .data([1, 2, 3]).enter()
               .append("g")
               .attr("class", ".legend")
               .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
@@ -281,7 +272,9 @@ window.onload = function() {
                 .attr("y", 0)
                 .attr("width", 32)
                 .attr("height", 20)
-                .style("fill", d => color2(d))
+                //.style("fill", d => color2(d))
+                .style("fill", function(d, i) { return color2(i); })
+
 
             // add text to legend
             sv.selectAll("textlegend")

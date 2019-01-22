@@ -1,0 +1,148 @@
+Country,Election type,Year,Voter Turnout,VAP Turnout
+Austria,EU Parliament,2014,45.39 %,39.77 %
+Austria,EU Parliament,2009,45.97 %,41.32 %
+Austria,EU Parliament,2004,42.43 %,39.95 %
+Austria,EU Parliament,1999,49.01 %,46.11 %
+Austria,EU Parliament,1996,67.73 %,63.64 %
+Belgium,EU Parliament,2014,89.64 %,86.82 %
+Belgium,EU Parliament,2009,90.39 %,83.94 %
+Belgium,EU Parliament,2004,90.81 %,84.56 %
+Belgium,EU Parliament,1999,91.05 %,84.51 %
+Belgium,EU Parliament,1994,90.66 %,84.03 %
+Belgium,EU Parliament,1989,90.73 %,84.98 %
+Belgium,EU Parliament,1984,92.09 %,87.35 %
+Belgium,EU Parliament,1979,91.36 %,86.69 %
+Bulgaria,EU Parliament,2014,36.10 %,41.07 %
+Bulgaria,EU Parliament,2009,38.92 %,43.59 %
+Bulgaria,EU Parliament,2007,29.22 %,31.27 %
+Croatia,EU Parliament,2014,25.24 %,26.39 %
+Croatia,EU Parliament,2013,20.84 %,22.70 %
+Cyprus,EU Parliament,2014,43.97 %,31.49 %
+Cyprus,EU Parliament,2009,59.40 %,38.99 %
+Cyprus,EU Parliament,2004,72.50 %,47.16 %
+Czech Republic,EU Parliament,2014,18.20 %,17.57 %
+Czech Republic,EU Parliament,2009,28.22 %,29.68 %
+Czech Republic,EU Parliament,2004,28.30 %,30.87 %
+Denmark,EU Parliament,2014,56.32 %,54.21 %
+Denmark,EU Parliament,2009,59.54 %,56.29 %
+Denmark,EU Parliament,2004,47.89 %,46.37 %
+Denmark,EU Parliament,1999,50.39 %,49.12 %
+Denmark,EU Parliament,1994,52.92 %,52.38 %
+Denmark,EU Parliament,1989,46.20 %,45.92 %
+Denmark,EU Parliament,1984,52.40 %,53.27 %
+Denmark,EU Parliament,1979,47.80 %,48.45 %
+Estonia,EU Parliament,2014,36.52 %,32.55 %
+Estonia,EU Parliament,2009,43.90 %,37.84 %
+Estonia,EU Parliament,2004,26.83 %,22.34 %
+Finland,EU Parliament,2014,40.98 %,41.66 %
+Finland,EU Parliament,2009,40.48 %,39.92 %
+Finland,EU Parliament,2004,39.43 %,41.22 %
+Finland,EU Parliament,1999,30.14 %,31.64 %
+Finland,EU Parliament,1996,57.60 %,60.94 %
+France,EU Parliament,2014,42.43 %,38.82 %
+France,EU Parliament,2009,40.63 %,35.92 %
+France,EU Parliament,2004,42.76 %,37.52 %
+France,EU Parliament,1999,46.76 %,41.37 %
+France,EU Parliament,1994,52.76 %,46.68 %
+France,EU Parliament,1989,48.70 %,
+France,EU Parliament,1984,56.70 %,
+France,EU Parliament,1979,60.70 %,
+Germany,EU Parliament,2014,48.14 %,44.57 %
+Germany,EU Parliament,2009,43.27 %,39.53 %
+Germany,EU Parliament,2004,43.00 %,39.84 %
+Germany,EU Parliament,1999,45.21 %,42.02 %
+Germany,EU Parliament,1994,60.02 %,56.12 %
+Germany,EU Parliament,1989,62.30 %,
+Germany,EU Parliament,1984,56.80 %,
+Germany,EU Parliament,1979,65.70 %,
+Greece,EU Parliament,2014,59.97 %,67.53 %
+Greece,EU Parliament,2009,52.63 %,59.18 %
+Greece,EU Parliament,2004,63.22 %,70.33 %
+Greece,EU Parliament,1999,71.49 %,78.68 %
+Greece,EU Parliament,1994,73.18 %,84.98 %
+Greece,EU Parliament,1989,79.90 %,89.78 %
+Greece,EU Parliament,1984,77.20 %,84.31 %
+Greece,EU Parliament,1981,78.60 %,82.96 %
+Hungary,EU Parliament,2014,28.97 %,28.96 %
+Hungary,EU Parliament,2009,36.31 %,36.00 %
+Hungary,EU Parliament,2004,38.50 %,38.37 %
+Ireland,EU Parliament,2014,52.44 %,47.45 %
+Ireland,EU Parliament,2009,57.57 %,54.19 %
+Ireland,EU Parliament,2004,58.58 %,62.52 %
+Ireland,EU Parliament,1999,50.21 %,54.72 %
+Ireland,EU Parliament,1994,43.98 %,47.92 %
+Ireland,EU Parliament,1989,68.30 %,73.69 %
+Ireland,EU Parliament,1984,47.60 %,51.97 %
+Ireland,EU Parliament,1979,63.60 %,67.06 %
+Italy,EU Parliament,2014,57.22 %,57.32 %
+Italy,EU Parliament,2009,65.05 %,65.11 %
+Italy,EU Parliament,2004,71.72 %,75.37 %
+Italy,EU Parliament,1999,69.76 %,74.36 %
+Italy,EU Parliament,1994,73.60 %,78.83 %
+Italy,EU Parliament,1989,81.00 %,87.17 %
+Italy,EU Parliament,1984,83.40 %,89.62 %
+Italy,EU Parliament,1979,84.90 %,90.19 %
+Latvia,EU Parliament,2014,30.24 %,25.19 %
+Latvia,EU Parliament,2009,53.69 %,43.20 %
+Latvia,EU Parliament,2004,41.34 %,31.30 %
+Lithuania,EU Parliament,2014,47.35 %,43.15 %
+Lithuania,EU Parliament,2009,20.98 %,19.48 %
+Lithuania,EU Parliament,2004,48.38 %,45.32 %
+Luxembourg,EU Parliament,2014,85.55 %,55.76 %
+Luxembourg,EU Parliament,2009,90.76 %,57.09 %
+Luxembourg,EU Parliament,2004,91.35 %,60.07 %
+Luxembourg,EU Parliament,1999,87.27 %,60.84 %
+Luxembourg,EU Parliament,1994,88.55 %,63.93 %
+Luxembourg,EU Parliament,1989,87.40 %,65.44 %
+Luxembourg,EU Parliament,1984,88.80 %,68.49 %
+Luxembourg,EU Parliament,1979,88.90 %,69.20 %
+Malta,EU Parliament,2014,74.80 %,77.84 %
+Malta,EU Parliament,2009,78.79 %,78.56 %
+Malta,EU Parliament,2004,82.39 %,82.39 %
+Netherlands,EU Parliament,2014,37.32 %,36.35 %
+Netherlands,EU Parliament,2009,36.75 %,34.68 %
+Netherlands,EU Parliament,2004,39.26 %,38.32 %
+Netherlands,EU Parliament,1999,30.02 %,29.42 %
+Netherlands,EU Parliament,1994,35.69 %,35.21 %
+Netherlands,EU Parliament,1989,47.20 %,47.02 %
+Netherlands,EU Parliament,1984,50.60 %,50.61 %
+Netherlands,EU Parliament,1979,58.10 %,58.43 %
+Poland,EU Parliament,2014,23.82 %,23.62 %
+Poland,EU Parliament,2009,24.53 %,24.04 %
+Poland,EU Parliament,2004,20.87 %,21.49 %
+Portugal,EU Parliament,2014,33.67 %,37.56 %
+Portugal,EU Parliament,2009,36.78 %,41.55 %
+Portugal,EU Parliament,2004,38.60 %,40.59 %
+Portugal,EU Parliament,1999,39.93 %,44.22 %
+Portugal,EU Parliament,1994,35.54 %,39.79 %
+Portugal,EU Parliament,1989,51.20 %,57.76 %
+Portugal,EU Parliament,1987,72.40 %,74.88 %
+Romania,EU Parliament,2014,32.44 %,33.50 %
+Romania,EU Parliament,2009,27.67 %,28.09 %
+Romania,EU Parliament,2007,29.47 %,26.91 %
+Slovakia,EU Parliament,2014,13.05 %,13.14 %
+Slovakia,EU Parliament,2009,19.64 %,19.51 %
+Slovakia,EU Parliament,2004,16.97 %,17.45 %
+Slovenia,EU Parliament,2014,24.55 %,25.64 %
+Slovenia,EU Parliament,2009,28.33 %,28.83 %
+Slovenia,EU Parliament,2004,28.35 %,31.87 %
+Spain,EU Parliament,2014,43.81 %,41.21 %
+Spain,EU Parliament,2009,44.90 %,41.89 %
+Spain,EU Parliament,2004,45.14 %,45.67 %
+Spain,EU Parliament,1999,63.05 %,67.64 %
+Spain,EU Parliament,1994,59.14 %,62.72 %
+Spain,EU Parliament,1989,54.60 %,57.11 %
+Spain,EU Parliament,1987,68.90 %,71.62 %
+Sweden,EU Parliament,2014,51.07 %,49.37 %
+Sweden,EU Parliament,2009,45.53 %,46.76 %
+Sweden,EU Parliament,2004,37.85 %,37.27 %
+Sweden,EU Parliament,1999,38.84 %,38.05 %
+Sweden,EU Parliament,1995,41.63 %,40.44 %
+United Kingdom,EU Parliament,2014,35.40 %,33.20 %
+United Kingdom,EU Parliament,2009,34.48 %,32.05 %
+United Kingdom,EU Parliament,2004,39.21 %,37.89 %
+United Kingdom,EU Parliament,1999,24.02 %,24.08 %
+United Kingdom,EU Parliament,1994,36.43 %,36.13 %
+United Kingdom,EU Parliament,1989,36.21 %,36.87 %
+United Kingdom,EU Parliament,1984,32.57 %,33.69 %
+United Kingdom,EU Parliament,1979,32.34 %,33.29 %
