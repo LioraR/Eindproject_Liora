@@ -13,7 +13,41 @@ var margin = { top: 50, right: 50, bottom: 50, left: 50 },
 
               // make title
             //  d3.select("head").append("title").text("Voter Turnout")
+
+var test;
+var myFunction;
+
 window.onload = function() {
+
+// open dropdown menu
+  function hoi() {
+document.getElementById("myDropdown").classList.toggle("show");
+}
+myFunction = hoi;
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+
+if (!event.target.matches('.dropbtn')) {
+  var dropdowns = document.getElementsByClassName("dropdown-content");
+  var i;
+  for (i = 0; i < dropdowns.length; i++) {
+    var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+      openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+// Create a dropdown
+//var dropdown.append(years)
+
+// function getSelectValue() {
+// d3.select("#map > *").remove()
+// var selectedValue = document.getElementById("myDropdown").value;
+// }
+// getSelectValue()
 
     // distract jasons
     var vote = "EUturnout.json"
@@ -41,26 +75,7 @@ window.onload = function() {
         var format = d3.format(",");
 
 
-        //countery = "Belgium"
 
-
-        // create tooltips
-        var tip = d3.tip()
-            .attr('class', 'd3-tip')
-            .offset([-10, 0])
-            .html(function(d) {
-
-              var votes = vote[d.properties.NAME]["2014"]
-              //var votes = Object.values(vote[d.properties.NAME])
-              console.log(votes)
-
-              if (votes !== undefined) {
-                // only select countries were data exist
-                return "<strong>Country: </strong><span class='details'>" + d.properties.NAME + "<br></span>" +
-                       "<strong>Voter Turnout: </strong><span class='details'>" + votes + "</span>";
-                }
-
-            })
 
         // the colors were picked at this website: http://colorbrewer2.org/#type=sequential&scheme=Blues&n=9
         var color = d3.scaleThreshold()
@@ -85,16 +100,53 @@ window.onload = function() {
 
         var path = d3.geoPath().projection(projection);
 
-        svg.call(tip);
         makeMap(data, vote);
 
 
 
 
 
+        function xTest(jaar){
+          console.log(jaar);
+          console.log(data);
+          console.log(vote);
 
 
-        function makeMap(data, vote) {
+
+          makeMap(data, vote, jaar)
+        }
+        test = xTest;
+
+        function makeMap(data, vote, jaar) {
+
+          // create tooltips
+          var tip = d3.tip()
+              .attr('class', 'd3-tip')
+              .offset([-10, 0])
+              .html(function(d) {
+
+                var votes = vote[d.properties.NAME][jaar]
+                //var votes = Object.values(vote[d.properties.NAME])
+                console.log(votes)
+
+                if (votes !== undefined) {
+                  // only select countries were data exist
+                  return "<strong>Country: </strong><span class='details'>" + d.properties.NAME + "<br></span>" +
+                         "<strong>Voter Turnout: </strong><span class='details'>" + votes + "</span>";
+                  }
+
+              })
+
+              svg.call(tip);
+
+
+
+            if (jaar == undefined){
+              jaar = "2014";
+            } else {
+              // verwijder map
+              d3.select("#map > *").remove()
+            }
             var IndexbyCountry = {};
 
             var europe = topojson.feature(data, data.objects.europe).features
@@ -106,8 +158,8 @@ window.onload = function() {
                 .attr("d", path)
                 .style("fill", function(d) {
                   // if a country is not in the dataset make it white
-                  if ((vote[d.properties.NAME] !== undefined) && (vote[d.properties.NAME]["2014"] !== undefined)) {
-                    return (color(vote[d.properties.NAME]["2014"]));
+                  if ((vote[d.properties.NAME] !== undefined) && (vote[d.properties.NAME][jaar] !== undefined)) {
+                    return (color(vote[d.properties.NAME][jaar]));
                 }
                     return "#A9A9A9"
                 })
@@ -139,7 +191,7 @@ window.onload = function() {
                     scatterPlot(country)
                     barChart(country)
                     lineChart(country)
-                    pieChart(country)
+                    pieChart(country, jaar)
                     lineChartVote(country)
                })
 
@@ -178,12 +230,19 @@ window.onload = function() {
             //var data = [x, 100 - x]
             //voterTurnout = data["Voter Turnout"];
 
-            function pieChart(country) {
+            function pieChart(country, jaar) {
 
-            var invalidVote = invalid[country]["2014"]
+              if (jaar == undefined){
+                jaar = "2014";
+              } else {
+                // verwijder piechart
+                d3.select("#pieChart > *").remove()
+              }
+
+            var invalidVote = invalid[country][jaar]
             console.log(invalidVote)
-            var turnout = vote[country]["2014"];
-            console.log(vote[country]["2014"])
+            var turnout = vote[country][jaar];
+            console.log(vote[country][jaar])
             var data = [turnout, invalidVote, 100 - turnout - invalidVote]
 
             radius = height /2;
@@ -254,7 +313,7 @@ window.onload = function() {
             )
 
             // add text to legend
-            var names = ["Invalid Votes", "Voter Turnout", "Not Voted"]
+            var names = ["Voter Turnout", "Invalid Votes", "Not Voted"]
 
             // make legend
             legend2 = sv.selectAll("pieChart")
@@ -302,10 +361,31 @@ window.onload = function() {
         //console.log(Object.values(data))
         //console.log(data["Voter Turnout"])
 
-        var years = Object.keys(vote[country])
+        // var years = Object.keys(vap[country])
+        // console.log(years)
+        //
+        // years.forEach(function(y, i){
+        //   if (vap[country][years[i]] == null) {
+        //     delete vap[country][years[i]]
+        //     console.log(vap[country][years[i]])
+        //   }
+        // })
+
+
+
+        var years = Object.keys(vap[country])
         console.log(years)
-        var turnout = Object.values(vote[country])
+        //var turnout = Object.values(vote[country])
+        //console.log(turnout)
+        var turnout = vote[country]["2014"]
         console.log(turnout)
+        console.log(Object.values(vap[country]))
+        //var vapTurnout = Object.values(vap[country])
+        //console.log(vapTurnout)
+        var vapTurnout = vap[country]["2014"]
+        console.log(vapTurnout)
+        dataset = [turnout, vapTurnout]
+        console.log(dataset)
 
         // dimensions chart
         barWidth = (width - 2 * margin.top) / Object.keys(data).length;
@@ -352,7 +432,8 @@ window.onload = function() {
       //console.log(data)
       //console.log(Object.values(data))
       g.selectAll(".bar")
-        .data(turnout)
+        //.data(turnout)
+        .data(dataset)
         .enter().append("rect")
         .style('fill', function(d) {
             return "rgb(0, 0, 10)";
@@ -380,6 +461,7 @@ window.onload = function() {
 
     // make scatterplot from freedomHouse and turnout
     function scatterPlot(country) {
+
 
       // remove null data in dataset
       var years = Object.keys(vote[country])

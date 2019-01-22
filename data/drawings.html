@@ -38,20 +38,30 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="https://github.com/LioraR/Eindproject_Liora">Liora Rosenberg</a></li>
                 </ul>
+                <!--<ul class="container">
+                  <li><p style="color:blue;font-size:160%;text-align:center;">Voter Turnout</p></li>
+                </ul> -->
             </div>
           </div>
     </nav>
 
     <!-- make homepage-->
 
-      <p style="color:blue;font-size:160%;text-align:center;">Voter Turnout</p>
+
     <div class="row">
     <div class="container-fluit">
       <div class="dropdown2">
-        <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+        <button onclick="myFunction()" class="dropbtn">Years</button>
         <div id="myDropdown" class="dropdown-content2">
-          <a href="#">2007</a>
-          <a href="#">2008</a>
+          <a href="#" onclick="test('2014')">2014</a>
+          <!--<a href="#" onclick="test('2009');test('2013')">2009</a>-->
+          <a href="#" onclick="test('2009')">2009</a>
+          <a href="#" onclick="test('2004')">2004</a>
+          <a href="#" onclick="test('1999')">1999</a>
+          <a href="#" onclick="test('1994')">1994</a>
+          <a href="#" onclick="test('1989')">1989</a>
+          <a href="#" onclick="test('1984')">1984</a>
+          <a href="#" onclick="test('1981')">1981</a>
         </div>
       </div>
     </div>
@@ -76,34 +86,6 @@
         </div>
         </div> -->
 
-        <script>
-                function myFunction() {
-              document.getElementById("myDropdown").classList.toggle("show");
-            }
-
-            // Close the dropdown menu if the user clicks outside of it
-    window.onclick = function(event) {
-      if (!event.target.matches('.dropbtn')) {
-        var dropdowns = document.getElementsByClassName("dropdown-content");
-        var i;
-        for (i = 0; i < dropdowns.length; i++) {
-          var openDropdown = dropdowns[i];
-          if (openDropdown.classList.contains('show')) {
-            openDropdown.classList.remove('show');
-          }
-        }
-      }
-    }
-
-
-
-    // Create a dropdown
-    //var dropdown.append(years)
-
-    // on change functie
-
-
-        </script>
 
 
     <div class="col-md-6" style="background-color: white"><h2>EU Voter Turnout</h2><svg id="map" width="100%" height="550"><svg></div>
