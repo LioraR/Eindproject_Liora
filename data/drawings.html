@@ -48,7 +48,7 @@
     <div class="row">
     <div class="container-fluit">
       <div class="dropdown2">
-        <button onclick="myFunction()" class="dropbtn">Dropdown</button> 
+        <button onclick="myFunction()" class="dropbtn">Dropdown</button>
         <div id="myDropdown" class="dropdown-content2">
           <a href="#">2007</a>
           <a href="#">2008</a>
@@ -77,23 +77,32 @@
         </div> -->
 
         <script>
-            function myFunction() {
-          document.getElementById("myDropdown").classList.toggle("show");
-        }
+                function myFunction() {
+              document.getElementById("myDropdown").classList.toggle("show");
+            }
 
-        // Close the dropdown menu if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
+            // Close the dropdown menu if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
       }
     }
-  }
-}
+
+
+
+    // Create a dropdown
+    //var dropdown.append(years)
+
+    // on change functie
+
+
         </script>
 
 

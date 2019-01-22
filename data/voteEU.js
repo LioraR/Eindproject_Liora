@@ -85,6 +85,23 @@ window.onload = function() {
         svg.call(tip);
         makeMap(data, vote);
 
+
+
+
+
+
+
+              
+
+
+        // Create a dropdown
+    var dropdown = d3.select("#fruitDropdown")
+
+
+
+
+
+
         function makeMap(data, vote) {
             var IndexbyCountry = {};
 
@@ -246,7 +263,7 @@ window.onload = function() {
 
             // add text
 
-            var names = ["Voter Turnout", "Invalid Votes", "Not Voted"]
+            var names = ["Invalid Votes", "Voter Turnout", "Not Voted"]
 
             // make legend
             legend2 = sv.selectAll("pieChart")
@@ -256,11 +273,29 @@ window.onload = function() {
               .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
 
             legend2.append("rect")
-                .attr("x", 300)
-                .attr("y", 250)
+                //.attr("x", 300)
+                //.attr("y", 250)
+                //.attr("width", 32)
+                //.attr("height", 20)
+                .attr("x", width - 850)
+                .attr("y", 0)
                 .attr("width", 32)
                 .attr("height", 20)
                 .style("fill", d => color2(d))
+
+            // add text to legend
+            sv.selectAll("textlegend")
+                .data(names).enter()
+                .append("text")
+                .text(function(d) {
+                  return d;
+                })
+                .attr("x", width - 800)
+                .attr("y", function(d, i) {
+
+              return i * 20 + 15;
+
+            })
 
 
             }
