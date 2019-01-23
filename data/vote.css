@@ -105,6 +105,10 @@ pointer-events: none;
   overflow: hidden;
   background-color: #333;
   font-family: Arial;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 }
 
 /* Links inside the navbar */
@@ -116,6 +120,9 @@ pointer-events: none;
   padding: 14px 16px;
   text-decoration: none;
 }
+
+
+
 
 /* The dropdown container */
 .dropdown {
