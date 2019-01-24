@@ -126,9 +126,21 @@ if (!event.target.matches('.dropbtn')) {
           }
           console.log(turnout)
 
-          barChart(jaar, turnout)
+          vapTurnout = []
+          for (var i = 0; i<allCountries.length; i++) {
+            vapTurnout.push([allCountries[i], vap[allCountries[i]][jaar]])
+            //console.log(i)
+          }
+          console.log(vapTurnout)
+
+
+          barChart(jaar, vapTurnout)
         }
         test = xTest;
+
+
+
+
 
         function makeMap(data, vote, jaar) {
 
@@ -383,14 +395,37 @@ if (!event.target.matches('.dropbtn')) {
 
 
 
-        function barChart(jaar, turnout) {
 
-          console.log(turnout)
+            jaar = "2014";
+
+
+            vapTurnout = []
+            //console.log(Object.keys(vote))
+            allCountries = Object.keys(vote)
+            for (var i = 0; i<allCountries.length; i++) {
+              vapTurnout.push([allCountries[i], vap[allCountries[i]][jaar]])
+              console.log(i)
+            }
+            console.log(vapTurnout)
+
+
+
+            barChart("2014", vapTurnout)
+
+
+
+
+
+        function barChart(jaar, vapTurnout) {
+
+          console.log(vapTurnout)
 
           if (jaar == undefined){
             jaar = "2014";
           }
-          //pieCountry = country
+
+
+
 
         //var data = vote[country]
         //console.log(Object.values(data))
@@ -427,13 +462,15 @@ if (!event.target.matches('.dropbtn')) {
         //console.log(Object.values(vap["Germany"]))
         //var vapTurnout = Object.values(vap[country])
         //console.log(vapTurnout)
-        var vapTurnout = vap["Germany"][jaar]
-        console.log(vapTurnout)
+
+        //var vapTurnout = vap["Germany"][jaar]
+        //console.log(vapTurnout)
+
         //dataset = [turnout]
         //console.log(dataset)
 
         // dimensions chart
-        barWidth = (width - 2 * margin.top) / Object.keys(data).length;
+        barWidth = (width - 2 * margin.top) / Object.keys(vapTurnout).length;
 
         // create svg barchart
         g = d3.select("#barChart")
@@ -460,12 +497,11 @@ if (!event.target.matches('.dropbtn')) {
           //.domain(sample.map((s) => s.language))
 
       //var xScale = d3.scaleLinear()
-      var xScale =d3.scaleOrdinal()
-      //var xScale = d3.scaleBand()
+      //var xScale =d3.scaleOrdinal()
+      var xScale = d3.scaleBand()
           //.domain([0, allCountries.length])
           .range([margin.left, width/2 - (3*margin.right)])
-
-      xScale.domain(turnout.map(function(d) { return d[0]; }));
+          .domain(vapTurnout.map(function(d) { return d[0]; }));
 
       // voter percentage on y-scale
       var yScale = d3.scaleLinear()
@@ -489,7 +525,7 @@ if (!event.target.matches('.dropbtn')) {
       console.log(xScale("Nederland"))
       //console.log(Object.values(data))
       g.selectAll(".bar")
-        .data(turnout)
+        .data(vapTurnout)
         //.data(dataset)
         .enter().append("rect")
         .style('fill', function(d) {
@@ -502,13 +538,13 @@ if (!event.target.matches('.dropbtn')) {
           //return height - margin.top - yScale(d)
         })
         .attr("x", function(d, i) {
-          console.log(d)
+          console.log(d[0])
           //return margin.left + i * width / b.length;
           //return xScale(i) + margin.left;
-          return xScale((d[0])[i])
+          return xScale((d[0])) * 0.4*i + margin.left
           // /14
         })
-        .attr('width', barWidth/25)
+        .attr('width', barWidth/3)
         .attr('height', function(d){
           //return yScale(d)
           return height - margin.top - yScale(d[1])
