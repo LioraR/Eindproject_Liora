@@ -33,7 +33,7 @@
                 <ul class="nav navbar-nav">
                     <li><a data-toggle="tab" href="/vote.html">Home</a></li>
                     <li class="active"><a data-toggle="collapse" href="/drawings.html">Voter Turnout</a></li>
-                    <li><a data-toggle="collapse" href="/references.html">references</a></li>
+                    <li><a data-toggle="collapse" href="/references.html">References</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="https://github.com/LioraR/Eindproject_Liora">Liora Rosenberg</a></li>
@@ -66,9 +66,9 @@
       </div>
 
     <div class="btn pull-right">
-        <form>
-            <label><input type="radio" name="dataset" value='0' checked> Turnout</label>
-            <label><input type="radio" name="dataset" value='1'> VAP Turnout</label>
+        <form class="radioButtons">
+            <label><input type="radio" name="dataset" value='0' id="turnoutRadioButton" checked> Turnout</label>
+            <label><input type="radio" name="dataset" value='1' id="VAPTurnoutRadioButton"> VAP Turnout</label>
         </form>
     </div>
     </div>
@@ -114,8 +114,8 @@
     </div>
 
     <div class="row">
-      <div class="col-md-6" style="background-color: white"><h2>Freedom House</h2><svg id="lineChart" width="100%" height="550"><svg></div>
-      <div class="col-md-5 col-md-offset-1" style="background-color: white"><h2>Voter Turnout</h2><svg id="lineChart2" width="100%" height="550"><svg></div>
+      <div class="col-md-6" style="background-color: white" id="lineChart"><h2>Freedom House</h2><svg id="testID" width="100%" height="550"><svg></div>
+      <div class="col-md-5 col-md-offset-1" style="background-color: white" id="lineChart2"><h2>Voter Turnout</h2><svg id="testID2" width="100%" height="550"><svg></div>
     </div>
 
 

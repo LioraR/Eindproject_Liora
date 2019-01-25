@@ -61,6 +61,8 @@ if (!event.target.matches('.dropbtn')) {
     var requests = [d3.json(vote), d3.json(data), d3.json(freedomHouse), d3.json(invalid), d3.json(vap)];
 
     Promise.all(requests).then(function(response) {
+
+        var currentYear = "2014";
         var vote = response[0];
         var data = response[1];
         var freedomHouse = response[2];
@@ -109,13 +111,12 @@ if (!event.target.matches('.dropbtn')) {
 
 
         function xTest(jaar){
-          console.log(jaar);
-          console.log(data);
-          console.log(vote);
 
           makeMap(data, vote, jaar)
-          pieChart(pieCountry, jaar)
-
+          // pieChart(pieCountry, jaar)
+          //console.log(" INFOOOOOOOOOOO")
+          console.log(d3.select("#turnoutRadioButton")._groups["0"]["0"].checked);
+          currentYear = jaar;
 
           turnout = []
           console.log(Object.keys(vote))
@@ -134,9 +135,17 @@ if (!event.target.matches('.dropbtn')) {
           console.log(vapTurnout)
 
 
-          barChart(jaar, vapTurnout)
+
+          if(d3.select("#turnoutRadioButton")._groups["0"]["0"].checked){
+            barChart(jaar, turnout)
+          }
+
+          else {
+            barChart(jaar, vapTurnout)
+          }
         }
         test = xTest;
+
 
 
 
@@ -149,17 +158,20 @@ if (!event.target.matches('.dropbtn')) {
               .attr('class', 'd3-tip')
               .offset([-10, 0])
               .html(function(d) {
-
-                var votes = vote[d.properties.NAME][jaar]
-                //var votes = Object.values(vote[d.properties.NAME])
-                console.log(votes)
-
-                if (votes !== undefined) {
-                  // only select countries were data exist
-                  return "<strong>Country: </strong><span class='details'>" + d.properties.NAME + "<br></span>" +
-                         "<strong>Voter Turnout: </strong><span class='details'>" + votes + "</span>";
+                if (vote[d.properties.NAME]) {
+                  if (vote[d.properties.NAME][jaar]) {
+                    var votes = vote[d.properties.NAME][jaar]
+                    return "<strong>Country: </strong><span class='details'>" + d.properties.NAME + "<br></span>" +
+                           "<strong>Voter Turnout: </strong><span class='details'>" + votes + "</span>";
                   }
-
+                  else {
+                    return "<strong>Country: </strong><span class='details'>" + d.properties.NAME + "<br></span>" +
+                           "<strong>Voter Turnout: </strong><span class='details'>" + "NaN" + "</span>";
+                  };
+                }
+                else {
+                  return "No Data";
+                };
               })
 
               svg.call(tip);
@@ -212,6 +224,7 @@ if (!event.target.matches('.dropbtn')) {
                })
                .on('click', function(d) {
                     d3.select("#chart").selectAll("*").remove().exit()
+                    d3.select("#lineChart").selectAll("*").exit().remove();
                     var country = d.properties.NAME;
                     scatterPlot(country)
                     //barChart(country, jaar)
@@ -225,9 +238,9 @@ if (!event.target.matches('.dropbtn')) {
                   .attr("class", "names")
                   .attr("d", path);
 
-        };
-
         // make legend
+        svg.selectAll(".legendRect").remove();
+        svg.selectAll(".legendText").remove();
         legend = svg.selectAll("#map")
           .data([10, 20, 30, 40, 50, 60, 70, 80, 90, 100]).enter()
           .append("g")
@@ -237,6 +250,7 @@ if (!event.target.matches('.dropbtn')) {
         legend.append("rect")
             .attr("x", width - 800)
             .attr("y", 0)
+            .attr("class", "legendRect")
             .attr("width", 32)
             .attr("height", 20)
             .style("fill", d => color(d))
@@ -245,9 +259,13 @@ if (!event.target.matches('.dropbtn')) {
         legend.append("text")
             .attr("x", width - 760)
             .attr("y", 20)
+            .attr("class", "legendText")
             .text(function(d) {
               return d;
             })
+
+      };
+
 
             //var y = system['Austria']['self-government']
             //var x = vote['Austria']["2014"]
@@ -397,28 +415,31 @@ if (!event.target.matches('.dropbtn')) {
 
 
             jaar = "2014";
+            d3.select(".radioButtons").on("change", function() {
+              xTest(currentYear);
+            });
 
 
-            vapTurnout = []
+            turnout = []
             //console.log(Object.keys(vote))
             allCountries = Object.keys(vote)
             for (var i = 0; i<allCountries.length; i++) {
-              vapTurnout.push([allCountries[i], vap[allCountries[i]][jaar]])
+              turnout.push([allCountries[i], vote[allCountries[i]][jaar]])
               console.log(i)
             }
-            console.log(vapTurnout)
+            // console.log(vapTurnout)
 
 
 
-            barChart("2014", vapTurnout)
+            barChart("2014", turnout)
 
 
 
 
 
-        function barChart(jaar, vapTurnout) {
-
-          console.log(vapTurnout)
+        function barChart(jaar, dataBar) {
+          console.log(" Text here")
+          console.log(dataBar, jaar)
 
           if (jaar == undefined){
             jaar = "2014";
@@ -470,7 +491,7 @@ if (!event.target.matches('.dropbtn')) {
         //console.log(dataset)
 
         // dimensions chart
-        barWidth = (width - 2 * margin.top) / Object.keys(vapTurnout).length;
+        barWidth = (width - 2 * margin.top) / Object.keys(dataBar).length;
 
         // create svg barchart
         g = d3.select("#barChart")
@@ -501,12 +522,15 @@ if (!event.target.matches('.dropbtn')) {
       var xScale = d3.scaleBand()
           //.domain([0, allCountries.length])
           .range([margin.left, width/2 - (3*margin.right)])
-          .domain(vapTurnout.map(function(d) { return d[0]; }));
+          .domain(dataBar.map(function(d) { return d[0]; }));
 
       // voter percentage on y-scale
       var yScale = d3.scaleLinear()
           .domain([0, 100])
-          .range([height - margin.bottom, margin.top])
+          .range([height - 2 * margin.bottom, margin.top])
+
+      // delete axis if so
+      g.selectAll(".axis").remove();
 
       // make y-as
       var yAxis = d3.axisLeft(yScale);
@@ -519,15 +543,23 @@ if (!event.target.matches('.dropbtn')) {
       var xAxis = d3.axisBottom(xScale);
       g.append("g")
           .attr("class", "axis")
-          .attr("transform", "translate(" + [0, height - margin.top] + ")")
+          .attr("transform", "translate(" + [0, height - 2 * margin.bottom] + ")")
           .call(xAxis)
+          .selectAll("text")
+          .style("text-anchor", "end")
+          .attr("dx", "-.8em")
+          .attr("dy", ".15em")
+          .attr("transform", function(d) {
+            return "rotate(-65)"
+          });
 
-      console.log(xScale("Nederland"))
+      //console.log(xScale("Nederland"))
       //console.log(Object.values(data))
-      g.selectAll(".bar")
-        .data(vapTurnout)
-        //.data(dataset)
-        .enter().append("rect")
+
+      var bars = g.selectAll("rect")
+                  .data(dataBar);
+
+      bars.enter().append("rect")
         .style('fill', function(d) {
             return "rgb(0, 0, 10)";
         })
@@ -541,14 +573,24 @@ if (!event.target.matches('.dropbtn')) {
           console.log(d[0])
           //return margin.left + i * width / b.length;
           //return xScale(i) + margin.left;
-          return xScale((d[0])) * 0.4*i + margin.left
+          return xScale((d[0]))
           // /14
         })
         .attr('width', barWidth/3)
         .attr('height', function(d){
           //return yScale(d)
-          return height - margin.top - yScale(d[1])
+          return height - 2 * margin.bottom - yScale(d[1])
         })
+        .merge(bars)
+        .attr('y', function(d, i) {
+          console.log(d[0])
+          return yScale(d[1]);
+          //return height - margin.top - yScale(d)
+        })
+        .attr('height', function(d){
+          //return yScale(d)
+          return height - 2 * margin.bottom - yScale(d[1])
+        });
         //.attr("y", height - margin.top)
 
 
@@ -604,11 +646,16 @@ if (!event.target.matches('.dropbtn')) {
       grandList = []
       turnout.forEach(function(y, i){
         var obj= [];
-        obj["freedom"] = freedom[i];
-        obj["turnout"] = turnout[i];
+        if(freedom[i] !== undefined){
+          obj["freedom"] = freedom[i];
+          obj["turnout"] = turnout[i];
 
-        grandList.push(obj)
+          grandList.push(obj)
+        }
+
       })
+
+      console.log(grandList);
 
 
 
@@ -692,11 +739,19 @@ if (!event.target.matches('.dropbtn')) {
 
       var years = Object.keys(vote[country])
       var freedomHous = Object.values(freedomHouse[country])
+
+
       console.log(freedomHouse)
       console.log(years)
 
+      if (d3.select("#testID")){
+          d3.select("#testID").remove();
+      }
+
+      var totalWidth = "Total Width: " + screen.width;
+
       // create SVG element
-      var svg_line = d3.select("#lineChart")
+      var svg_line = d3.select("#lineChart").append("svg").attr("id", "testID").attr("height", 550).attr("width", totalWidth/2 - (margin.left + margin.right))
 
       // scaling
       var min = Math.min.apply(null, years)
@@ -759,10 +814,15 @@ if (!event.target.matches('.dropbtn')) {
       testdata = []
       years.forEach(function(y, i){
         var obj= {};
+        if(freedomHous[i] !== undefined){
         obj["years"] = y;
         obj["freedomHous"] = freedomHous[i];
         testdata.push(obj)
-      })
+      }
+    })
+
+
+
       // var obj = {};
       // obj['years'] = years;
       // obj['freedomHouse'] = freedomHouse;
@@ -842,7 +902,15 @@ svg_line.call(toolTip);
       console.log(years)
 
       // create SVG element
-      var svg_line2 = d3.select("#lineChart2")
+      //var svg_line2 = d3.select("#lineChart2")
+      if (d3.select("#testID2")) {
+          d3.select("#testID2").remove();
+      }
+
+      var totalWidth = "Total Width: " + screen.width;
+
+      // create SVG element
+      var svg_line2 = d3.select("#lineChart2").append("svg").attr("id", "testID2").attr("height", 550).attr("width", totalWidth/2 - (margin.left + margin.right))
 
       // scaling
       var min = Math.min.apply(null, years)
