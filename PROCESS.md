@@ -11,6 +11,8 @@ Vrijdag: Bij de bespreking werd duidelijk dat om een barchart te maken dat het t
 
 Zaterdag: Ik heb met boodstrap grid mijn opmaak mooi gemaakt.
 
+
+
 Week 2
 Maandag: Ik heb besloten om mijn onderzoeksvraag aan te passen aangezien ik daar betere visualisaties bij kan maken. Ik heb dan als onderzoeksvraag: in hoeverre is er een verband tussen politieke vrijheden en het opkomstpercentage bij EU-verkiezingen? Dan maak ik een linechart bij van het freedomHouse (politieke vrijheden) en een scatterplot om te kijken of er een verband tussen het freedomHouse en het opkomstpercentage is. Ik ben bezig geweest om mijn kaart aan te passen naar de uitslag van EU-verkiezingen.
 
@@ -27,16 +29,18 @@ Ik heb de null-data verwijderd uit mijn lijn en ben bezig geweest om text-labels
 
 Zaterdag + zondag: Ik heb gezocht dat de navbar goed werkt en er drie pagina's zijn.
 
+
+
 Week 3
 Maandag: Ik heb de invalid votes ingeladen en ik ben begonnen om een dropdown menu te maken voor de jaren en daarmee de kaart up te date.
 
-Dinsdag: slider voor jaren fixen zodat de kaart upgedate wordt
+Dinsdag: Ik heb een dropdown van de jaren en de kaart wordt geupdate. Wel wordt de piechart nog niet goed upgedate. Daarnaast heb ik gewerkt op een goede barchart te maken met de juiste gegevens.
 
-Woensdag: zorgen dat niet de hele svg verwijderd wordt maar enkel de baren, de lijnen en de piechart
+Woensdag: Ik heb aan de barchart gewerkt en ervoor gezocht dat de piechart goed geupdate wordt. Verder heb ik een radiobutton gemaakt voor de barchart.
 
-Donderdag: maak drop-down menu voor linechart freedomHouse
+Donderdag: zorg dat niet de hele svg verwijderd wordt maar enkel de baren, (de lijnen en de piechartmaak slider voor linechart freedomHouse)
 
-Vrijdag: maak een mooie voorkant en ga aan de opmaak van de website werken
+Vrijdag: maak een mooie voorkant en ga aan de opmaak van de website werken + zorg dat de radiobutton werkt. 
 
 Week 4
 Maandag: splits alle javscript files en zorgt dat alle files georderd erin staan
