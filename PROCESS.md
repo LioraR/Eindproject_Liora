@@ -32,18 +32,21 @@ Zaterdag + zondag: Ik heb gezocht dat de navbar goed werkt en er drie pagina's z
 
 
 Week 3
-Maandag: Ik heb de invalid votes ingeladen en ik ben begonnen om een dropdown menu te maken voor de jaren en daarmee de kaart up te date.
+Maandag: Ik heb de invalid votes ingeladen en ik ben begonnen om een dropdown menu te maken voor de jaren waardoor de kaart moet worden upgedate.
 
 Dinsdag: Ik heb een dropdown van de jaren en de kaart wordt geupdate. Wel wordt de piechart nog niet goed upgedate. Daarnaast heb ik gewerkt op een goede barchart te maken met de juiste gegevens.
 
 Woensdag: Ik heb aan de barchart gewerkt en ervoor gezocht dat de piechart goed geupdate wordt. Verder heb ik een radiobutton gemaakt voor de barchart.
 
-Donderdag: zorg dat niet de hele svg verwijderd wordt maar enkel de baren, (de lijnen en de piechartmaak slider voor linechart freedomHouse)
+Donderdag: Ik ben actief geweest bij de hacketon en heb niet hard getrokken aan mijn code. Morgen ga ik er weer goed tegen aan. Wel heb ik ervoor gezorgd dat de barchart er goed uitziet.
 
-Vrijdag: maak een mooie voorkant en ga aan de opmaak van de website werken + zorg dat de radiobutton werkt. 
+Vrijdag: Ik had het gevoel dat ik wat achter liep en dus heb ik dit aan Martijn aangegeven. Na vandaag heb ik dat gevoel niet meer. Mijn radiobuttons werken goed en de namen van de landen staan goed in de barchart. Verder worden de lijnen van de linechart niet meer overscheden maar goed upgedate. Verder heb ik mijn code opgeschoond en veel console.logs verwijderd.
+
+zaterdag: kijk of je de scatterplot voor alle landen kan maken en elk land een aparte kleur kan geven.
+
 
 Week 4
-Maandag: splits alle javscript files en zorgt dat alle files georderd erin staan
+Maandag: splits alle javscript files en zorgt dat alle files georderd erin staan. maak een mooie voorkant en ga aan de opmaak van de website werken
 
 Dinsdag: maak de code mooi
 
