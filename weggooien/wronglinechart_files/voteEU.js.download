@@ -573,8 +573,7 @@ window.onclick = function(event) {
         if(freedom[i] !== undefined){
           obj["freedom"] = freedom[i];
           obj["turnout"] = turnout[i];
-          obj["years"] = years[i]
-          console.log(years[i])
+          obj["year"] = years[i]
           obj["country"] = allCountries[i]
 
           grandList.push(obj)
@@ -628,18 +627,19 @@ window.onclick = function(event) {
           .text("Voter Turnout")
 
 
-      //add color
-      dict ={}
-      //var color3 = ["#fff7fb", "#ece7f2", "#d0d1e6", "#a6bddb", "#74a9cf", "#3690c0", "#0570b0", "#034e7b"];
-      var color3 = ["#a50026", "#d73027", "#f46d43", "#fdae61", "#fee090", "#ffffbf", "#e0f3f8", "#abd9e9", "#74add1", "#4575b4", "#313695", "#8073ac", "#542788", "#2d004b"]
-
-      count = 0
-      years.forEach(function(datapoint, i) {
-        if (!(years in dict)){
-          dict[years[i]] = color3[count]
-          count++
-        }
-      })
+      // add color
+      // dict ={}
+      // color = ["rgb(247,251,255)", "rgb(222,235,247)", "rgb(198,219,239)",
+      //         "rgb(158,202,225)", "rgb(107,174,214)", "rgb(66,146,198)",
+      //         "rgb(33,113,181)", "rgb(8,81,156)", "rgb(8,48,107)", "rgb(3,19,43)"];
+      //
+      // count = 0
+      // years.forEach(function(datapoint, i) {
+      //   if (!(allCountries[i] in dict)){
+      //     dict[allCountries[i]] = color[count]
+      //     count++
+      //   }
+      // })
 
       console.log(grandList)
       // create circles in scatterplot
@@ -656,66 +656,12 @@ window.onclick = function(event) {
             return yScale(d.turnout);
             })
             .attr("r", 5)
-            .attr("fill", function(d){
-              console.log(dict[d.years])
-             return dict[d.years]
-            })
-            .on("mouseover", function(d) {
-                toolTip.show(d);
+            .attr("fill", "black")
 
-                d3.select(this)
-                  .style("opacity", 1)
-                  .style("stroke", "white")
-                  .style("stroke-width", 3);
+            //function(d){
+            //  return dict[d.county]
 
-        })
-            .on('mouseout', function(d) {
-                toolTip.hide(d);
-            })
-
-            // Set tooltips
-          var toolTip = d3.tip()
-                .attr('class', 'd3-tip')
-                .offset([-10, 0])
-                .html(function(d) {
-
-                  return "<strong>Year: </strong><span class='details'>" + d.years + "<br></span>" +
-                         "<strong>Voter Turnout: </strong><span class='details'>" + d.turnout + "<br></span>" +
-                         "<strong>Freedom: </strong><span class='details'>" + d.freedom + "</span>";
-
-
-        })
-
-              svg3.call(toolTip);
-
-
-
-        // make legend
-      console.log(Object.keys(dict))
-      legend3 = svg3.selectAll(".legend")
-        .data(Object.keys(dict))
-        .enter()
-        .append("g")
-        .attr("class", ".legend")
-        .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
-
-        legend3.append("rect")
-          .attr("x", width - 800)
-          .attr("y", 20)
-          .attr("width", 32)
-          .attr("height", 20)
-          .style("fill", function(d, i) {
-            return Object.values(dict)[i]
-             console.log(Object.values(dict)[i])
-          })
-
-          // add text to legend
-          // legend.append("text")
-          //   .attr("x", width - 110)
-          //   .attr("y", 20)
-          //   .text(function(d){
-          //     return d;
-          //   })
+            //});
 
     }
 
