@@ -52,17 +52,17 @@
     <div class="row">
     <div class="container-fluit">
       <div class="dropdown2">
-        <button onclick="myFunction()" class="dropbtn">Years</button>
+        <button onclick="openFunction()" class="dropbtn">Years</button>
         <div id="myDropdown" class="dropdown-content2">
-          <a href="#" onclick="test('2014')">2014</a>
+          <a href="#" onclick="selectYear('2014')">2014</a>
           <!--<a href="#" onclick="test('2009');test('2013')">2009</a>-->
-          <a href="#" onclick="test('2009')">2009</a>
-          <a href="#" onclick="test('2004')">2004</a>
-          <a href="#" onclick="test('1999')">1999</a>
-          <a href="#" onclick="test('1994')">1994</a>
-          <a href="#" onclick="test('1989')">1989</a>
-          <a href="#" onclick="test('1984')">1984</a>
-          <a href="#" onclick="test('1981')">1981</a>
+          <a href="#" onclick="selectYear('2009')">2009</a>
+          <a href="#" onclick="selectYear('2004')">2004</a>
+          <a href="#" onclick="selectYear('1999')">1999</a>
+          <a href="#" onclick="selectYear('1994')">1994</a>
+          <a href="#" onclick="selectYear('1989')">1989</a>
+          <a href="#" onclick="selectYear('1984')">1984</a>
+          <a href="#" onclick="selectYear('1981')">1981</a>
         </div>
       </div>
 
@@ -97,38 +97,16 @@
 
 
     <div class="col-md-6" style="background-color: white"><h2>EU Voter Turnout</h2>
-      <button style="font-size:24px" onclick="mapClickFunction()"><i class="fa fa-info-circle"></i></button>
-      <div id="myDIV">The voter turnout of the European Parliamentary elections of 2014 is shown in the map of Europe. When another year in the drop-down menu is selected, the map will be updated accordingly. The map has multiple interactive features such as hovering over the map and seeing the voter turnout. The map is furthermore a linked view towards two line charts, a scatterplot, and a donut chart. These will all be update ones a different country is selected.<br><br><br><br></div>
+      <button style="font-size:24px" onclick="mapFunction()"><i class="fa fa-info-circle"></i></button>
+      <div id="myDIV">The voter turnout of the European Parliamentary elections of 2014 is shown in the map of Europe. When another year in the drop-down menu is selected, the map will be updated accordingly. The map has multiple interactive features such as hovering over the map and seeing the voter turnout. The map is furthermore a linked view towards two line charts and a donut chart. These will all be update ones a different country is selected.<br><br><br><br></div>
       <svg id="map" width="100%" height="550"><svg></div>
 
 
-      <script>
-      function mapClickFunction() {
-        var x = document.getElementById("myDIV");
-        if (x.style.display === "none") {
-          x.style.display = "block";
-        } else {
-          x.style.display = "none";
-        }
-      }
-      </script>
-
       <div class="md-2"></div>
     <div class="col-md-5 col-md-offset-1" style="background-color: white"><h2>EU Voter Turnout per country</h2>
-      <button style="font-size:24px" onclick="barClickFunction()"><i class="fa fa-info-circle"></i></button>
+      <button style="font-size:24px" onclick="barFunction()"><i class="fa fa-info-circle"></i></button>
       <div id="selectBarchart">The voter turnouts of de European Parliament elections in every country is visible and when another year is selected in the drop-down menu the bar chart is updated accordingly. It is also possible to click on the button of the VAP turnout. The voting-age population (VAP) turnout is a percentage calculated by looking at the voting age population compared to the people who voted. On the contrary, the voter turnout is defined as a percentage of people who voted from the voting-eligible population. The population which has a non-citizenship is not included in the count of the voter turnout. </div>
       <svg id="barChart" width="100%" height="550"><svg></div>
-
-        <script>
-        function barClickFunction() {
-          var x = document.getElementById("selectBarchart");
-          if (x.style.display === "none") {
-            x.style.display = "block";
-          } else {
-            x.style.display = "none";
-          }
-        }
-        </script>
 
 
     <div class="row">
@@ -137,36 +115,15 @@
 
     <div class="row">
       <div class="col-md-6" style="background-color: white"><h2>Amount of Votes </h2>
-        <button style="font-size:24px" onclick="donutClickFunction()"><i class="fa fa-info-circle"></i></button>
+        <button style="font-size:24px" onclick="donutFunction()"><i class="fa fa-info-circle"></i></button>
         <div id="selectDonutchart">The donut chart is updated when a country on the map and when a year in the dropdown menu is selected. You can hover over the donut chart and then the number of invalid votes, the turnout, and the percentage of people who did not vote are shown. <br><br><br><br></div>
         <svg id="pieChart" width="100%" height="550"><svg></div>
 
-          <script>
-          function donutClickFunction() {
-            var x = document.getElementById("selectDonutchart");
-            if (x.style.display === "none") {
-              x.style.display = "block";
-            } else {
-              x.style.display = "none";
-            }
-          }
-          </script>
 
       <div class="col-md-5 col-md-offset-1" style="background-color: white" id="scatterPlot"><h2>Correlation Freedom and Turnout</h2>
-        <button style="font-size:24px" onclick="scatterClickFunction()"><i class="fa fa-info-circle"></i></button>
-        <div id="selectScatterplot">The scatterplot is shown ones a country of the map is selected. The dots in the scatterplot represent different years within that particular country and more information is shown ones you hover over a dot. A scatterplot is meant to establish various kinds of correlations and according to our research question, we want to see if there is a relationship between the freedom of a country and the voter turnout. The freedom House ranges from 1 (lots of freedom) until 4 (no freedom). In Europe, there is lots of freedom, so it is difficult to establish some kind of correlations.</div>
+        <button style="font-size:24px" onclick="scatterFunction()"><i class="fa fa-info-circle"></i></button>
+        <div id="selectScatterplot">The dots in the scatterplot represent all the election results per country per year. The colors represent multiple countries and more information is shown ones hovering over the dots. A scatterplot is meant to establish various kinds of correlations and according to our research question, we want to see if there is a relationship between the freedom of a country and the voter turnout. The freedom House ranges from 1 (lots of freedom) until 4 (no freedom). In Europe, there is lots of freedom, so it is difficult to establish some kind of correlations.</div>
         <svg id="testID3" width="100%" height="550"><svg></div>
-
-          <script>
-          function scatterClickFunction() {
-            var x = document.getElementById("selectScatterplot");
-            if (x.style.display === "none") {
-              x.style.display = "block";
-            } else {
-              x.style.display = "none";
-            }
-          }
-          </script>
     </div>
 
     <div class="row">
@@ -175,36 +132,15 @@
 
     <div class="row">
       <div class="col-md-6" style="background-color: white" id="lineChart"><h2>Freedom House</h2>
-        <button style="font-size:24px" onclick="lineClickFunction()"><i class="fa fa-info-circle"></i></button>
-        <div id="selectLine">The line chart represents the amount of freedom over the years in one particular country and it is updated ones a country is selected in the map of Europe. The Freedom House is an independent organization that analyses the democracy and freedom around the world and the data ranges from 1 (lots of freedom) until 4 (no freedom). </div>
+        <button style="font-size:24px" onclick="lineFunction()"><i class="fa fa-info-circle"></i></button>
+        <div id="selectLine">The line chart represents the amount of freedom over the years in one particular country and it is updated ones a country is selected in the map of Europe. The Freedom House is an independent organization that analyses the democracy and freedom around the world and the data ranges from 1 (lots of freedom) until 4 (no freedom). <br><br><br></div>
         <svg id="testID" width="100%" height="550"><svg></div>
 
-          <script>
-          function lineClickFunction() {
-            var x = document.getElementById("selectLine");
-            if (x.style.display === "none") {
-              x.style.display = "block";
-            } else {
-              x.style.display = "none";
-            }
-          }
-          </script>
 
       <div class="col-md-5 col-md-offset-1" style="background-color: white" id="lineChart2"><h2>Voter Turnout</h2>
-        <button style="font-size:24px" onclick="lineVClickFunction()"><i class="fa fa-info-circle"></i></button>
+        <button style="font-size:24px" onclick="lineVFunction()"><i class="fa fa-info-circle"></i></button>
           <div id="selectLineVote">This line chart shows the voter turnout over the years in one particular country and it is updated ones a country is selected in the map of Europe.  The Voter Turnout is defined as the percentage of people who voted from the voting-eligible population. The turnout in a lot of countries has decreased over the years but in 1984 fewer countries participated in the elections of the European Parliament. </div>
           <svg id="testID2" width="100%" height="550"><svg></div>
-
-          <script>
-          function lineVClickFunction() {
-            var x = document.getElementById("selectLineVote");
-            if (x.style.display === "none") {
-              x.style.display = "block";
-            } else {
-              x.style.display = "none";
-            }
-          }
-          </script>
     </div>
 
 

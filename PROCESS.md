@@ -42,12 +42,12 @@ Donderdag: Ik ben actief geweest bij de hacketon en heb niet hard getrokken aan 
 
 Vrijdag: Ik had het gevoel dat ik wat achter liep en dus heb ik dit aan Martijn aangegeven. Na vandaag heb ik dat gevoel niet meer. Mijn radiobuttons werken goed en de namen van de landen staan goed in de barchart. Verder worden de lijnen van de linechart niet meer overscheden maar goed upgedate. Verder heb ik mijn code opgeschoond en veel console.logs verwijderd.
 
-zaterdag: kijk of je de scatterplot voor alle landen kan maken en elk land een aparte kleur kan geven.
+zaterdag: Ik heb information buttons gemaakt voor de visualisaties.
 
 
 Week 4
-Maandag: splits alle javscript files en zorgt dat alle files georderd erin staan. maak een mooie voorkant en ga aan de opmaak van de website werken
+Maandag: Ik heb een scatterplot mooit gemaakt met punten voor alle landen en jaren en ik heb elk land een aparte kleur gegeven. Mijn linechart heeft nu wel een rare bug en daar kom ik niet uit. Daarnaast is mijn legende nog niet zichtbaar. 
 
-Dinsdag: maak de code mooi
+Dinsdag: splits alle javscript files en zorgt dat alle files georderd erin staan. maak een mooie voorkant en ga aan de opmaak van de website werken
 
 Woensdag: maak de code mooi
