@@ -14,7 +14,7 @@
       stroke-linejoin: round;
       }
     </style>
-    <link rel="stylesheet" type="text/css" href="vote.css">
+    <link rel="stylesheet" type="text/css" href="/styles/vote.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -22,9 +22,9 @@
     <script src="http://d3js.org/topojson.v1.min.js"></script>
 
   </head>
-  <!-- <div class = "description">text</div> -->
   <body>
 
+    <!-- add backgroundcolor homepage-->
     <div class="p-3 mb-2 bg-info text-white">
 
     <!--  add navbar -->
@@ -39,16 +39,12 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="https://github.com/LioraR/Eindproject_Liora">Liora Rosenberg</a></li>
                 </ul>
-                <!--<ul class="container">
-                  <li><p style="color:blue;font-size:160%;text-align:center;">Voter Turnout</p></li>
-                </ul> -->
             </div>
           </div>
     </nav>
 
-    <!-- make homepage-->
 
-
+    <!-- make dropdown-menu and button in this row -->
     <div class="row">
     <div class="container-fluit">
       <div class="dropdown2">
@@ -75,34 +71,14 @@
     </div>
     </div>
 
-      <!--<div class="row">
-        <div class="container-fluit">
-          <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-             Year <span class="caret"></span>
-        </button>
-          <ul class="dropdown-menu" role="menu">
-            <li><a class="m" value="2007" href="#">2007</a></li>
-            <li><a class="m" value="2008" href="#">2008</a></li>
-            <li><a class="m" value="2009" href="#">2009</a></li>
-            <li><a class="m" value="2010" href="#">2010</a></li>
-            <li><a class="m" value="2011" href="#">2011</a></li>
-            <li><a class="m" value="2012" href="#">2012</a></li>
-            <li><a class="m" value="2013" href="#">2013</a></li>
-            <li><a class="m" value="2014" href="#">2014</a></li>
-            <li><a class="m" value="2015" href="#">2015</a></li>
-          </ul>
-        </div>
-        </div> -->
-
-
-
+    <!-- make svg class and button map -->
     <div class="col-md-6" style="background-color: white"><h2>EU Voter Turnout</h2>
       <button style="font-size:24px" onclick="mapFunction()"><i class="fa fa-info-circle"></i></button>
       <div id="myDIV">The voter turnout of the European Parliamentary elections of 2014 is shown in the map of Europe. When another year in the drop-down menu is selected, the map will be updated accordingly. The map has multiple interactive features such as hovering over the map and seeing the voter turnout. The map is furthermore a linked view towards two line charts and a donut chart. These will all be update ones a different country is selected.<br><br><br><br></div>
       <svg id="map" width="100%" height="550"><svg></div>
 
 
-      <div class="md-2"></div>
+    <!-- make svg, class and button barchart -->
     <div class="col-md-5 col-md-offset-1" style="background-color: white"><h2>EU Voter Turnout per country</h2>
       <button style="font-size:24px" onclick="barFunction()"><i class="fa fa-info-circle"></i></button>
       <div id="selectBarchart">The voter turnouts of de European Parliament elections in every country is visible and when another year is selected in the drop-down menu the bar chart is updated accordingly. It is also possible to click on the button of the VAP turnout. The voting-age population (VAP) turnout is a percentage calculated by looking at the voting age population compared to the people who voted. On the contrary, the voter turnout is defined as a percentage of people who voted from the voting-eligible population. The population which has a non-citizenship is not included in the count of the voter turnout. </div>
@@ -113,13 +89,14 @@
       <div class="col-md-12" style="p-3 mb-2 bg-info text-white"><svg id="betweenline" width="100%" height="150"><svg></div>
     </div>
 
+    <!-- make svg, class and button donutchart -->
     <div class="row">
       <div class="col-md-6" style="background-color: white"><h2>Amount of Votes </h2>
         <button style="font-size:24px" onclick="donutFunction()"><i class="fa fa-info-circle"></i></button>
         <div id="selectDonutchart">The donut chart is updated when a country on the map and when a year in the dropdown menu is selected. You can hover over the donut chart and then the number of invalid votes, the turnout, and the percentage of people who did not vote are shown. <br><br><br><br></div>
         <svg id="pieChart" width="100%" height="550"><svg></div>
 
-
+      <!-- make svg, class and button scatterplot -->
       <div class="col-md-5 col-md-offset-1" style="background-color: white" id="scatterPlot"><h2>Correlation Freedom and Turnout</h2>
         <button style="font-size:24px" onclick="scatterFunction()"><i class="fa fa-info-circle"></i></button>
         <div id="selectScatterplot">The dots in the scatterplot represent all the election results per country per year. The colors represent multiple countries and more information is shown ones hovering over the dots. A scatterplot is meant to establish various kinds of correlations and according to our research question, we want to see if there is a relationship between the freedom of a country and the voter turnout. The freedom House ranges from 1 (lots of freedom) until 4 (no freedom). In Europe, there is lots of freedom, so it is difficult to establish some kind of correlations.</div>
@@ -131,12 +108,15 @@
     </div>
 
     <div class="row">
+
+      <!-- make svg, class and button linechart freedomHouse -->
       <div class="col-md-6" style="background-color: white" id="lineChart"><h2>Freedom House</h2>
         <button style="font-size:24px" onclick="lineFunction()"><i class="fa fa-info-circle"></i></button>
         <div id="selectLine">The line chart represents the amount of freedom over the years in one particular country and it is updated ones a country is selected in the map of Europe. The Freedom House is an independent organization that analyses the democracy and freedom around the world and the data ranges from 1 (lots of freedom) until 4 (no freedom). <br><br><br></div>
         <svg id="testID" width="100%" height="550"><svg></div>
 
 
+      <!-- make svg, class and button linechart voter turnout -->
       <div class="col-md-5 col-md-offset-1" style="background-color: white" id="lineChart2"><h2>Voter Turnout</h2>
         <button style="font-size:24px" onclick="lineVFunction()"><i class="fa fa-info-circle"></i></button>
           <div id="selectLineVote">This line chart shows the voter turnout over the years in one particular country and it is updated ones a country is selected in the map of Europe.  The Voter Turnout is defined as the percentage of people who voted from the voting-eligible population. The turnout in a lot of countries has decreased over the years but in 1984 fewer countries participated in the elections of the European Parliament. </div>
@@ -146,9 +126,17 @@
 
   </div>
 
-  <!-- own writen js -->
-  <script src="d3-tip.js"></script>
-  <script src="voteEU.js" charset="utf-8"></script>
+  <!-- own writen javascript files -->
+  <script type= "text/javascript" src="/scripts/d3-tip.js"></script>
+  <script type= "text/javascript" src="/scripts/main.js" charset="utf-8"></script>
+  <script type= "text/javascript" src="/scripts/map.js" charset="utf-8"></script>
+  <script type= "text/javascript" src="/scripts/piechart.js" charset="utf-8"></script>
+  <script type= "text/javascript" src="/scripts/line.js" charset="utf-8"></script>
+  <script type= "text/javascript" src="/scripts/line2.js" charset="utf-8"></script>
+  <script type= "text/javascript" src="/scripts/barchart.js" charset="utf-8"></script>
+  <script type= "text/javascript" src="/scripts/year.js" charset="utf-8"></script>
+  <script type= "text/javascript" src="/scripts/scatterplot.js" charset="utf-8"></script>
+
 
   </body>
 </html>

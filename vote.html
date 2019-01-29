@@ -21,7 +21,7 @@
         transform: translate(-50%, -50%);
       }
     </style>
-    <link rel="stylesheet" type="text/css" href="vote.css">
+    <link rel="stylesheet" type="text/css" href="styles/vote.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
     <script src="https://d3js.org/d3.v5.min.js"></script>
@@ -29,7 +29,6 @@
 
   </head>
   <body>
-
 
 
     <div class="container-fluid" </div>
@@ -50,33 +49,10 @@
             </div>
       </nav>
 
-      <!-- <div class="navbar">
-        <a href="#home">Home</a>
-        <a href="#news">News</a>
-        <div class="dropdown">
-          <button class="dropbtn">Dropdown
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <a href="/drawings.html">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
-          </div>
-        </div>
-      </div> -->
-
-      <!-- make explanation -->
-      <!--<div class="collapse navbar-collapse">
-        <div id="home" class="nav navbar-nav">
-          <h3>HOME</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div> -->
-
-
   <!-- create homepage with image -->
   <!--<div id="home" class="nav navbar-nav"> -->
     <div class="container">
-      <img src="eu.jpg" alt="EU" style="width:100%;">
+      <img src="data/eu.jpg" alt="EU" style="width:100%;">
       <!--<div class="centered">explanation EU</div>
       <div class="centered">explanation Voter Turnout</div>
       <div class="centered">explanation website</div> -->
@@ -94,36 +70,11 @@
 <h3>The donut chart is updated when a country on the map and when a year in the dropdown menu is selected. You can hover over the donut chart and then the number of invalid votes, the turnout, and the percentage of people who did not vote are shown.</h3>
 <h3>The dots in the scatterplot represent all the election results per country per year. The colors represent multiple countries and more information is shown ones hovering over the dots. A scatterplot is meant to establish various kinds of correlations and according to our research question, we want to see if there is a relationship between the freedom of a country and the voter turnout. The freedom House ranges from 1 (lots of freedom) until 4 (no freedom). In Europe, there is lots of freedom, so it is difficult to establish some kind of correlations.</h3>
 <h3>The line chart represents the amount of freedom over the years in one particular country and it is updated ones a country is selected in the map of Europe. The Freedom House is an independent organization that analyses the democracy and freedom around the world and the data ranges from 1 (lots of freedom) until 4 (no freedom).</h3>
-<script>
 
-function button() {
-    document.documentElement.scrollTop = 800;
-}
-</script>
-
-
-
-  <!--<script>
-  // when the user clicks on the button, scroll to the first visualization
-  // scroll down
-
-  document.documentElement.scrollTop = 1630;
-  function downFunction() {
-      document.documentElement.scrollTop = 800;
-  }
-  </script> -->
-
-
-
-
-  <!--<div id="references" class="nav navbar-nav">
-    <h3>Menu 2</h3>
-    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-  </div> -->
 
   <!-- own writen js -->
-  <script src="d3-tip.js"></script>
-  <script src="voteEU.js" charset="utf-8"></script>
+  <script src="/scripts/d3-tip.js"></script>
+  <script type= "text/javascript" src="/scripts/main.js" charset="utf-8"></script>
 
 
 

@@ -8,13 +8,9 @@ import json
 INPUT_CSV = "freedomHouse.csv"
 reader = pandas.read_csv(INPUT_CSV)
 
+# election type is all the same (EU turnout)
 reader = reader.drop(["Election type"], axis=1)
 
-print(reader)
-
-# put the data in the right format
+# put the data in the right format to convert to json
 reader = reader.pivot_table(values='Freedom house', index='Country', columns='Year', aggfunc='mean')
-
-print(reader)
-#reader = reader.set_index('Country')
 reader = reader.to_json('freedomHouse.json', orient="index")

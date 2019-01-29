@@ -46,8 +46,8 @@ zaterdag: Ik heb information buttons gemaakt voor de visualisaties.
 
 
 Week 4
-Maandag: Ik heb een scatterplot mooit gemaakt met punten voor alle landen en jaren en ik heb elk land een aparte kleur gegeven. Mijn linechart heeft nu wel een rare bug en daar kom ik niet uit. Daarnaast is mijn legende nog niet zichtbaar. 
+Maandag: Ik heb een scatterplot mooit gemaakt met punten voor alle landen en jaren en ik heb elk land een aparte kleur gegeven. Mijn linechart heeft nu wel een rare bug en daar kom ik niet uit. Verder heb ik een legende gemaakt voor de scatterplot echter moet ik nog goede kleuren kiezen voor allemaal landen die kleurenblinden ook kunnen zien.
 
-Dinsdag: splits alle javscript files en zorgt dat alle files georderd erin staan. maak een mooie voorkant en ga aan de opmaak van de website werken
+Dinsdag: Ik alle files in verschillende mappen ingedeeld en heb mijn bug voor de linechart gefixed. Daarnaast heb ik verder gewerkt aan de opmaak van mijn website en heb verschillende kleuren voor de legende van de scatterplot gekozen. Daarnaast heb ik allemaal verschillende javascript files aangemaakt. 
 
-Woensdag: maak de code mooi
+Woensdag: maak de code mooi +  maak een mooie voorkant en ga aan de opmaak van de website werken + schrijf readme
