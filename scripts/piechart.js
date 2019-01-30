@@ -1,6 +1,5 @@
 function pieChart(country, year) {
 
-
   pieCountry = country;
 
 
@@ -8,9 +7,15 @@ function pieChart(country, year) {
     year = "2014";
   };
 
+// remove null data in invalid Vote
+if (window.invalid[countries][years] != null) {
+  var invalidVote = (window.invalid[country][year]).toFixed(1);
+}
+else {
+  var invalidVote = (window.invalid[country][year]);
+}
 
 // define variables with one decimal
-var invalidVote = (window.invalid[country][year]).toFixed(1);
 var turnout = (window.vote[country][year]).toFixed(1);
 var noVote = (100 - turnout - invalidVote).toFixed(1);
 var data = [turnout, invalidVote, noVote];

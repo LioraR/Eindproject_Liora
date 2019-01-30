@@ -23,8 +23,6 @@ function scatterPlot() {
   d3.select("#testID3").remove();
 
   // create SVG element
-  console.log(totalWidth);
-  console.log(margin.left);
   var svg3 = d3.select("#scatterPlot").append("svg").attr("id", "testID3").attr("height", 550).attr("width", totalWidth/2 - (margin.left + margin.right));
 
   // window.freedomHouse rating is from 4 untill 0

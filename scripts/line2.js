@@ -12,9 +12,6 @@ years.forEach(function(y, i){
 
   var years = Object.keys(window.freedomHouse[country]);
   var freedomHous = Object.values(window.freedomHouse[country]);
-  console.log(years)
-  console.log(freedomHous)
-  console.log(window.freedomHouse)
 
   // remove linechart when other country is selected
     d3.select("#testID").remove();
