@@ -12,9 +12,9 @@ function pieChart(country, year) {
 if (window.invalid[countries][years] != null) {
   var invalidVote = (window.invalid[country][year]).toFixed(1);
 }
-//else {
-//  var invalidVote = (window.invalid[country][year]);
-//}
+else {
+  var invalidVote = (window.invalid[country][year]);
+}
 
 // define variables with one decimal
 var turnout = (window.vote[country][year]).toFixed(1);
