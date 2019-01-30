@@ -18,15 +18,15 @@ Bij de visualisatie wil ik graag een kaart van europa maken die middels verschil
 
 *dit mag weg* Daarbij wordt een dropdown menu gemaakt waar de verschillende politieke systemen worden weergegeven. Hierdoor kunnen we zien of er een groot verschil zitten in het opkomstpercentage tussen de verschillende politieke systemen.
 
-<img src="(https://user-images.githubusercontent.com/44025069/51983567-4a7fda80-2499-11e9-9000-957a32058992.png)" alt="drawing" width="1000"/>
+<img src="https://user-images.githubusercontent.com/44025069/51983567-4a7fda80-2499-11e9-9000-957a32058992.png" alt="drawing" width="1000"/>
 
-<img src="(https://user-images.githubusercontent.com/44025069/51983598-5f5c6e00-2499-11e9-8d58-5834e58c084a.png)" alt="drawing" width="1000"/>
+<img src="https://user-images.githubusercontent.com/44025069/51983598-5f5c6e00-2499-11e9-8d58-5834e58c084a.png" alt="drawing" width="1000"/>
 
-<img src="(https://user-images.githubusercontent.com/44025069/51983702-afd3cb80-2499-11e9-9966-87db4cd72298.png)" alt="drawing" width="1000"/>
+<img src="https://user-images.githubusercontent.com/44025069/51983702-afd3cb80-2499-11e9-9966-87db4cd72298.png" alt="drawing" width="1000"/>
 
-<img src="(https://user-images.githubusercontent.com/44025069/51983622-769b5b80-2499-11e9-93d1-ce8261acfd82.png)" alt="drawing" width="1000"/>
+<img src="https://user-images.githubusercontent.com/44025069/51983622-769b5b80-2499-11e9-93d1-ce8261acfd82.png" alt="drawing" width="1000"/>
 
-<img src="(https://user-images.githubusercontent.com/44025069/51983672-99c60b00-2499-11e9-9826-533b4f8985b7.png)" alt="drawing" width="1000"/>
+<img src="https://user-images.githubusercontent.com/44025069/51983672-99c60b00-2499-11e9-9826-533b4f8985b7.png" alt="drawing" width="1000"/>
 
 
 <img src="https://user-images.githubusercontent.com/44025069/50977309-51e34200-14f2-11e9-83ea-f44cda916a92.png" alt="drawing" width="1000"/>
