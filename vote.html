@@ -7,20 +7,6 @@
   <head>
     <meta charset="utf-8">
     <title>Line chart</title>
-    <style>
-      .container {
-        position: relative;
-        text-align: center;
-        color: white;
-      }
-
-      .centered {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
-    </style>
     <link rel="stylesheet" type="text/css" href="styles/vote.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
@@ -52,11 +38,13 @@
   <!-- create homepage with image -->
   <!--<div id="home" class="nav navbar-nav"> -->
     <div class="container">
-      <img src="data/eu.jpg" alt="EU" style="width:100%;">
+      <img src="docs/eu.jpg" alt="EU" style="width:100%;">
       <!--<div class="centered">explanation EU</div>
       <div class="centered">explanation Voter Turnout</div>
       <div class="centered">explanation website</div> -->
-      <div class="centered"><button onclick="button()" id="Button">Explanation</button></div>
+      <div class="centered"><button onclick="button()" id="Button">Explanation EU</button></div>
+      <div class="centered2"><button onclick="button()" id="Button">research question</button></div>
+      <div class="centered3"><button onclick="button()" id="Button">Explanation visualisations</button></div>
       <!--<button onclick="downFunction()" id="downButton">Go Down</button> -->
     </div>
   <!--</div> -->
@@ -72,9 +60,16 @@
 <h3>The line chart represents the amount of freedom over the years in one particular country and it is updated ones a country is selected in the map of Europe. The Freedom House is an independent organization that analyses the democracy and freedom around the world and the data ranges from 1 (lots of freedom) until 4 (no freedom).</h3>
 
 
-  <!-- own writen js -->
-  <script src="/scripts/d3-tip.js"></script>
+  <!-- own writen javascript files -->
+  <script type= "text/javascript" src="/scripts/d3-tip.js"></script>
   <script type= "text/javascript" src="/scripts/main.js" charset="utf-8"></script>
+  <script type= "text/javascript" src="/scripts/map.js" charset="utf-8"></script>
+  <script type= "text/javascript" src="/scripts/piechart.js" charset="utf-8"></script>
+  <script type= "text/javascript" src="/scripts/line.js" charset="utf-8"></script>
+  <script type= "text/javascript" src="/scripts/line2.js" charset="utf-8"></script>
+  <script type= "text/javascript" src="/scripts/barchart.js" charset="utf-8"></script>
+  <script type= "text/javascript" src="/scripts/year.js" charset="utf-8"></script>
+  <script type= "text/javascript" src="/scripts/scatterplot.js" charset="utf-8"></script>
 
 
 

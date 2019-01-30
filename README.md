@@ -1,19 +1,15 @@
-•	Opdracht: eindproject voorstel
+•	Opdracht: eindproject
 
 •	Naam: Liora Rosenberg
 
 •	Link data voter turnout: https://www.idea.int/data-tools/data/voter-turnout
-•	Link data political systems: (zie politicalsystems.xlsx)
-
 
 • External components: d3-tip, SQLite, pandas, matplotlib.pyplot
 
-• Similar related visualizations: https://jaspernaberman.github.io/Programming-Project/Scripts/HTML/visualizations.html (bij dit eindproject is er ook een visualisatie van de wereldkaart gemaakt en is het mogelijk om op verschillende landen te klikken)
 
+De onderzoeksvraag luidt: “In hoeverre is er een verband tussen de politieke vrijheid en het opkomstpercentage van de Europese Unie?” Deze onderzoeksvraag is enigszinds veranderd aangezien ik eerst verschillende politieke systemen wilde ten opzichte van het opkomstpercentage wilde onderzoeken. Ik vond het niet handig om deze onderzoeksvraag aan te houden aangezien ik er geen goede visualisaties bij kon bedenken. Een piechart moest namelijk op 100% uitkomen en daarin kon ik dus niet alle politieke systemen visualiseren.
 
-
-De onderzoeksvraag luidt: “In hoeverre is er een verband tussen de politieke vrijheid en het opkomstpercentage van de Europese Unie?”
-Sinds 1980 is er een afname in het opkomstpercentage bij de verkiezing van de Europese Unie van de stemgerechtigde populatie. Wetenschappelijk onderzoek heeft zich de afgelopen jaren vooral bezig gehouden met de reden hiervoor. Er is echter relatief weinig onderzoek gedaan met betrekking tot het verschil in landen. De onderzoeken die zich bezig houden met de reden van de verminderde opkomstpercentages doen dat vaak zonder visualisatie van data terwijl dat mogelijk tot meer inzicht zou leiden. Vandaar mijn voorstel om de relatie tussen de politieke vrijheid en het opkomstpercentage op verschillende wijze te visualiseren. De doelgroep van dit onderzoek zijn mensen met interesse in de politiek.
+Sinds 1980 is er een afname in het opkomstpercentage bij de verkiezing van de Europese Unie van de stemgerechtigde populatie. Wetenschappelijk onderzoek heeft zich de afgelopen jaren vooral bezig gehouden met de reden hiervoor. Er is echter relatief weinig onderzoek gedaan naar of de bevolking zich wel vrij genoeg voelt om te komen stemmen. De onderzoeken die zich bezig houden met de reden van de verminderde opkomstpercentages doen dat vaak zonder visualisatie van data terwijl dat mogelijk tot meer inzicht zou leiden. Vandaar mijn voorstel om de relatie tussen de politieke vrijheid en het opkomstpercentage op verschillende wijze te visualiseren. De doelgroep van dit onderzoek zijn mensen met interesse in de politiek.
 
 Freedom House is een onafhankelijkee NGO zonder winstoogmerk waardoor hun resultaten niet gekleurd zijn. Zij bieden ondersteunen en voegen onderzoek uit naar democratie, politieke vrijheid en mensenrechten. De data van het freedom House over verschillende politieke vrijheden heb ik gebruikt in mijn onderzoek. De vrijheid wordt gerangd op een schaal van 1 tot 4.
 

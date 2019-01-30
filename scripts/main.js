@@ -21,17 +21,17 @@ var donutFunction;
 var scatterFunction;
 var lineFunction;
 var lineVFunction;
-var scroll;
+var button;
 
 window.onload = function() {
         var pieCountry = "";
 
         // start at this hight at vote.html page
-        function button() {
+        function scroll() {
             document.documentElement.scrollTop = 800;
         };
 
-        scroll = button
+        button = scroll
 
         // https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
         // info button at map

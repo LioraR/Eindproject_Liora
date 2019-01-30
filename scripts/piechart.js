@@ -81,6 +81,7 @@ var names = ["Voter Turnout", "Invalid Votes", "Not Voted"];
 // make legend again
 sv.selectAll(".legendRect").remove();
 sv.selectAll(".legendText").remove();
+
 legend2 = sv.selectAll("#pieChart")
   .data([1, 2, 3]).enter()
   .append("g")
