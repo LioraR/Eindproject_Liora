@@ -42,3 +42,4 @@ Pandas: https://jquery.com/
 D3-Tip http://labratrevenge.com/d3-tip/
 styling tooltip: http://bl.ocks.org/micahstubbs/8e15870eb432a21f0bc4d3d527b2d14f
 I have used a liberary for the information button: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css
+foto on homepage: https://www.google.com/search?q=european+union&source=lnms&tbm=isch&sa=X&ved=0ahUKEwj_ueim6JXgAhUIY1AKHUcuCAkQ_AUIDigB&biw=1536&bih=754#imgrc=xFCPtoP2kP5Z7M:
