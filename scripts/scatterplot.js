@@ -67,7 +67,6 @@ function scatterPlot() {
   var color3 = ["#a6cee3", "#1f78b4", "#b2df8a", "#33a02c", "#fb9a99", "#e31a1c", "#fdbf6f", "#ff7f00", "#cab2d6", "#6a3d9a", "#ffff99", "#b15928", "#8dd3c7", "#ffffb3", "#bebada", "#fb8072", "#80b1d3", "#fdb462", "#b3de69", "#fccde5", "#d9d9d9", "#bc80bd", "#ccebc5", "#ffed6f", "#1b9e77", "#d95f02", "#7570b3", "#e7298a"]
 
   var allCountries = Object.keys(window.vote)
-  console.log(allCountries)
   count = 0;
   allCountries.forEach(function(datapoint, i) {
     if (!(allCountries in dict)){

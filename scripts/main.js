@@ -9,8 +9,8 @@ var margin = { top: 50, right: 50, bottom: 50, left: 50 },
 
 var totalWidth = screen.width;
 
-// scroll down in homepage
-document.documentElement.scrollTop = 2000;
+// start at this hight at vote.html page
+document.documentElement.scrollTop = 70;
 
 // define click functions
 var selectYear;
@@ -22,16 +22,35 @@ var scatterFunction;
 var lineFunction;
 var lineVFunction;
 var button;
+var button1;
+var button2;
+
 
 window.onload = function() {
         var pieCountry = "";
 
-        // start at this hight at vote.html page
+        // scroll down in homepage
         function scroll() {
-            document.documentElement.scrollTop = 800;
+            document.documentElement.scrollTop = 850;
         };
 
         button = scroll
+
+
+        function scroll1() {
+            document.documentElement.scrollTop = 1650;
+        };
+
+        button1 = scroll1
+
+
+        function scroll2() {
+            document.documentElement.scrollTop = 2000;
+        };
+
+        button2 = scroll2
+
+
 
         // https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
         // info button at map

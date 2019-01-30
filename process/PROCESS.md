@@ -34,7 +34,7 @@ Zaterdag + zondag: Ik heb gezocht dat de navbar goed werkt en er drie pagina's z
 Week 3
 Maandag: Ik heb de invalid votes ingeladen en ik ben begonnen om een dropdown menu te maken voor de jaren waardoor de kaart moet worden upgedate.
 
-Dinsdag: Ik heb een dropdown van de jaren en de kaart wordt geupdate. Wel wordt de piechart nog niet goed upgedate. Daarnaast heb ik gewerkt op een goede barchart te maken met de juiste gegevens.
+Dinsdag: Ik heb een dropdown van de jaren gemaakt zodat de kaart wordt geupdate. De dropdown-menu bestaat enkel uit jaren waar meerdere landen een verkiezing hebben gehouden. Het is namelijk zo dat elk land in een ander jaar kunnen bepalen wanneer ze de verkiezingen houden maar al die uitslagen zijn wel pas geldig in een jaar. Daarom zullen de meesten landen de verkiezingen houden in dat specifieke jaar doen. De piechart nog niet goed upgedate aan de hand van de drop-down menu. Daarnaast heb ik gewerkt op een goede barchart te maken met de juiste gegevens.
 
 Woensdag: Ik heb aan de barchart gewerkt en ervoor gezocht dat de piechart goed geupdate wordt. Verder heb ik een radiobutton gemaakt voor de barchart.
 
@@ -48,6 +48,6 @@ zaterdag: Ik heb information buttons gemaakt voor de visualisaties.
 Week 4
 Maandag: Ik heb een scatterplot mooit gemaakt met punten voor alle landen en jaren en ik heb elk land een aparte kleur gegeven. Mijn linechart heeft nu wel een rare bug en daar kom ik niet uit. Verder heb ik een legende gemaakt voor de scatterplot echter moet ik nog goede kleuren kiezen voor allemaal landen die kleurenblinden ook kunnen zien.
 
-Dinsdag: Ik alle files in verschillende mappen ingedeeld en heb mijn bug voor de linechart gefixed. Daarnaast heb ik verder gewerkt aan de opmaak van mijn website en heb verschillende kleuren voor de legende van de scatterplot gekozen. Daarnaast heb ik allemaal verschillende javascript files aangemaakt. 
+Dinsdag: Ik alle files in verschillende mappen ingedeeld en heb mijn bug voor de linechart gefixed. Daarnaast heb ik verder gewerkt aan de opmaak van mijn website en heb verschillende kleuren voor de legende van de scatterplot gekozen. Daarnaast heb ik allemaal verschillende javascript files aangemaakt.
 
-Woensdag: maak de code mooi +  maak een mooie voorkant en ga aan de opmaak van de website werken + schrijf readme
+Woensdag:Ik heb de code mooier gemaakt en een betere homepage gemaakt. Daarnaast heb ik de readme.md geschreven en de website upgeload naar github :)

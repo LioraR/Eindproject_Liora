@@ -33,8 +33,7 @@
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="nav navbar-nav">
                     <li><a data-toggle="tab" href="vote.html">Home</a></li>
-                    <li class="active"><a data-toggle="collapse" href="#home">Voter Turnout</a></li>
-                    <li><a data-toggle="collapse" href="references.html">References</a></li>
+                    <li class="active"><a data-toggle="collapse" href="#drawings">Voter Turnout</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="https://github.com/LioraR/Eindproject_Liora">Liora Rosenberg</a></li>
@@ -51,14 +50,12 @@
         <button onclick="openFunction()" class="dropbtn">Years</button>
         <div id="myDropdown" class="dropdown-content2">
           <a href="#" onclick="selectYear('2014')">2014</a>
-          <!--<a href="#" onclick="test('2009');test('2013')">2009</a>-->
           <a href="#" onclick="selectYear('2009')">2009</a>
           <a href="#" onclick="selectYear('2004')">2004</a>
           <a href="#" onclick="selectYear('1999')">1999</a>
           <a href="#" onclick="selectYear('1994')">1994</a>
           <a href="#" onclick="selectYear('1989')">1989</a>
           <a href="#" onclick="selectYear('1984')">1984</a>
-          <a href="#" onclick="selectYear('1981')">1981</a>
         </div>
       </div>
 
@@ -113,14 +110,14 @@
       <div class="col-md-6" style="background-color: white" id="lineChart"><h2>Freedom House</h2>
         <button style="font-size:24px" onclick="lineFunction()"><i class="fa fa-info-circle"></i></button>
         <div id="selectLine">The line chart represents the amount of freedom over the years in one particular country and it is updated ones a country is selected in the map of Europe. The Freedom House is an independent organization that analyses the democracy and freedom around the world and the data ranges from 1 (lots of freedom) until 4 (no freedom). <br><br><br></div>
-        <svg id="testID" width="100%" height="550"><svg></div>
+        <svg id="svgupdate" width="100%" height="550"><svg></div>
 
 
       <!-- make svg, class and button linechart voter turnout -->
       <div class="col-md-5 col-md-offset-1" style="background-color: white" id="lineChart2"><h2>Voter Turnout</h2>
         <button style="font-size:24px" onclick="lineVFunction()"><i class="fa fa-info-circle"></i></button>
           <div id="selectLineVote">This line chart shows the voter turnout over the years in one particular country and it is updated ones a country is selected in the map of Europe.  The Voter Turnout is defined as the percentage of people who voted from the voting-eligible population. The turnout in a lot of countries has decreased over the years but in 1984 fewer countries participated in the elections of the European Parliament. </div>
-          <svg id="testID2" width="100%" height="550"><svg></div>
+          <svg id="testID2" width="90%" height="550"><svg></div>
     </div>
 
 

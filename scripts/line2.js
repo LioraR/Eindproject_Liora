@@ -14,10 +14,10 @@ years.forEach(function(y, i){
   var freedomHous = Object.values(window.freedomHouse[country]);
 
   // remove linechart when other country is selected
-    d3.select("#testID").remove();
+    d3.select("#svgupdate").remove();
 
   // create SVG element
-  var svg_line = d3.select("#lineChart").append("svg").attr("id", "testID").attr("height", 550).attr("width", totalWidth/2 - (margin.left + margin.right));
+  var svg_line = d3.select("#lineChart").append("svg").attr("id", "svgupdate").attr("height", 550).attr("width", totalWidth/2 - (margin.left + margin.right));
 
   // scaling
   var min = Math.min.apply(null, years);
@@ -28,7 +28,7 @@ years.forEach(function(y, i){
   // scaling x and y-as
   var xScale = d3.scaleLinear()
       .domain([min, max])
-      .range([margin.right, width/2 - margin.left]);
+      .range([margin.left, width/2 - 2*margin.right]);
 
   // the highest window.freedomHouse rating is 1 and the lowest is 4 so the domain ranges from max to min
   var yScale = d3.scaleLinear()
