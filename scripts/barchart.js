@@ -86,8 +86,14 @@ bars.enter().append("rect")
     return xScale((d[0]))
   })
   .attr('width', barWidth / 3)
-  .attr('height', function(d){
-    return height - 2 * margin.bottom - yScale(d[1])
+  .attr('height', function(d) {
+    if (d[1] == NaN) {
+      return 0
+    }
+    else {
+      return height - 2 * margin.bottom - yScale(d[1])
+    }
+
   })
   .merge(bars)
   .attr('y', function(d, i) {
