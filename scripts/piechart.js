@@ -79,6 +79,7 @@ var g = sv.selectAll(".arc")
 var path = sv.selectAll("path")
   .data(pie(data))
   .transition()
+  .duration(3)
   .attr("d", arc);
 
 
