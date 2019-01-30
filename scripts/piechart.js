@@ -76,10 +76,11 @@ var g = sv.selectAll(".arc")
 );
 
 // update piechart
-var x = sv.selectAll("path")
+var path = sv.selectAll("path")
   .data(pie(data))
   .transition()
   .attr("d", arc);
+
 
 // add text to legend
 var names = ["Voter Turnout", "Invalid Votes", "Not Voted"];
