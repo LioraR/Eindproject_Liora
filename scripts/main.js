@@ -148,11 +148,11 @@ window.onload = function() {
 
 
         // distract jasons
-        var vote = "https://raw.githubusercontent.com/LioraR/Eindproject_Liora/master/data/python/EUturnout.json"
-        var data = "https://raw.githubusercontent.com/LioraR/Eindproject_Liora/master/data/python/europe.json"
-        var freedomHouse = "https://raw.githubusercontent.com/LioraR/Eindproject_Liora/master/data/python/freedomHouse.json"
-        var invalid = "https://raw.githubusercontent.com/LioraR/Eindproject_Liora/master/data/python/invalid.json"
-        var vap = "https://raw.githubusercontent.com/LioraR/Eindproject_Liora/master/data/python/vap.json"
+        var vote = "https://raw.githubusercontent.com/LioraR/Eindproject_Liora/master/data/EUturnout.json"
+        var data = "https://raw.githubusercontent.com/LioraR/Eindproject_Liora/master/data/europe.json"
+        var freedomHouse = "https://raw.githubusercontent.com/LioraR/Eindproject_Liora/master/data/freedomHouse.json"
+        var invalid = "https://raw.githubusercontent.com/LioraR/Eindproject_Liora/master/data/invalid.json"
+        var vap = "https://raw.githubusercontent.com/LioraR/Eindproject_Liora/master/data/vap.json"
         var requests = [d3.json(vote), d3.json(data), d3.json(freedomHouse), d3.json(invalid), d3.json(vap)];
 
         Promise.all(requests).then(function(response) {
