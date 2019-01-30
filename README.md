@@ -15,9 +15,9 @@ In de visualisatie heb  kaart van europa maken die middels verschillende kleuren
 
 <img src="https://user-images.githubusercontent.com/44025069/51988467-0266b500-24a5-11e9-81b4-a281a6d9189e.png" alt="drawing" width="1000"/>
 
-<img src="https://user-images.githubusercontent.com/44025069/51983622-769b5b80-2499-11e9-93d1-ce8261acfd82.png" alt="drawing" width="1000"/>
+<img src="https://user-images.githubusercontent.com/44025069/51991125-bf0f4500-24aa-11e9-9525-b4712e442f59.png" alt="drawing" width="1000"/>
 
-<img src="https://user-images.githubusercontent.com/44025069/51983672-99c60b00-2499-11e9-9826-533b4f8985b7.png" alt="drawing" width="1000"/>
+<img src="https://user-images.githubusercontent.com/44025069/51991210-ec5bf300-24aa-11e9-8795-95b0a39313e6.png" alt="drawing" width="1000"/>
 
 referenties:
 Ik heb verschillende externe bronnen gebruikt. Voor de data van het freedomHouse en de voter turnout heb ik deze website gebruikt: https://www.idea.int/data-tools/data/voter-turnout.
