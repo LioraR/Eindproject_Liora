@@ -95,9 +95,11 @@ function makeMap(data, vote, year) {
        // if country is click upon change scatterplot, linecharts and piechart
        .on('click', function(d) {
             var country = d.properties.NAME;
-            lineChart(country)
-            pieChart(country, year)
-            lineChartVote(country)
+            if (vote[d.properties.NAME]) {
+              lineChart(country)
+              pieChart(country, year)
+              lineChartVote(country)
+            }
        });
 
       svg.append("path")
