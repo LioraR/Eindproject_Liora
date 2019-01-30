@@ -45,7 +45,7 @@ window.onload = function() {
 
 
         function scroll2() {
-            document.documentElement.scrollTop = 2000;
+            document.documentElement.scrollTop = 2300;
         };
 
         button2 = scroll2
