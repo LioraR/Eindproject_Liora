@@ -6,14 +6,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Line chart</title>
-    <style>
-      .names {
-      fill: none;
-      stroke: #fff;
-      stroke-linejoin: round;
-      }
-    </style>
+    <title>eindproject</title>
     <link rel="stylesheet" type="text/css" href="styles/vote.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -97,7 +90,7 @@
       <div class="col-md-5 col-md-offset-1" style="background-color: white" id="scatterPlot"><h2>Correlation Freedom and Turnout</h2>
         <button style="font-size:24px" onclick="scatterFunction()"><i class="fa fa-info-circle"></i></button>
         <div id="selectScatterplot">The dots in the scatterplot represent all the election results per country per year. The colors represent multiple countries and more information is shown ones hovering over the dots. A scatterplot is meant to establish various kinds of correlations and according to our research question, we want to see if there is a relationship between the freedom of a country and the voter turnout. The freedom House ranges from 1 (lots of freedom) until 4 (no freedom). In Europe, there is lots of freedom, so it is difficult to establish some kind of correlations.</div>
-        <svg id="testID3" width="100%" height="550"><svg></div>
+        <svg id="scatterplotupdate" width="100%" height="550"><svg></div>
     </div>
 
     <div class="row">
@@ -117,7 +110,7 @@
       <div class="col-md-5 col-md-offset-1" style="background-color: white" id="lineChart2"><h2>Voter Turnout</h2>
         <button style="font-size:24px" onclick="lineVFunction()"><i class="fa fa-info-circle"></i></button>
           <div id="selectLineVote">This line chart shows the voter turnout over the years in one particular country and it is updated ones a country is selected in the map of Europe.  The Voter Turnout is defined as the percentage of people who voted from the voting-eligible population. The turnout in a lot of countries has decreased over the years but in 1984 fewer countries participated in the elections of the European Parliament. </div>
-          <svg id="testID2" width="90%" height="550"><svg></div>
+          <svg id="linechartupdate" width="100%" height="550"><svg></div>
     </div>
 
 

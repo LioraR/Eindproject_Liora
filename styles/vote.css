@@ -1,8 +1,33 @@
+.row {
+  margin-right: 0px;
+  margin-left: 0px;
+  width: 100%
+}
+
+.container-fluit {
+  width: 100%;
+}
+
+.btn.pull-right{
+  margin-right: 30px
+  }
+
+
+
+
+
+
 /* Style the lines by removing the fill and applying a stroke */
 .line {
     fill: none;
     stroke: #87CEFA;
     stroke-width: 3;
+}
+
+.names {
+fill: none;
+stroke: #fff;
+stroke-linejoin: round;
 }
 
 .overlay {
@@ -114,24 +139,6 @@ pointer-events: none;
   overflow: hidden;
 }
 
-
-/*volgens mij kan alles van de dropdown weg/*
-/* Dropdown button */
-/*.dropdown .dropbtn {
-  font-size: 16px;
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit; /* Important for vertical align on mobile phones
-  margin: 0; /* Important for vertical align on mobile phones */
-}
-
-/* Add a red background color to navbar links on hover
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: red; */
-}
 
 /* Dropdown content (hidden by default) */
 .dropdown-content {

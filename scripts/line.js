@@ -1,3 +1,4 @@
+/* This function makes the linechart for the voter turnout */
 function lineChartVote(country) {
 
     // remove null data in dataset
@@ -13,13 +14,12 @@ function lineChartVote(country) {
     var years = Object.keys(window.vote[country]);
     var voterTurnout = Object.values(window.vote[country]);
 
-
     // change linechart when select different country
-    d3.select("#testID2").remove();
+    d3.select("#linechartupdate").remove();
 
     // create SVG element
-    var svgLineVote = d3.select("#lineChart2").append("svg").attr("id", "testID2").attr("height", 550).attr("width", totalWidth / 2
-        - (margin.left + margin.right));
+    var svgLineVote = d3.select("#lineChart2").append("svg").attr("id", "linechartupdate").attr("height", 550).attr("width", totalWidth / 2 -
+                  (margin.left + 2*margin.right));
 
     // scaling
     var min = Math.min.apply(null, years);
@@ -36,15 +36,15 @@ function lineChartVote(country) {
         .domain([minF, maxF])
         .range([height - margin.bottom, margin.top]);
 
-    // make y-as
+    // make x-as and y-as
     var yAxis = d3.axisLeft(yScale);
     svgLineVote.append("g")
         .attr("class", "axis")
         .attr("transform", "translate(" + [margin.top, 0] + ")")
         .call(yAxis);
 
-    // make x-as
-    var xAxis = d3.axisBottom(xScale);
+    // tick is added because otherwise half years will appear when Romania is clicked upon
+    var xAxis = d3.axisBottom(xScale).ticks(5);
     svgLineVote.append("g")
         .attr("class", "axis")
         .attr("transform", "translate(" + [0, height - margin.top] + ")")

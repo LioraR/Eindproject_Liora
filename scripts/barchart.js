@@ -1,8 +1,10 @@
-// change barchart if year changes
-function changeBarchart(){
-  var currentYear = "2014";
+/* This function changes the barchart when a differen year or vap turnout is selected */
+function changeBarchart() {
 
   // the first barchart starts with year 2014
+  var currentYear = "2014";
+
+  // change barchart if year changes
   year = "2014";
   d3.select(".radioButtons").on("change", function() {
     yearFunction(currentYear);
@@ -21,7 +23,7 @@ function changeBarchart(){
 
 
 
-
+/* This function creates a barchart from the voter turnout */
 function barChart(year, dataBar) {
 
   if (year == undefined){
@@ -37,7 +39,7 @@ var g = d3.select("#barChart");
 // countries on x-as
 var xScale = d3.scaleBand()
     //.domain([0, allCountries.length])
-    .range([margin.left, width/2 - (3*margin.right)])
+    .range([margin.left, width / 2 - (3 * margin.right)])
     .domain(dataBar.map(function(d) { return d[0]; }));
 
 // voter percentage on y-as
@@ -69,7 +71,7 @@ g.append("g")
       return "rotate(-65)"
     });
 
-
+// create bars
 var bars = g.selectAll("rect")
             .data(dataBar);
 
@@ -83,7 +85,7 @@ bars.enter().append("rect")
   .attr("x", function(d, i) {
     return xScale((d[0]))
   })
-  .attr('width', barWidth/3)
+  .attr('width', barWidth / 3)
   .attr('height', function(d){
     return height - 2 * margin.bottom - yScale(d[1])
   })
@@ -91,9 +93,10 @@ bars.enter().append("rect")
   .attr('y', function(d, i) {
     return yScale(d[1]);
   })
-  .attr('height', function(d){
+  .attr('height', function(d) {
     return height - 2 * margin.bottom - yScale(d[1])
   })
+  // show voter turnout, year and country when hover over
   .on("mouseover", function(d) {
       toolTip.show(d);
 
@@ -115,9 +118,9 @@ var toolTip = d3.tip()
 
         return "<strong>Country: </strong><span class='details'>" + (d[0]) + "<br></span>" +
                "<strong>Voter Turnout: </strong><span class='details'>" + (d[1]) + "<br></span>" +
-               "<strong>year: </strong><span class='details'>" + year + "</span>";
+               "<strong>year: </strong><span class='details'>" + year + "</span>"
 
-})
+});
 
-    g.call(toolTip);
-}
+    g.call(toolTip)
+};

@@ -1,14 +1,14 @@
-  // make scatterplot from freedomHouse and turnout
+/* make scatterplot from freedomHouse and turnout */
 function scatterPlot() {
 
   list = [];
 
   // loop over all datapoints
-  for (countries in window.vote){
-    for (years in window.vote[countries]){
+  for (countries in window.vote) {
+    for (years in window.vote[countries]) {
 
       //remove if data is null
-      if (window.vote[countries][years] != null && window.freedomHouse[countries][years] != null){
+      if (window.vote[countries][years] != null && window.freedomHouse[countries][years] != null) {
         list.push({
           "Country": countries,
           "Year": years,
@@ -20,15 +20,16 @@ function scatterPlot() {
   }
 
   // remove linechart when other country is selected
-  d3.select("#testID3").remove();
+  d3.select("#scatterplotupdate").remove();
 
   // create SVG element
-  var svg3 = d3.select("#scatterPlot").append("svg").attr("id", "testID3").attr("height", 550).attr("width", totalWidth/2 - (margin.left + margin.right));
+  var svg3 = d3.select("#scatterPlot").append("svg").attr("id", "scatterplotupdate").attr("height", 550).attr("width", totalWidth / 2 -
+            (margin.left + 2*margin.right));
 
   // window.freedomHouse rating is from 4 untill 0
   var xScale = d3.scaleLinear()
       .domain([0, 4])
-      .range([margin.left, width/2.3 - margin.right]);
+      .range([margin.left, width / 2.3 - margin.right]);
 
   // voter turnout is in percentage (0-100)
   var yScale = d3.scaleLinear()
@@ -61,10 +62,12 @@ function scatterPlot() {
       .text("Voter Turnout");
 
 
-  //add color
-  dict ={};
   // the chosen colors are not based on colorblindness
-  var color3 = ["#a6cee3", "#1f78b4", "#b2df8a", "#33a02c", "#fb9a99", "#e31a1c", "#fdbf6f", "#ff7f00", "#cab2d6", "#6a3d9a", "#ffff99", "#b15928", "#8dd3c7", "#ffffb3", "#bebada", "#fb8072", "#80b1d3", "#fdb462", "#b3de69", "#fccde5", "#d9d9d9", "#bc80bd", "#ccebc5", "#ffed6f", "#1b9e77", "#d95f02", "#7570b3", "#e7298a"]
+  dict ={};
+  var color3 = ["#a6cee3", "#1f78b4", "#b2df8a", "#33a02c", "#fb9a99", "#e31a1c", "#fdbf6f",
+                "#ff7f00", "#cab2d6", "#6a3d9a", "#ffff99", "#b15928", "#8dd3c7", "#ffffb3",
+                "#bebada", "#fb8072", "#80b1d3", "#fdb462", "#b3de69", "#fccde5", "#d9d9d9",
+                "#bc80bd", "#ccebc5", "#ffed6f", "#1b9e77", "#d95f02", "#7570b3", "#e7298a"]
 
   var allCountries = Object.keys(window.vote)
   count = 0;
@@ -115,7 +118,7 @@ legend3 = svg3.selectAll(".legend")
         return yScale(d.Vote);
         })
         .attr("r", 5)
-        .attr("fill", function(d){
+        .attr("fill", function(d) {
           return dict[d.Country]
         })
         .on("mouseover", function(d) {
@@ -141,7 +144,6 @@ legend3 = svg3.selectAll(".legend")
                      "<strong>Year: </strong><span class='details'>" + d.Year + "<br></span>" +
                      "<strong>Voter Turnout: </strong><span class='details'>" + d.Vote + "<br></span>" +
                      "<strong>Freedom: </strong><span class='details'>" + d.freedomhouse + "</span>";
-
 
     });
 

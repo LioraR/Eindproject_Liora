@@ -1,9 +1,10 @@
-function lineChart(country){
+/* This function makes the linechart for the freedomHouse */
+function lineChart(country) {
 
 // remove null data in dataset
 var years = Object.keys(window.freedomHouse[country]);
 
-years.forEach(function(y, i){
+years.forEach(function(y, i) {
   var v = window.freedomHouse[country][years[i]]
   if (window.freedomHouse[country][years[i]] == null) {
     delete window.freedomHouse[country][years[i]]
@@ -17,7 +18,8 @@ years.forEach(function(y, i){
     d3.select("#svgupdate").remove();
 
   // create SVG element
-  var svg_line = d3.select("#lineChart").append("svg").attr("id", "svgupdate").attr("height", 550).attr("width", totalWidth/2 - (margin.left + margin.right));
+  var svg_line = d3.select("#lineChart").append("svg").attr("id", "svgupdate").attr("height", 550).attr("width",
+                totalWidth/2 - (margin.left + margin.right));
 
   // scaling
   var min = Math.min.apply(null, years);
@@ -28,22 +30,22 @@ years.forEach(function(y, i){
   // scaling x and y-as
   var xScale = d3.scaleLinear()
       .domain([min, max])
-      .range([margin.left, width/2 - 2*margin.right]);
+      .range([margin.left, width / 2 - 2 * margin.right]);
 
   // the highest window.freedomHouse rating is 1 and the lowest is 4 so the domain ranges from max to min
   var yScale = d3.scaleLinear()
       .domain([maxF, minF])
       .range([height - margin.bottom, margin.top]);
 
-  // make y-as
+  // make y-as and x-as
   var yAxis = d3.axisLeft(yScale);
   svg_line.append("g")
       .attr("class", "axis")
       .attr("transform", "translate(" + [margin.top, 0] + ")")
       .call(yAxis);
 
-  // make x-as
-  var xAxis = d3.axisBottom(xScale);
+  // tick is added because otherwise half years will appear when Romania is clicked upon
+  var xAxis = d3.axisBottom(xScale).ticks(5);
   svg_line.append("g")
       .attr("class", "axis")
       .attr("transform", "translate(" + [0, height - margin.top] + ")")
@@ -70,7 +72,7 @@ years.forEach(function(y, i){
   dataset = []
   years.forEach(function(y, i) {
     var obj= {};
-    if(freedomHous[i] !== undefined){
+    if(freedomHous[i] !== undefined) {
     obj["years"] = y;
     obj["freedomHous"] = freedomHous[i];
     dataset.push(obj)
@@ -111,9 +113,9 @@ years.forEach(function(y, i){
 
                 return "<strong>Country: </strong><span class='details'>" + country + "<br></span>" +
                        "<strong>Year: </strong><span class='details'>" + d["years"] + "<br></span>" +
-                       "<strong>Voter Turnout: </strong><span class='details'>" + d["freedomHous"] + "</span>";
+                       "<strong>Voter Turnout: </strong><span class='details'>" + d["freedomHous"] + "</span>"
 
-      })
+      });
 
-            svg_line.call(toolTip);
+            svg_line.call(toolTip)
 };

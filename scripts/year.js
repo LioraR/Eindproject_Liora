@@ -1,3 +1,4 @@
+/* This function changes the map and barchart when a different year in dropdown-menu is selected */
 function yearFunction(year) {
 
     makeMap(data, window.vote, year)

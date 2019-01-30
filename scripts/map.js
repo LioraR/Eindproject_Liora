@@ -14,6 +14,7 @@ var projection = d3.geoMercator()
 var path = d3.geoPath().projection(projection);
 
 
+/* This function makes a map of Europe based on the voter turnout*/
 function makeMap(data, vote, year) {
 
     var svg = d3.select("#map");

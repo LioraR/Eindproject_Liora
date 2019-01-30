@@ -1,3 +1,4 @@
+/* This function makes a piechart from the turnout, non votes and invalid votes */
 function pieChart(country, year) {
 
   pieCountry = country;
