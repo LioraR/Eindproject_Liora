@@ -6,7 +6,7 @@ Mijn website geeft een beeld van het opkomstpercentage voor de verkiezingen van 
 
 Op de website worden zes visualisaties weergegeven. De kaart van Europa geeft het opkomstpercentage weer en deze wordt geupdate als een ander jaar in het dropdown menu of een andere button (VAP turnout) is geselecteerd. Als een land op de kaart wordt aangeklikt dan zal de donut chart en twee linecharts zichtbaar worden. De donut chart bevat het opkomstpercentage, de ongeldige stemmen en het percentage dat niet is komen stemmen. De eerste linechart geeft een overzicht van het opkomstpercentage over de jaren en de tweede laat de vrijheid (freedomHouse) over de jaren zien. Daarnaast is er nog een scatterplot die het verband tussen de vrijheid in een land en het opkomstpercentage onderzoekt. Verder is er een barchart die het opkomstpercentage van landen laat zien en veranderd wanneer een ander jaar of een van de andere button (VAP turnout) wordt geselecteerd. Bij VAP opkomstpercentage wordt gekeken naar het aantal mensen die oud genoeg zijn om te mogen stemmen terwijl bij het opkomstpercentage gekeken wordt naar wie zich hebben geregistreerd als stemmers.
 
-<img src="https://user-images.githubusercontent.com/44025069/52066436-d9175900-2578-11e9-8fff-4f5a62dfadf5.png" alt="drawing" width="400"/>
+<img src="https://user-images.githubusercontent.com/44025069/52066436-d9175900-2578-11e9-8fff-4f5a62dfadf5.png" alt="drawing" width="1000"/>
 (dit is enkel een weergave van een deel van mijn website)
 
 # mapstructuur
