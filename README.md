@@ -3,6 +3,7 @@
 •	Naam: Liora Rosenberg
 
 De website kan hier worden gevonden: https://liorar.github.io/Eindproject_Liora/drawings.html
+De link naar mijn filmpje: https://drive.google.com/file/d/1PWiZrigF6_aZ0mf9aiiAdQda4mNFuW-b/view
 
 
 De onderzoeksvraag luidt: “In hoeverre is er een verband tussen de politieke vrijheid en het opkomstpercentage van de Europese Unie?” Deze onderzoeksvraag is enigszinds veranderd aangezien ik eerst verschillende politieke systemen wilde ten opzichte van het opkomstpercentage wilde onderzoeken. Ik vond het niet handig om deze onderzoeksvraag aan te houden aangezien ik er geen goede visualisaties bij kon bedenken. Een piechart moest namelijk op 100% uitkomen en daarin kon ik dus niet alle politieke systemen visualiseren.
